@@ -1,0 +1,16 @@
+.experience_items {
+  position: relative;
+  font-size: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #03030f;
+    border: 12px solid #d4ecfe;
+    left: -50px;
+  }
+}

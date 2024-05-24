@@ -1,0 +1,17 @@
+.custom_cursor__ball {
+  position: fixed;
+  top: -2px;
+  left: -2px;
+  transition: opacity 1s ease;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+.custom_cursor__ball___small {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
+  border-radius: 50%;
+  pointer-events: none;
+}

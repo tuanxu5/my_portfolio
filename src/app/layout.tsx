@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Nunito_Sans } from "next/font/google"
+import Head from "next/head"
 import Script from "next/script"
-import { SvgIcon } from "./assets/icons"
-import "./globals.scss"
+import "./styles/globals.scss"
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] })
 
@@ -17,14 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/png" sizes="32x32" href={SvgIcon.ImportLogoApp} />
+      <Head>
+        <link rel="shortcut icon" href="../images/icons/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-      </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+      </Head>
+
       <body className={nunito_sans.className}>
         {children}
-        {/* <Script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></Script> */}
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></Script>
         <Script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></Script>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></Script>

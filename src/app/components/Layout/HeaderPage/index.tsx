@@ -5,7 +5,6 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { LINK_CV } from "../../../utils/constant.js"
 import ToggleComponent from "../../Shared/ToggleComponent/index.tsx"
-import ButtonPrimary from "../../UI/Button/ButtonPrimary/index"
 import styles from "./index.module.scss"
 
 const HeaderPage = () => {
@@ -49,7 +48,7 @@ const HeaderPage = () => {
           </ul>
           <ToggleComponent />
           <a href={LINK_CV} target="_blank">
-            <ButtonPrimary title="Curriculum Vitae" />
+            <button className="button_primary px-5 py-4">Curriculum Vitae</button>
           </a>
         </div>
       </nav>

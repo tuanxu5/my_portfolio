@@ -1,8 +1,7 @@
+import { SvgIcon } from "@/app/assets/icons"
 import type { Metadata } from "next"
 import { Nunito_Sans } from "next/font/google"
 import Script from "next/script"
-import { SvgIcon } from "./assets/icons"
-import "./globals.scss"
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] })
 
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
   title: "TuanXu | My Portfolio"
 }
 
-export default function RootLayout({
+export default function ContactsPageLayout({
   children
 }: Readonly<{
   children: React.ReactNode
@@ -24,7 +23,6 @@ export default function RootLayout({
       </head>
       <body className={nunito_sans.className}>
         {children}
-        {/* <Script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></Script> */}
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></Script>
         <Script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></Script>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></Script>

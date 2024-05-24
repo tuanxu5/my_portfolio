@@ -1,26 +1,26 @@
-"use client";
-import { SvgIcon } from "@/app/assets/icons/index.ts";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef } from "react";
-import { LINK_CV } from "../../../utils/constant.js";
-import ToggleComponent from "../../Shared/ToggleComponent/index.tsx";
-import ButtonPrimary from "../../UI/Button/ButtonPrimary/index";
-import styles from "./index.module.scss";
+"use client"
+import { SvgIcon } from "@/app/assets/icons/index.ts"
+import Image from "next/image"
+import Link from "next/link"
+import { useEffect, useRef } from "react"
+import { LINK_CV } from "../../../utils/constant.js"
+import ToggleComponent from "../../Shared/ToggleComponent/index.tsx"
+import ButtonPrimary from "../../UI/Button/ButtonPrimary/index"
+import styles from "./index.module.scss"
 
 const HeaderPage = () => {
-  const isScrolled = useRef(false);
+  const isScrolled = useRef(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      isScrolled.current = window.scrollY > 0;
-    };
+      isScrolled.current = window.scrollY > 0
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
     <header className={` ${styles.header_page} ${isScrolled.current ? styles.is_scrolled : ""}`}>
@@ -44,7 +44,7 @@ const HeaderPage = () => {
               <Link href="/tools">Skills</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/contacts">Contacts</Link>
+              <Link href="/pages/contacts">Contacts</Link>
             </li>
           </ul>
           <ToggleComponent />
@@ -54,7 +54,7 @@ const HeaderPage = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default HeaderPage;
+export default HeaderPage

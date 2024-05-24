@@ -2,28 +2,28 @@
 import { SvgIcon } from "@/app/assets/icons/index.ts"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef } from "react"
+import { useEffect, useState } from "react"
 import { LINK_CV } from "../../../utils/constant.js"
 import ToggleComponent from "../../Shared/ToggleComponent/index.tsx"
 import ButtonPrimary from "../../UI/Button/ButtonPrimary/index"
 import styles from "./index.module.scss"
 
 const HeaderPage = () => {
-  const isScrolled = useRef(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      isScrolled.current = window.scrollY > 0
+      setIsScrolled(window.scrollY > 30)
     }
-
     window.addEventListener("scroll", handleScroll)
+    handleScroll()
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
 
   return (
-    <header className={` ${styles.header_page} ${isScrolled.current ? styles.is_scrolled : ""}`}>
+    <header className={`${styles.header_page} ${isScrolled ? styles.is_scrolled : ""}`}>
       <nav className={styles.header_nav}>
         <div className={styles.header_logo}>
           <Image src={SvgIcon.ImportLogoApp} height="24" width="24" alt="" />

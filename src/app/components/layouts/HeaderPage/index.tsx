@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { LINK_CV } from "../../../utils/constant.js"
-import ToggleComponent from "../../Shared/ToggleComponent/index.tsx"
+import ToggleComponent from "../../shared/toggle/index.tsx"
 import styles from "./index.module.scss"
 
 const HeaderPage = () => {

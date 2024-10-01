@@ -1,4 +1,4 @@
-import TitleComponent from "@/app/components/Shared/TitleComponent"
+import TitleComponent from "@/app/components/shared/title"
 import styles from "./index.module.scss"
 export default function ContactSection() {
   return (

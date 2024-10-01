@@ -1,7 +1,7 @@
-import { SvgIcon } from "@/app/assets/icons";
-import Image from "next/image";
-import ScrollToTop from "../../Shared/ScrollToTop";
-import styles from "./index.module.scss";
+import { SvgIcon } from "@/app/assets/icons"
+import Image from "next/image"
+import ScrollToTop from "../../shared/scroll-to-top"
+import styles from "./index.module.scss"
 
 const FooterPage = () => {
   return (
@@ -36,7 +36,7 @@ const FooterPage = () => {
         <ScrollToTop />
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default FooterPage;
+export default FooterPage

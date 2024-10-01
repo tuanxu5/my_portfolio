@@ -1,7 +1,7 @@
 "use client";
 import { mockDataProject } from "@/app/mocks/_mockProject";
 import { useState } from "react";
-import TabProjectSection from "./TabProjectSection";
+import TabProjectSection from "./tab-project";
 
 export default function ListProjectSection() {
   const projects = mockDataProject;

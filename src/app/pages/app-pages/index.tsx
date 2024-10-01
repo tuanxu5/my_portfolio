@@ -1,13 +1,13 @@
-import FooterPage from "@/app/components/Layout/FooterPage"
-import HeaderPage from "@/app/components/Layout/HeaderPage"
-import ContactComponent from "@/app/components/Shared/ContactComponent"
-import TitleComponent from "@/app/components/Shared/TitleComponent"
-import { ExperienceSection } from "@/app/sections/Experience"
-import { ImageParallaxSection } from "@/app/sections/ImageParallaxSection"
-import ListProjectSection from "@/app/sections/ListProjectSection"
-import { MyGoalSection } from "@/app/sections/MyGoal"
-import SkillsSection from "@/app/sections/SkillsSection"
-import StatsSection from "@/app/sections/StatsSection"
+import FooterPage from "@/app/components/layouts/FooterPage"
+import HeaderPage from "@/app/components/layouts/HeaderPage"
+import ContactComponent from "@/app/components/shared/contact"
+import TitleComponent from "@/app/components/shared/title"
+import { ExperienceSection } from "@/app/sections/experience"
+import { ImageParallaxSection } from "@/app/sections/image-parallax"
+import ListProjectSection from "@/app/sections/list-project"
+import { MyGoalSection } from "@/app/sections/my-goal"
+import SkillsSection from "@/app/sections/skills"
+import StatsSection from "@/app/sections/stats"
 
 export default function AppPage() {
   return (

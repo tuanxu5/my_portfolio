@@ -1,5 +1,5 @@
-import CursorComponent from "./components/Shared/CursorComponent"
-import AppPage from "./pages/AppPage"
+import CursorComponent from "./components/shared/cursor"
+import AppPage from "./pages/app-pages"
 
 export default function App() {
   return (

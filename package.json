@@ -13,13 +13,14 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.6",
     "gsap": "^3.12.5",
-    "next": "14.2.3",
+    "next": "^14.2.13",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.2",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.13",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

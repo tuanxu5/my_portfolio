@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean-webpack": "rm -rf .next/cache/webpack/"
+    "export": "next export"
   },
   "dependencies": {
     "clsx": "^2.1.1",

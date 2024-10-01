@@ -22,7 +22,10 @@
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
+    img {
+      margin-top: 3px;
+    }
   }
 
   .header_nav {

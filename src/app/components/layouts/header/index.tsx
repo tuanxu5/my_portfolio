@@ -25,7 +25,7 @@ const HeaderPage = () => {
     <header className={`${styles.header_page} ${isScrolled ? styles.is_scrolled : ""}`}>
       <nav className={styles.header_nav}>
         <div className={styles.header_logo}>
-          <Image src={SvgIcon.ImportLogoApp} height="24" width="24" alt="" />
+          <Image src={SvgIcon.ImportLogoApp} height="32" alt="" />
           <span>TuanXu</span>
         </div>
         <div className={styles.nav_menu}>

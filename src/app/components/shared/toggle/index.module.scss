@@ -1,5 +1,6 @@
 .toggle_label {
   position: relative;
+  cursor: pointer;
 
   &:before {
     position: absolute;
@@ -10,7 +11,7 @@
     width: 10px;
     height: 10px;
     border-radius: 9999%;
-    background-color: #03030f;
+    background-color: var(--primary-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 40%;
@@ -40,11 +41,11 @@
   &.color {
     .toggle_label {
       background-color: transparent;
-      border: 1px solid #03030f;
+      border: 1px solid var(--primary-color);
     }
 
     .toggle_checkbox:checked + .toggle_label {
-      background-color: #03030f;
+      background-color: var(--primary-color);
     }
   }
 }

@@ -1,5 +1,5 @@
-import FooterPage from "@/app/components/layouts/FooterPage"
-import HeaderPage from "@/app/components/layouts/HeaderPage"
+import FooterPage from "@/app/components/layouts/footer"
+import HeaderPage from "@/app/components/layouts/header"
 import ContactComponent from "@/app/components/shared/contact"
 import TitleComponent from "@/app/components/shared/title"
 import { ExperienceSection } from "@/app/sections/experiences"

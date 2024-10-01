@@ -17,7 +17,7 @@ export default function SkillsSection() {
             </div>
           </div>
           <div className="grid grid-cols-6 gap-x-5 gap-y-10">
-            {skill.children?.map((item) => (
+            {skill?.children?.map((item) => (
               <div key={item.id} className="flex flex-col items-center gap-2.5 text-sm font-bold">
                 <div className="bg-[#f4f6f7] rounded-2xl w-14 h-14 flex justify-center items-center">
                   <Image src={item.image} height={item.height} width={item.width} alt={item.name} />

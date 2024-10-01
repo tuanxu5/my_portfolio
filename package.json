@@ -23,6 +23,8 @@
     "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
+    "@locator/babel-jsx": "^0.4.4",
+    "@locator/runtime": "^0.4.4",
     "@next/bundle-analyzer": "^14.2.13",
     "@types/node": "^20",
     "@types/react": "^18",

@@ -1,14 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  outline: none;
+}
+
 :root {
   --primary-color: #03030f;
+  --secondary-color: #26a0f8;
   --gradient-bg-primary: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
+  --text: #03030f;
+  --error: #fe5f55;
+  --text-transparent: rgba(3, 3, 15, 0.2);
+  --text-opaque: rgba(3, 3, 15, 0.5);
+  --background: #fff;
+  --background-transparent: hsla(0, 0%, 100%, 0.2);
+  --background-opaque: hsla(0, 0%, 100%, 0.6);
+  --background-second: #f3f3f4;
+  --background-for-firefox: hsla(0, 0%, 100%, 0.9);
+  --background-icon: rgba(0, 0, 0, 0.1);
+  --background-table: #fafafa;
+  --background-banner: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
+  --background-collection: #f2f2f2;
+  --background-collection-secondary: #f3f3f3;
+  --background-card: #d4ecfe;
+  --background-card-secondary: #d4ecfe;
+  --background-card-third: #f4f6f7;
+  --background-card-fourth: #d4ecfe;
+  --background-card-fifth: #f4f6f7;
+  --background-card-sixth: #f4f7fa;
+  --background-card-seventh: #fafafa;
+  --background-card-eighth: #d4ecfe;
+  --background-card-transparent: rgba(38, 160, 248, 0.1);
+  --icon-border: #dbdbdb;
+  --background-oddscrowd: #e8f2fc;
+  --background-hamperapp: #f7f7f7;
+  --background-noah: #ebebf5;
+  --background-shipmen: #f9fbff;
+  --background-lagniappe: #eaf8f0;
+  --background-ukretreats: #f5faf9;
+  --background-mideast: #e9f0fe;
+  --background-therein: #edf2eb;
+  --background-dorky: #f9fbff;
+  --background-365days: #e9f0fe;
+  --background-mastery: #f7f7f7;
+  --hljs-base-color: #383a42;
+  --hljs-background: #eee;
+  --hljs-color-quote: #a0a1a7;
+  --hljs-color-formula: #a626a4;
+  --hljs-color-subst: #e45649;
+  --hljs-color-literal: #0184bb;
+  --hljs-color-attribute: #50a14f;
+  --hljs-color-class: #c18401;
+  --hljs-color-pseudo: #986801;
+  --hljs-color-meta: #4078f2;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  scrollbar-width: none;
+  overflow: -moz-scrollbar-none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes moveLeftAndBack {

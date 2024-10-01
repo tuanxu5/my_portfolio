@@ -10,7 +10,7 @@ const FooterPage = () => {
         <nav className="flex justify-between">
           <span className="text-sm text-[#03030f80]">© 2024 Tuanxu. All rights reserved.</span>
         </nav>
-        <div className="flex flex-col fixed gap-2 left-6 bottom-6">
+        <div className="flex flex-col fixed gap-2 left-8 bottom-6">
           <a href="https://www.linkedin.com/in/tuanxu5/" target="_blank">
             <button className={styles.contact_item}>
               <Image src={SvgIcon.IconLinkdIn} alt="icon" width={18} height={18} />

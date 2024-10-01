@@ -1,3 +1,5 @@
+import { SvgIcon } from "../assets/icons"
+
 export const mockDataSkill = [
   {
     id: 1,
@@ -5,126 +7,126 @@ export const mockDataSkill = [
     children: [
       {
         id: 1,
-        image: "src/assets/icons/Skill/icon_stack_html.svg",
+        image: SvgIcon.IconStackHtml,
         name: "HTML5",
         width: 40,
         height: 40
       },
       {
         id: 2,
-        image: "src/assets/icons/Skill/icon_stack_css.svg",
+        image: SvgIcon.IconStackCss,
         name: "CSS3",
         width: 40,
         height: 40
       },
       {
         id: 3,
-        image: "src/assets/icons/Skill/icon_stack_react.svg",
+        image: SvgIcon.IconStackReactJs,
         name: "ReatJS",
         width: 40,
         height: 40
       },
       {
         id: 4,
-        image: "src/assets/icons/Skill/icon_stack_vuejs.svg",
+        image: SvgIcon.IconStackVueJs,
         name: "VueJS",
         width: 40,
         height: 40
       },
       {
         id: 5,
-        image: "src/assets/icons/Skill/icon_stack_nextjs.svg",
+        image: SvgIcon.IconStackNextJs,
         name: "NextJS",
         width: 56,
         height: 56
       },
       {
         id: 6,
-        image: "src/assets/icons/Skill/icon_stack_ts.svg",
-        name: "Typescript",
-        width: 40,
-        height: 40
-      },
-      {
-        id: 7,
-        image: "src/assets/icons/Skill/icon_stack_js.svg",
+        image: SvgIcon.IconStackJs,
         name: "Javascript",
         width: 40,
         height: 40
       },
       {
+        id: 7,
+        image: SvgIcon.IconStackTs,
+        name: "Typescript",
+        width: 40,
+        height: 40
+      },
+      {
         id: 8,
-        image: "src/assets/icons/Skill/icon_stack_sass.svg",
+        image: SvgIcon.IconStackSass,
         name: "Sass",
         width: 40,
         height: 40
       },
       {
         id: 9,
-        image: "src/assets/icons/Skill/icon_stack_antd.svg",
+        image: SvgIcon.IconStackAntd,
         name: "Ant Design",
         width: 20,
         height: 20
       },
       {
         id: 10,
-        image: "src/assets/icons/Skill/icon_stack_tailwind.svg",
+        image: SvgIcon.IconStackTailWind,
         name: "Tailwind Css",
         width: 40,
         height: 40
       },
       {
         id: 11,
-        image: "src/assets/icons/Skill/icon_stack_boostrap.svg",
+        image: SvgIcon.IconStackBootstrap,
         name: "Bootstrap5",
         width: 40,
         height: 40
       },
       {
         id: 12,
-        image: "src/assets/icons/Skill/icon_stack_flutter.svg",
+        image: SvgIcon.IconStackFlutter,
         name: "Flutter",
         width: 40,
         height: 40
       },
       {
         id: 13,
-        image: "src/assets/icons/Skill/icon_stack_laravel.svg",
+        image: SvgIcon.IconStackLaravel,
         name: "Laravel",
         width: 40,
         height: 40
       },
       {
         id: 14,
-        image: "src/assets/icons/Skill/icon_stack_graphql.svg",
+        image: SvgIcon.IconStackGraphql,
         name: "GraphQL",
         width: 40,
         height: 40
       },
       {
         id: 15,
-        image: "src/assets/icons/Skill/icon_stack_mysql.svg",
+        image: SvgIcon.IconStackMySql,
         name: "MySQL",
         width: 40,
         height: 40
       },
       {
         id: 16,
-        image: "src/assets/icons/Skill/icon_stack_firebase.svg",
+        image: SvgIcon.IconStackFirebase,
         name: "Firebase",
         width: 40,
         height: 40
       },
       {
         id: 17,
-        image: "src/assets/icons/Skill/icon_stack_github.svg",
+        image: SvgIcon.IconStackGithub,
         name: "Github",
         width: 40,
         height: 40
       },
       {
         id: 18,
-        image: "src/assets/icons/Skill/icon_stack_figma.svg",
+        image: SvgIcon.IconStackFigma,
         name: "Figma",
         width: 40,
         height: 40

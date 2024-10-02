@@ -4,6 +4,7 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["icon-library"]
   },
+  output: "export",
   images: {
     domains: ["assets.aceternity.com"]
   }

@@ -14,7 +14,7 @@ export default function ContactSection() {
         }
       />
       <main className="container px-[140px] flex flex-wrap flex-col mt-[-80px] pt-[50px] w-full">
-        <div className="sub-title leading-6">
+        <div className="text-[16px] leading-6">
           Just fill this simple form in and we will contact you promptly to
           <br />
           discuss your project. Hate forms? Drop me a line at <br />
@@ -43,7 +43,7 @@ export default function ContactSection() {
             </div>
             <div className="md:flex md:items-center">
               <button
-                className="mt-10 font-bold px-8 py-4 shadow-sm rounded-full leading-normal border border-[#03030f] text-[#fff] bg-[#03030f]"
+                className="mt-10 font-semibold px-8 py-4 shadow-sm rounded-full leading-normal border border-[#03030f] text-white bg-[#03030f]"
                 type="button"
               >
                 Send Request

@@ -1,5 +1,6 @@
 import IconKep from "./about/icon_kep.svg"
 import IconKep2 from "./about/icon_kep_2.svg"
+import IconTuanxu from "./icon-tuanxu.svg"
 import IconFacebook from "./icon_contact_facebook.svg"
 import IconGithub from "./icon_contact_github.svg"
 import IconInstagram from "./icon_contact_instagram.svg"
@@ -51,7 +52,8 @@ const SvgIcon = {
   IconStackFigma,
   IconStackLaravel,
   IconStackGraphql,
-  IconStackMySql
+  IconStackMySql,
+  IconTuanxu
 }
 
 export { SvgIcon }

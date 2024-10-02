@@ -6,6 +6,7 @@
   text-decoration: underline;
   position: relative;
   cursor: pointer;
+  font-size: 16px;
 
   &:before {
     content: "";
@@ -21,10 +22,10 @@
 
 .sub_title_h {
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   width: fit-content;
   margin-bottom: 60px;
-  font-size: 20px;
+  font-size: 18px;
 
   &:before {
     content: "";

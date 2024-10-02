@@ -1,9 +1,10 @@
+"use client";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 import styles from "./index.module.scss";
 
 interface CustomButtonProps {
-  label: string;
+  label: React.ReactNode | String | null;
   px: number;
   py: number;
 }
@@ -14,7 +15,7 @@ type ButtonElement = HTMLElement & {
   };
 };
 
-export const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => {
   useEffect(() => {
     class Button {
       block: ButtonElement;
@@ -27,7 +28,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => 
 
       constructor(buttonElement: ButtonElement) {
         this.block = buttonElement;
-        this.DOM = { button: buttonElement, flair: document.createElement("span") }; // Khởi tạo DOM
+        this.DOM = { button: buttonElement, flair: document.createElement("span") };
         this.init();
         this.initEvents();
       }
@@ -128,7 +129,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => 
     <button
       className={`${styles.button} ${styles["button--stroke"]}`}
       style={{
-        padding: `${px * 4}px ${py * 4}px`
+        padding: `${py * 4}px ${px * 4}px `
       }}
       data-block="button"
     >
@@ -137,3 +138,5 @@ export const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => 
     </button>
   );
 };
+
+export default CustomButton;

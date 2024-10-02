@@ -1,5 +1,6 @@
-import TitleComponent from "@/app/components/shared/title"
-import styles from "./index.module.scss"
+import CustomButton from "@/app/components/shared/button";
+import TitleComponent from "@/app/components/shared/title";
+import styles from "./index.module.scss";
 export default function ContactSection() {
   return (
     <main className="flex flex-col gap-[120px] pt-[120px] pb-[50px] h-full items-center">
@@ -42,16 +43,11 @@ export default function ContactSection() {
               </div>
             </div>
             <div className="md:flex md:items-center">
-              <button
-                className="mt-10 font-semibold px-8 py-4 shadow-sm rounded-full leading-normal border border-[#03030f] text-white bg-[#03030f]"
-                type="button"
-              >
-                Send Request
-              </button>
+              <CustomButton px={8} py={4} label="Send Request" />
             </div>
           </form>
         </div>
       </main>
     </main>
-  )
+  );
 }

@@ -29,11 +29,11 @@
 .button__label {
   position: relative;
   text-align: center;
-  transition: color 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: color 5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .button--stroke:hover .button__label {
-  transition: color 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: color 5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .button__flair {

@@ -1,17 +1,17 @@
-import { FlipWords } from "@/app/components/aceternity-ui/flip-words"
-import FooterPage from "@/app/components/layouts/footer"
-import HeaderPage from "@/app/components/layouts/header"
-import ContactComponent from "@/app/components/shared/contact"
-import TitleComponent from "@/app/components/shared/title"
-import { ExperienceSection } from "@/app/sections/experiences"
-import { ImageParallaxSection } from "@/app/sections/image-parallax"
-import ListProjectSection from "@/app/sections/list-project"
-import { MyGoalSection } from "@/app/sections/my-goal"
-import SkillsSection from "@/app/sections/skills"
-import StatsSection from "@/app/sections/stats"
+import { FlipWords } from "@/app/components/aceternity-ui/flip-words";
+import FooterPage from "@/app/components/layouts/footer";
+import HeaderPage from "@/app/components/layouts/header";
+import ContactComponent from "@/app/components/shared/contact";
+import TitleComponent from "@/app/components/shared/title";
+import { ExperienceSection } from "@/app/sections/experiences";
+import { ImageParallaxSection } from "@/app/sections/image-parallax";
+import ListProjectSection from "@/app/sections/list-project";
+import { MyGoalSection } from "@/app/sections/my-goal";
+import SkillsSection from "@/app/sections/skills";
+import StatsSection from "@/app/sections/stats";
 
 export default function AppPage() {
-  const words = ["TuanXu", "Software Developer"]
+  const words = ["TuanXu", "Software Developer"];
 
   return (
     <div>
@@ -50,19 +50,10 @@ export default function AppPage() {
           }
         />
         <ExperienceSection />
-        <TitleComponent
-          title="Skills"
-          subTitle={
-            <span>
-              Take a look at some of the ideas <br />
-              we’ve helped to implement. Will yours be next?
-            </span>
-          }
-        />
         <SkillsSection />
         <ContactComponent />
       </section>
       <FooterPage />
     </div>
-  )
+  );
 }

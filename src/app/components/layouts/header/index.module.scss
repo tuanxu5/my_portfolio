@@ -13,16 +13,17 @@
 
   &.is_scrolled {
     -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--text-transparent);
     backdrop-filter: blur(8px);
   }
 
   .progress_bar {
     position: fixed;
-    top: 90px;
+    top: 89px;
     left: 0;
     right: 0;
     height: 1px;
-    background: var(--text-transparent);
+    background: var(--secondary-color);
     transform-origin: 0%;
   }
 

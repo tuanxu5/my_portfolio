@@ -5,7 +5,7 @@ import "./styles/globals.scss"
 
 export const metadata: Metadata = {
   title: "Tuanxu | Portfolio",
-  icons: "http://localhost:3000/_next/static/media/icon_logo_project.7faf818f.svg"
+  icons: "./icon-tuanxu.svg"
 }
 
 export default function RootLayout({

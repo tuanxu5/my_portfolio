@@ -1,7 +1,7 @@
 "use client"
 import { SvgIcon } from "@/app/assets/icons"
 import Image from "next/image"
-import { AnimatedTooltip } from "../../aceternity-ui/AnumatedTooltip/intex"
+import { AnimatedTooltip } from "../../aceternity-ui/tooltip/intex"
 
 export default function ScrollToTop() {
   const handleScrollToTop = () => {

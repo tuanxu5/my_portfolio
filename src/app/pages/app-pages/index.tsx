@@ -1,3 +1,4 @@
+import { FlipWords } from "@/app/components/aceternity-ui/flip-words"
 import FooterPage from "@/app/components/layouts/footer"
 import HeaderPage from "@/app/components/layouts/header"
 import ContactComponent from "@/app/components/shared/contact"
@@ -10,16 +11,21 @@ import SkillsSection from "@/app/sections/skills"
 import StatsSection from "@/app/sections/stats"
 
 export default function AppPage() {
+  const words = ["TuanXu", "Software Developer"]
+
   return (
     <div>
       <HeaderPage />
       <section className="flex flex-col gap-[120px] pt-[120px] pb-[50px] h-full items-center">
         <TitleComponent
           title="About"
-          subTitle={
-            <span>I&apos;m a Software Developer, I have experience in modern develop web and mobile apps.</span>
+          subTitle={<div>I have experience in modern develop web and mobile apps.</div>}
+          name={
+            <span>
+              Hi, I&apos;m
+              <FlipWords words={words} duration={5000} />
+            </span>
           }
-          name="Hi, I'm TuanXu"
         />
         <ImageParallaxSection />
         <MyGoalSection />

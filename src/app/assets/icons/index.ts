@@ -4,7 +4,6 @@ import IconFacebook from "./icon_contact_facebook.svg"
 import IconGithub from "./icon_contact_github.svg"
 import IconInstagram from "./icon_contact_instagram.svg"
 import IconLinkdIn from "./icon_contact_linkedIn.svg"
-import ImportLogoApp from "./icon_logo_project.svg"
 import IconToTop from "./icon_to_top.svg"
 import IconStackAntd from "./skills/icon_stack_antd.svg"
 import IconStackBootstrap from "./skills/icon_stack_bootstrap.svg"
@@ -32,7 +31,6 @@ const SvgIcon = {
   IconInstagram,
   IconGithub,
   IconFacebook,
-  ImportLogoApp,
   IconKep,
   IconKep2,
   IconStackHtml,

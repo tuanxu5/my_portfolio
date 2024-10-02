@@ -30,7 +30,7 @@ const HeaderPage = () => {
         </div>
         <div className={styles.nav_menu}>
           <ul className={styles.list_menu}>
-            <li className={`${styles.item_menu} ${styles.active}}`}>
+            <li className={`${styles.item_menu} ${styles.active}} active`}>
               <Link href="/">About</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>

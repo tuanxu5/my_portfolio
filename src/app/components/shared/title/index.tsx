@@ -1,7 +1,7 @@
 interface TitleComponentProps {
   title: String
   subTitle?: React.ReactNode
-  name?: String | null
+  name?: React.ReactNode | String | null
 }
 
 export default function TitleComponent({ title, subTitle, name, ...rest }: TitleComponentProps) {
@@ -11,7 +11,7 @@ export default function TitleComponent({ title, subTitle, name, ...rest }: Title
         <div className="flex justify-between items-center">
           <h5 className="text-[18px] font-medium mb-10">{title}</h5>
         </div>
-        <h1 className="text-[60px] font-bold leading-[70px]">{name}</h1>
+        {name && <h1 className="text-[70px] font-bold leading-[70px] mb-4">{name}</h1>}
         <h1 className="text-[45px] font-semibold leading-[50px]">
           <div>{subTitle}</div>
         </h1>

@@ -4,7 +4,7 @@ import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Contact | Portfolio",
-  icons: "http://localhost:3000/_next/static/media/icon_logo_project.7faf818f.svg"
+  icons: "../../icon-tuanxu.svg"
 }
 
 export default function ContactsPageLayout({

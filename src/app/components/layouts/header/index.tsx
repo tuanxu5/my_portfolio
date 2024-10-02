@@ -1,27 +1,28 @@
-"use client"
-import { SvgIcon } from "@/app/assets/icons/index.ts"
-import { motion, useScroll } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import { useEffect, useState } from "react"
-import { LINK_CV } from "../../../utils/constant.js"
-import ToggleComponent from "../../shared/toggle/index.tsx"
-import styles from "./index.module.scss"
+"use client";
+import { SvgIcon } from "@/app/assets/icons/index.ts";
+import { motion, useScroll } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { LINK_CV } from "../../../utils/constant.js";
+import { CustomButton } from "../../shared/button/index.tsx";
+import ToggleComponent from "../../shared/toggle/index.tsx";
+import styles from "./index.module.scss";
 
 const HeaderPage = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const { scrollYProgress } = useScroll()
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { scrollYProgress } = useScroll();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30)
-    }
-    window.addEventListener("scroll", handleScroll)
-    handleScroll()
+      setIsScrolled(window.scrollY > 30);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className={`${styles.header_page} ${isScrolled ? styles.is_scrolled : ""}`}>
@@ -50,13 +51,13 @@ const HeaderPage = () => {
           </ul>
           <ToggleComponent />
           <a href={LINK_CV} target="_blank">
-            <button className="button_primary px-5 py-4">Curriculum Vitae</button>
+            <CustomButton label="Curriculum Vitae" px={4} py={5} />
           </a>
         </div>
       </nav>
       <motion.div className={styles.progress_bar} style={{ scaleX: scrollYProgress }} />
     </header>
-  )
-}
+  );
+};
 
-export default HeaderPage
+export default HeaderPage;

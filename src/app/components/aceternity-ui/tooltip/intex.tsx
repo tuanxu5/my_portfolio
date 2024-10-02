@@ -1,14 +1,13 @@
-"use client"
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
-import { ReactElement, useState } from "react"
+"use client";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { ReactElement, useState } from "react";
 
 export const AnimatedTooltip = ({ items, title }: { items?: ReactElement<any, any>; title: String }) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-  const springConfig = { stiffness: 100, damping: 5 }
-  const x = useMotionValue(0)
-  const rotate = useSpring(useTransform(x, [-100, 100], [-45, 45]), springConfig)
-  console.log(title.length * 2)
-  const translateX = useSpring(useTransform(x, [-100, 100], [-100, 100 - title.length * 2]), springConfig)
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const springConfig = { stiffness: 100, damping: 5 };
+  const x = useMotionValue(0);
+  const rotate = useSpring(useTransform(x, [-100, 100], [-45, 45]), springConfig);
+  const translateX = useSpring(useTransform(x, [-100, 100], [-100, 105 - title.length * 2]), springConfig);
 
   return (
     <>
@@ -45,5 +44,5 @@ export const AnimatedTooltip = ({ items, title }: { items?: ReactElement<any, an
         {items}
       </div>
     </>
-  )
-}
+  );
+};

@@ -14,8 +14,10 @@ export default function ListProjectSection() {
   }
 
   return (
-    <section className="container flex flex-wrap mt-[-80px]">
-      <TabProjectSection onChangeCurrentTab={handleChangeCurrentTab} currentTab={currentTab} projects={projects} />
-    </section>
+    <>
+      <section className="container flex flex-col flex-wrap mt-[-80px]">
+        <TabProjectSection onChangeCurrentTab={handleChangeCurrentTab} currentTab={currentTab} projects={projects} />
+      </section>
+    </>
   )
 }

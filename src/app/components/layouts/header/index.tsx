@@ -1,5 +1,6 @@
 "use client"
 import { SvgIcon } from "@/app/assets/icons/index.ts"
+import { motion, useScroll } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -9,6 +10,7 @@ import styles from "./index.module.scss"
 
 const HeaderPage = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const { scrollYProgress } = useScroll()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +54,7 @@ const HeaderPage = () => {
           </a>
         </div>
       </nav>
+      <motion.div className={styles.progress_bar} style={{ scaleX: scrollYProgress }} />
     </header>
   )
 }

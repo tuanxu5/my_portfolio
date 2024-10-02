@@ -2,7 +2,6 @@
 
 import { mockDataProject } from "@/app/mocks/_mockProject";
 import { useState } from "react";
-import TabProjectSection from "./tab-project";
 import TestSCroll from "./testscroll/index";
 
 export default function ListProjectSection() {
@@ -17,7 +16,7 @@ export default function ListProjectSection() {
   return (
     <>
       <section className="container flex flex-col flex-wrap mt-[-80px]">
-        <TabProjectSection onChangeCurrentTab={handleChangeCurrentTab} currentTab={currentTab} projects={projects} />
+        {/* <TabProjectSection onChangeCurrentTab={handleChangeCurrentTab} currentTab={currentTab} projects={projects} /> */}
         <TestSCroll />
       </section>
     </>

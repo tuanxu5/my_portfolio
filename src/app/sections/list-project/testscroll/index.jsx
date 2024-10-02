@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import "./index.css"; // Chứa các CSS tương tự với đoạn mã bạn đã cung cấp
+import "./index.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const App = () => {
+const TestSCroll = () => {
   useEffect(() => {
     // Thiết lập z-index cho các panel
     gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
@@ -21,11 +21,15 @@ const App = () => {
           scrub: true,
           toggleActions: "play none reverse none",
           invalidateOnRefresh: true,
-          // Loại bỏ markers
           markers: false
         }
       });
-      tl.to(image, { height: 0 });
+
+      tl.to(image, { height: 0, opacity: 0, borderRadius: "0% 0% 0% 0%" }, 0).to(
+        image,
+        { borderRadius: "0%", duration: 0 },
+        0
+      );
     });
 
     // Thiết lập z-index cho các panel-text
@@ -42,23 +46,24 @@ const App = () => {
           scrub: true,
           toggleActions: "play none reverse none",
           invalidateOnRefresh: true,
-          // Loại bỏ markers
           markers: false
         }
       });
-      tl.to(text, { duration: 0.33, opacity: 1, y: "15%" }).to(text, { duration: 0.33, opacity: 0, y: "0%" }, 0.66);
+      tl.to(text, { duration: 0.33, opacity: 1, y: "15%" }).to(text, { duration: 0, opacity: 0, y: "0%" }, 0.66);
     });
 
+    // Tạo hiệu ứng pin và scroll
     ScrollTrigger.create({
       trigger: ".black",
       scrub: true,
-      // Loại bỏ markers
       markers: false,
       pin: true,
       start: () => "top top",
       end: () => "+=" + (images.length + 1) * window.innerHeight,
       invalidateOnRefresh: true
     });
+
+    gsap.set(".blue-text", { opacity: 1, y: "15%" });
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -67,13 +72,30 @@ const App = () => {
 
   return (
     <div>
-      <section className="orange">
-        <div className="text">This is some text inside of a div block.</div>
-      </section>
-
       <section className="black">
         <div className="text-wrap">
-          <div className="panel-text blue-text">Blue</div>
+          <div className="panel-text blue-text">
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum laudantium quod temporibus expedita
+              placeat odio aliquid voluptatum asperiores dicta, incidunt tenetur, minima dolores in tempore magnam
+              repellat molestias nemo?
+            </div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum laudantium quod temporibus expedita
+              placeat odio aliquid voluptatum asperiores dicta, incidunt tenetur, minima dolores in tempore magnam
+              repellat molestias nemo?
+            </div>{" "}
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum laudantium quod temporibus expedita
+              placeat odio aliquid voluptatum asperiores dicta, incidunt tenetur, minima dolores in tempore magnam
+              repellat molestias nemo?
+            </div>{" "}
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum laudantium quod temporibus expedita
+              placeat odio aliquid voluptatum asperiores dicta, incidunt tenetur, minima dolores in tempore magnam
+              repellat molestias nemo?
+            </div>
+          </div>
           <div className="panel-text red-text">Red</div>
           <div className="panel-text orange-text">Orange</div>
           <div className="panel-text purple-text">Purple</div>
@@ -86,10 +108,8 @@ const App = () => {
           <div className="panel purple"></div>
         </div>
       </section>
-
-      <section className="blue"></section>
     </div>
   );
 };
 
-export default App;
+export default TestSCroll;

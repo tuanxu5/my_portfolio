@@ -11,7 +11,7 @@ export default function ScrollToTop() {
   };
 
   return (
-    <div className="fixed right-8 bottom-6" onClick={handleScrollToTop}>
+    <div className="fixed right-8 bottom-6" onClick={() => handleScrollToTop()}>
       <AnimatedTooltip
         title="Scroll to top"
         items={

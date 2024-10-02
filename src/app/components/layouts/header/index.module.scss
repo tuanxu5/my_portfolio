@@ -17,16 +17,6 @@
     backdrop-filter: blur(8px);
   }
 
-  .progress_bar {
-    position: fixed;
-    top: 89px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: var(--secondary-color);
-    transform-origin: 0%;
-  }
-
   .header_nav {
     display: flex;
     justify-content: space-between;

@@ -40,15 +40,6 @@ export default function AppPage() {
           }
         />
         <ListProjectSection />
-        <TitleComponent
-          title="Experience"
-          subTitle={
-            <span>
-              Take a look at some of the ideas <br />
-              we’ve helped to implement. Will yours be next?
-            </span>
-          }
-        />
         <ExperienceSection />
         <SkillsSection />
         <ContactComponent />

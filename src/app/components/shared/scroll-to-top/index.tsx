@@ -11,14 +11,14 @@ export default function ScrollToTop() {
   };
 
   return (
-    <div className=" fixed right-8 bottom-6" onClick={handleScrollToTop}>
-      <CustomButton
-        py={3}
-        px={3}
-        label={
-          <AnimatedTooltip
-            title="Scroll to top"
-            items={
+    <div className="fixed right-8 bottom-6" onClick={handleScrollToTop}>
+      <AnimatedTooltip
+        title="Scroll to top"
+        items={
+          <CustomButton
+            px={2.5}
+            py={2.5}
+            label={
               <Image
                 src={SvgIcon.IconToTop}
                 alt="icon"

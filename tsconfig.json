@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/utils/constant.js", "src/app/components/aceternity-ui/sticky-scroll-reveal/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/utils/constant.js", "src/app/components/aceternity-ui/sticky-scroll-reveal/index.tsx", "src/app/components/aceternity-ui/timeline/index.tsx"],
   "exclude": ["node_modules"]
 }

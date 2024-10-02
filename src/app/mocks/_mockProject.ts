@@ -1,4 +1,4 @@
-import { Project } from "../interface/project";
+import { Project } from "../interface";
 
 
 export const mockDataProject: Project[] = [

@@ -1,9 +1,9 @@
-import { Project } from "@/app/interface/project"
+import { Project } from "@/app/interface";
 
 interface TabProjectSectionProps {
-  currentTab: number
-  projects: Project[]
-  onChangeCurrentTab: (id: number) => void
+  currentTab: number;
+  projects: Project[];
+  onChangeCurrentTab: (id: number) => void;
 }
 
 const TabProjectSection = ({ currentTab, projects, onChangeCurrentTab }: TabProjectSectionProps) => {
@@ -24,7 +24,7 @@ const TabProjectSection = ({ currentTab, projects, onChangeCurrentTab }: TabProj
         ))}
       </ul>
     </section>
-  )
-}
+  );
+};
 
-export default TabProjectSection
+export default TabProjectSection;

@@ -49,6 +49,7 @@
   overflow: hidden;
   width: 450px;
   height: 80vh;
+  background-color: red;
 }
 
 .panel-text {
@@ -63,22 +64,6 @@
   font-weight: 900;
   text-align: center;
   transform: translateY(100%);
-}
-
-.panel-text.blue-text {
-  color: green;
-}
-
-.panel-text.red-text {
-  color: red;
-}
-
-.panel-text.purple-text {
-  color: purple;
-}
-
-.panel-text.orange-text {
-  color: orange;
 }
 
 .p-wrap {

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function MyGoalSection() {
   return (
-    <section className="container px-[140px] flex flex-wrap">
+    <section className="flex flex-wrap">
       <div>
         <h5 className="text-[16px] font-medium mb-10">My Goal</h5>
         <div className="relative">

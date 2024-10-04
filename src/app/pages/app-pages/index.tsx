@@ -1,50 +1,22 @@
-import { FlipWords } from "@/app/components/aceternity-ui/flip-words";
-import FooterPage from "@/app/components/layouts/footer";
-import HeaderPage from "@/app/components/layouts/header";
+import { LayoutPage } from "@/app/components/layouts/layout-page";
 import ContactComponent from "@/app/components/shared/contact";
-import TitleComponent from "@/app/components/shared/title";
-import { ExperienceSection } from "@/app/sections/experiences";
-import { ImageParallaxSection } from "@/app/sections/image-parallax";
-import ListProjectSection from "@/app/sections/list-project";
-import { MyGoalSection } from "@/app/sections/my-goal";
-import SkillsSection from "@/app/sections/skills";
-import StatsSection from "@/app/sections/stats";
+import CursorComponent from "@/app/components/shared/cursor";
+import { AboutSection } from "@/app/sections/app-pages/about";
+import { ExperienceSection } from "@/app/sections/app-pages/experiences";
+import { MyGoalSection } from "@/app/sections/app-pages/my-goal";
+import { ProjectSection } from "@/app/sections/app-pages/project";
+import SkillsSection from "@/app/sections/app-pages/skills";
 
 export default function AppPage() {
-  const words = ["TuanXu", "Software Developer"];
-
   return (
-    <div>
-      <HeaderPage />
-      <section className="flex flex-col gap-[120px] pt-[120px] pb-[50px] h-full items-center">
-        <TitleComponent
-          title="About"
-          subTitle={<div>I have experience in modern develop web and mobile apps.</div>}
-          name={
-            <span>
-              Hi, I&apos;m
-              <FlipWords words={words} duration={5000} />
-            </span>
-          }
-        />
-        <ImageParallaxSection />
-        <MyGoalSection />
-        <StatsSection />
-        <TitleComponent
-          title="Projects"
-          subTitle={
-            <span>
-              Take a look at some of the ideas <br />
-              we’ve helped to implement. Will yours be next?
-            </span>
-          }
-        />
-        <ListProjectSection />
-        <ExperienceSection />
-        <SkillsSection />
-        <ContactComponent />
-      </section>
-      <FooterPage />
-    </div>
+    <LayoutPage className="flex flex-col gap-[160px] pt-[120px] pb-[50px] h-full items-center">
+      <CursorComponent />
+      <AboutSection />
+      <MyGoalSection />
+      <ProjectSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <ContactComponent />
+    </LayoutPage>
   );
 }

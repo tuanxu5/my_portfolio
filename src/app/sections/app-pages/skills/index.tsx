@@ -6,9 +6,9 @@ export default function SkillsSection() {
   const skills = mockDataSkill;
 
   return (
-    <div className="w-full">
+    <section className="w-full">
       <TitleComponent title="Skills" subTitle={<span>Here are some of my skills.</span>} />
-      <section className="container px-[140px] flex flex-wrap mt-[48px]">
+      <div className="flex flex-wrap mt-[100px]">
         {skills?.map((skill) => (
           <div key={skill.id} className="w-full rounded-3xl border border-[#dbdbdb] p-12">
             <div className="col-span-6 text-center text-3xl mb-5 font-semibold flex justify-center ">
@@ -31,7 +31,7 @@ export default function SkillsSection() {
             </div>
           </div>
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

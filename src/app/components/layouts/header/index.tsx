@@ -35,16 +35,16 @@ const HeaderPage = () => {
               <Link href="/">About</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/projects">Project</Link>
+              <Link href="">Project</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/skills">Experience</Link>
+              <Link href="">Experience</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/tools">Skills</Link>
+              <Link href="">Skills</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/pages/contacts">Contacts</Link>
+              <Link href="">Contacts</Link>
             </li>
           </ul>
           <ToggleComponent />

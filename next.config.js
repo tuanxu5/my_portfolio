@@ -6,7 +6,8 @@ const nextConfig = {
   },
   output: "export",
   images: {
-    domains: ["assets.aceternity.com", "cdn.dribbble.com"]
+    domains: ["assets.aceternity.com", "cdn.dribbble.com"],
+    unoptimized: true
   }
 };
 

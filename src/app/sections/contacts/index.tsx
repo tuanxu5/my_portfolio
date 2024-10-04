@@ -3,10 +3,10 @@ import TitleComponent from "@/app/components/shared/title";
 import styles from "./index.module.scss";
 export default function ContactSection() {
   return (
-    <main className="flex flex-col gap-[120px] pt-[120px] pb-[50px] h-full items-center">
+    <section className="flex flex-col gap-[120px] pt-[120px] pb-[50px] h-full items-center">
       <TitleComponent
         title="Contact"
-        subTitle={
+        subTitleBig={
           <span>
             Interested?
             <br />
@@ -14,16 +14,16 @@ export default function ContactSection() {
           </span>
         }
       />
-      <main className="container px-[140px] flex flex-wrap flex-col mt-[-80px] pt-[50px] w-full">
-        <div className="text-[16px] leading-6">
+      <div className="flex flex-wrap flex-col mt-[-80px] pt-[50px] w-full">
+        <div className="text-[16px] leading-7">
           Just fill this simple form in and we will contact you promptly to
           <br />
           discuss your project. Hate forms? Drop me a line at <br />
-          <a href="mailto:lehoangtuan012@gmail.com">
+          <a href="mailto:lehoangtuan012@gmail.com" target="_blank">
             <span className={styles.email}>lehoangtuan012@gmail.com</span>
           </a>
         </div>
-        <div className="mt-12 w-full">
+        <div className="mt-20 w-full">
           <h5 className={styles.sub_title_h}>Work with me</h5>
           <form className="w-full max-w-2xl">
             <div className="flex flex-wrap -mx-3 w-full mb-6">
@@ -42,12 +42,12 @@ export default function ContactSection() {
                 <label htmlFor="Your message">Your message</label>
               </div>
             </div>
-            <div className="md:flex md:items-center">
-              <CustomButton px={8} py={4} label="Send Request" />
+            <div className="mt-20">
+              <CustomButton px={12} py={4.5} label="Send Request" />
             </div>
           </form>
         </div>
-      </main>
-    </main>
+      </div>
+    </section>
   );
 }

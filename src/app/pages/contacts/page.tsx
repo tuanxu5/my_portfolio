@@ -1,15 +1,13 @@
-import FooterPage from "@/app/components/layouts/footer"
-import HeaderPage from "@/app/components/layouts/header"
-import CursorComponent from "@/app/components/shared/cursor"
-import ContactSection from "@/app/sections/contacts"
+import { LayoutPage } from "@/app/components/layouts/layout-page";
+import CursorComponent from "@/app/components/shared/cursor";
+
+import ContactSection from "@/app/sections/contacts";
 
 export default function App() {
   return (
-    <>
+    <LayoutPage>
       <CursorComponent />
-      <HeaderPage />
       <ContactSection />
-      <FooterPage />
-    </>
-  )
+    </LayoutPage>
+  );
 }

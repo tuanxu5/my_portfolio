@@ -16,11 +16,9 @@ export function ExperienceSection() {
           </span>
         }
       />
-      <section className="container px-[140px] flex flex-wrap">
-        <div className="flex justify-start w-full items-start gap-[100px]">
-          <TimelineAceternity data={experiences} />
-        </div>
-      </section>
+      <div className="flex justify-start w-full items-start mt-[40px]">
+        <TimelineAceternity data={experiences} />
+      </div>
     </section>
   );
 }

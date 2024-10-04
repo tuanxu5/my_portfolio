@@ -41,7 +41,9 @@
 :root {
   --primary-color: #03030f;
   --secondary-color: #26a0f8;
+  --white-color: #ffffff;
   --gradient-bg-primary: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
+  --gradient-bg-second: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
   --error: #fe5f55;
   --text-transparent: hsla(240, 67%, 4%, 0.2);
   --text-opaque: rgba(3, 3, 15, 0.5);
@@ -52,7 +54,6 @@
   --background-for-firefox: hsla(0, 0%, 100%, 0.9);
   --background-icon: rgba(0, 0, 0, 0.1);
   --background-table: #fafafa;
-  --background-banner: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
   --background-collection: #f2f2f2;
   --background-collection-secondary: #f3f3f3;
   --background-card: #d4ecfe;

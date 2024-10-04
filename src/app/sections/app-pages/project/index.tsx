@@ -3,6 +3,7 @@
 import CustomButton from "@/app/components/shared/button";
 import TitleComponent from "@/app/components/shared/title";
 import Image from "next/image";
+import Link from "next/link";
 
 export const ProjectSection = () => {
   return (
@@ -26,7 +27,9 @@ export const ProjectSection = () => {
               a complex web app to automate your processes or a high-load platform with sensitive data.
             </span>
             <div className="mt-10">
-              <CustomButton label="See now" px={10} py={4} />
+              <Link href="/pages/projects">
+                <CustomButton label="See now" px={10} py={4} />
+              </Link>
             </div>
           </div>
           <div className="w-[40%]">
@@ -57,7 +60,9 @@ export const ProjectSection = () => {
               a complex web app to automate your processes or a high-load platform with sensitive data.
             </span>
             <div className="mt-10">
-              <CustomButton label="See now" px={10} py={4} />
+              <Link href="/pages/projects">
+                <CustomButton label="See now" px={10} py={4} />{" "}
+              </Link>
             </div>
           </div>
         </div>
@@ -70,7 +75,9 @@ export const ProjectSection = () => {
               a complex web app to automate your processes or a high-load platform with sensitive data.
             </span>
             <div className="mt-10">
-              <CustomButton label="See now" px={10} py={4} />
+              <Link href="/pages/projects">
+                <CustomButton label="See now" px={10} py={4} />
+              </Link>
             </div>
           </div>
           <div className="w-[40%]">

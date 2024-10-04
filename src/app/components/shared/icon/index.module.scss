@@ -1,0 +1,23 @@
+.icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(https://ronasit.com/_next/static/media/icons.c9771d62.svg);
+  --bg-position: 30px 30px;
+  background-position: var(--bg-position);
+}
+
+.icon_prod {
+  --bg-position: -224px -319px;
+  width: 56px;
+  height: 56px;
+}
+
+.icon_mask {
+  background: var(--iconColor);
+  -webkit-mask: url(https://ronasit.com/_next/static/media/icons.c9771d62.svg);
+  mask: url(https://ronasit.com/_next/static/media/icons.c9771d62.svg);
+  -webkit-mask-position: var(--bg-position);
+  mask-position: var(--bg-position);
+}

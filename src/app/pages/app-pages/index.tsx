@@ -3,7 +3,6 @@ import ContactComponent from "@/app/components/shared/contact";
 import CursorComponent from "@/app/components/shared/cursor";
 import { AboutSection } from "@/app/sections/app-pages/about";
 import { ExperienceSection } from "@/app/sections/app-pages/experiences";
-import { MyGoalSection } from "@/app/sections/app-pages/my-goal";
 import { ProjectSection } from "@/app/sections/app-pages/project";
 import SkillsSection from "@/app/sections/app-pages/skills";
 
@@ -12,7 +11,6 @@ export default function AppPage() {
     <LayoutPage className="flex flex-col gap-[160px] pt-[120px] pb-[50px] h-full items-center">
       <CursorComponent />
       <AboutSection />
-      <MyGoalSection />
       <ProjectSection />
       <ExperienceSection />
       <SkillsSection />

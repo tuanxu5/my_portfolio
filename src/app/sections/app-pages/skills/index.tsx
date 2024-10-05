@@ -8,7 +8,7 @@ export default function SkillsSection() {
   return (
     <section className="w-full">
       <TitleComponent title="Skills" subTitle={<span>Here are some of my skills.</span>} />
-      <div className="flex flex-wrap mt-[100px]">
+      <div className="flex flex-wrap mt-10">
         {skills?.map((skill) => (
           <div key={skill.id} className="w-full rounded-3xl border border-[#dbdbdb] p-12">
             <div className="col-span-6 text-center text-3xl mb-5 font-semibold flex justify-center ">

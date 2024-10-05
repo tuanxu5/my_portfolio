@@ -4,7 +4,7 @@ import { ProjectItems } from "./project-item";
 
 export default function ProjectSection() {
   return (
-    <section className="flex flex-col gap-[120px] pt-[120px] pb-[50px] h-full items-center">
+    <section className="flex flex-col gap-[120px] h-full items-center">
       <TitleComponent
         title="Other"
         subTitleBig={

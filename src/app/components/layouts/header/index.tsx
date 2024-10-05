@@ -25,10 +25,12 @@ const HeaderPage = () => {
   return (
     <header className={`${styles.header_page} ${isScrolled ? styles.is_scrolled : ""}`}>
       <nav className={styles.header_nav}>
-        <div className={styles.header_logo}>
-          <Image src={SvgIcon.IconTuanxu} height="32" alt="" />
-          <span>TuanXu</span>
-        </div>
+        <Link href="/">
+          <div className={styles.header_logo}>
+            <Image src={SvgIcon.IconTuanxu} height="32" alt="" />
+            <span>TuanXu</span>
+          </div>
+        </Link>
         <div className={styles.nav_menu}>
           <ul className={styles.list_menu}>
             <li className={`${styles.item_menu} ${styles.active}} active`}>

@@ -6,7 +6,7 @@
   transition: all 1s;
 
   &:hover {
-    background: var(--background-banner);
+    background: var(--gradient-bg-primary);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }

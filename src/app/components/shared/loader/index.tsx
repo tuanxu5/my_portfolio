@@ -1,3 +1,5 @@
+"use client";
+
 import { Power4, gsap } from "gsap";
 import Image from "next/image";
 import { useEffect } from "react";
@@ -11,13 +13,13 @@ interface LoaderProps {
   updateCurrentLoader: () => void;
 }
 
-export default function LoaderComponent({
+export const LoaderComponent = ({
   showWelcome,
   currentLoader,
   loaderCount,
   updateShowWelcome,
-  updateCurrentLoader,
-}: LoaderProps) {
+  updateCurrentLoader
+}: LoaderProps) => {
   useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
@@ -26,7 +28,7 @@ export default function LoaderComponent({
         } else {
           updateShowWelcome();
         }
-      },
+      }
     });
     tl.to(".loader", {
       width: "35%",
@@ -34,7 +36,7 @@ export default function LoaderComponent({
       delay: 3,
       opacity: 0,
       ease: Power4.easeInOut,
-      display: "none",
+      display: "none"
     }).to(".loader", {
       height: 0,
       top: "100%",
@@ -42,7 +44,7 @@ export default function LoaderComponent({
       delay: 0,
       opacity: 0,
       display: "none",
-      ease: Power4.easeInOut,
+      ease: Power4.easeInOut
     });
   }, [currentLoader, loaderCount, updateCurrentLoader, updateShowWelcome]);
 
@@ -68,4 +70,4 @@ export default function LoaderComponent({
       </div>
     </div>
   );
-}
+};

@@ -13,7 +13,7 @@ export const ImageWeb = () => {
         srcSet="https://ronasit.com/_next/static/media/cloud-light.1b9a7bfb.svg"
         src="https://ronasit.com/_next/static/media/cloud-light.1b9a7bfb.svg"
         decoding="async"
-        className="absolute top-[30%] left-0"
+        className="absolute top-[10%] left-[5%]"
       />
       <img
         alt="Angular"

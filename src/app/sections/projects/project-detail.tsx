@@ -19,7 +19,7 @@ export const ProjectDetail = () => {
           <div>
             <h1 className="text-[16px] mb-5">Hong Anh Computer</h1>
             <h1 className="text-[54px] font-bold leading-[60px] mb-5">Not everything needs to be owned</h1>
-            <h5 className="text-[18px] font-medium mb-20">Position: Frontend Developer</h5>
+            <h5 className="text-[18px] font-medium mb-10">Position: Frontend Developer</h5>
             <CustomButton label="Download in Appstore" px={10} py={5} />
           </div>
           <div className="w-[50%] flex justify-center">

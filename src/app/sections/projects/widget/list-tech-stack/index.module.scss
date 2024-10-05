@@ -1,0 +1,16 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--icon-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+  img {
+    width: 70px;
+    height: 70px;
+    filter: brightness(0);
+  }
+}

@@ -4,11 +4,11 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["icon-library"]
   },
-  output: "export",
   images: {
     domains: ["assets.aceternity.com", "cdn.dribbble.com"],
     unoptimized: true
-  }
+  },
+  output: "export"
 };
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({

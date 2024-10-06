@@ -22,9 +22,10 @@ export const ProjectSection = () => {
           <div className="flex flex-col w-[50%]">
             <span className="text-[1rem] text-[#03030f80]">Development</span>
             <span className="text-[2.5rem] font-semibold mt-6">Web Development</span>
-            <span className="mt-4 text-[15px]">
-              We create web products tailored exclusively for your business goals, be it a high converting landing page,
-              a complex web app to automate your processes or a high-load platform with sensitive data.
+            <span className="mt-4 text-[15px] leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio deserunt exercitationem inventore
+              laboriosam, aspernatur qui animi provident quia? Soluta dicta quis, non laborum ut neque eos pariatur
+              asperiores distinctio.
             </span>
             <div className="mt-10">
               <Link href="/pages/projects">
@@ -55,9 +56,10 @@ export const ProjectSection = () => {
           <div className="flex flex-col w-[50%]">
             <span className="text-[1rem] text-[#03030f80]">Development</span>
             <span className="text-[2.5rem] font-semibold mt-6">Mobile App Development</span>
-            <span className="mt-4 text-[15px]">
-              We create web products tailored exclusively for your business goals, be it a high converting landing page,
-              a complex web app to automate your processes or a high-load platform with sensitive data.
+            <span className="mt-4 text-[15px] leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio deserunt exercitationem inventore
+              laboriosam, aspernatur qui animi provident quia? Soluta dicta quis, non laborum ut neque eos pariatur
+              asperiores distinctio.
             </span>
             <div className="mt-10">
               <Link href="/pages/projects">
@@ -70,9 +72,10 @@ export const ProjectSection = () => {
           <div className="flex flex-col w-[50%]">
             <span className="text-[1rem] text-[#03030f80]">Other</span>
             <span className="text-[2.5rem] font-semibold mt-6">Design, Tools, ...</span>
-            <span className="mt-4 text-[15px]">
-              We create web products tailored exclusively for your business goals, be it a high converting landing page,
-              a complex web app to automate your processes or a high-load platform with sensitive data.
+            <span className="mt-4 text-[15px] leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio deserunt exercitationem inventore
+              laboriosam, aspernatur qui animi provident quia? Soluta dicta quis, non laborum ut neque eos pariatur
+              asperiores distinctio.
             </span>
             <div className="mt-10">
               <Link href="/pages/projects">

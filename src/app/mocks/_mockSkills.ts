@@ -1,24 +1,10 @@
-import { SvgIcon } from "../assets/icons"
+import { SvgIcon } from "../assets/icons";
 
 export const mockDataSkill = [
   {
     id: 1,
     title: "Tech Stack",
     children: [
-      {
-        id: 1,
-        image: SvgIcon.IconStackHtml,
-        name: "HTML5",
-        width: 40,
-        height: 40
-      },
-      {
-        id: 2,
-        image: SvgIcon.IconStackCss,
-        name: "CSS3",
-        width: 40,
-        height: 40
-      },
       {
         id: 3,
         image: SvgIcon.IconStackReactJs,
@@ -39,13 +25,6 @@ export const mockDataSkill = [
         name: "NextJS",
         width: 56,
         height: 56
-      },
-      {
-        id: 6,
-        image: SvgIcon.IconStackJs,
-        name: "Javascript",
-        width: 40,
-        height: 40
       },
       {
         id: 7,
@@ -78,7 +57,14 @@ export const mockDataSkill = [
       {
         id: 11,
         image: SvgIcon.IconStackBootstrap,
-        name: "Bootstrap5",
+        name: "Bootstrap",
+        width: 40,
+        height: 40
+      },
+      {
+        id: 19,
+        image: SvgIcon.IconStackDart,
+        name: "Dart",
         width: 40,
         height: 40
       },
@@ -118,6 +104,13 @@ export const mockDataSkill = [
         height: 40
       },
       {
+        id: 20,
+        image: SvgIcon.IconStackGit,
+        name: "Git",
+        width: 40,
+        height: 40
+      },
+      {
         id: 17,
         image: SvgIcon.IconStackGithub,
         name: "Github",
@@ -133,4 +126,4 @@ export const mockDataSkill = [
       }
     ]
   }
-]
+];

@@ -11,8 +11,11 @@
   border-radius: 100px;
   color: white;
   font-weight: 600;
-  transition: all 0.1s ease-in-out;
   position: relative;
+
+  &:hover {
+    border: 1px solid var(--secondary-color) !important;
+  }
 }
 
 .button--stroke:after {
@@ -29,11 +32,13 @@
 .button__label {
   position: relative;
   text-align: center;
-  transition: color 5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .button--stroke:hover .button__label {
-  transition: color 5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: #ffffff;
+  img {
+    filter: brightness(0) invert(1);
+  }
 }
 
 .button__flair {

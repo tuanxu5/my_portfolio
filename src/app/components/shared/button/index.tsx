@@ -7,6 +7,7 @@ interface CustomButtonProps {
   label: React.ReactNode | String | null;
   px: number;
   py: number;
+  type?: "primary" | "secondary";
 }
 
 type ButtonElement = HTMLElement & {
@@ -15,7 +16,7 @@ type ButtonElement = HTMLElement & {
   };
 };
 
-const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py, type = "primary" }) => {
   useEffect(() => {
     class Button {
       block: ButtonElement;
@@ -129,7 +130,10 @@ const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py }) => {
     <button
       className={`${styles.button} ${styles["button--stroke"]}`}
       style={{
-        padding: `${py * 4}px ${px * 4}px `
+        padding: `${py * 4}px ${px * 4}px `,
+        color: `${type === "primary" ? "white" : "black"}`,
+        background: `${type === "primary" ? "var(--primary-color)" : "#ffffff"}`,
+        border: ` ${type === "secondary" && "1px solid var(--primary-color)"}`
       }}
       data-block="button"
     >

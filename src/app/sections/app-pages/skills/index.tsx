@@ -12,18 +12,19 @@ export default function SkillsSection() {
       <div className="flex flex-wrap mt-10">
         {skills?.map((skill) => (
           <div key={skill.id} className="w-full rounded-3xl mt-5">
-            <div className="flex justify-start flex-wrap gap-x-5 gap-y-3">
+            <div className="flex justify-start flex-wrap gap-x-3 gap-y-[10px]">
               {skill?.children?.map((item) => (
                 <CustomButton
                   key={item.id}
                   label={
                     <div className="flex justify-between gap-2 items-center">
-                      <Image src={item.image} height={40} width={40} alt="" />
-                      <div className="text-[14px]">{item.name}</div>
+                      <Image src={item.image} height={18} width={18} alt="" />
+                      <div className="text-sm">{item.name}</div>
                     </div>
                   }
                   px={6}
-                  py={2.5}
+                  py={4.5}
+                  type="secondary"
                 />
               ))}
             </div>

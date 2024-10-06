@@ -12,7 +12,7 @@ export default function SkillsSection() {
       <div className="flex flex-wrap mt-10">
         {skills?.map((skill) => (
           <div key={skill.id} className="w-full rounded-3xl mt-5">
-            <div className="flex justify-start flex-wrap gap-x-3 gap-y-[10px]">
+            <div className="flex justify-start flex-wrap gap-3">
               {skill?.children?.map((item) => (
                 <CustomButton
                   key={item.id}
@@ -22,7 +22,7 @@ export default function SkillsSection() {
                       <div className="text-sm">{item.name}</div>
                     </div>
                   }
-                  px={6}
+                  px={6.5}
                   py={4.5}
                   type="secondary"
                 />

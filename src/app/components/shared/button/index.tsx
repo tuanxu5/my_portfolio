@@ -133,7 +133,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py, type = "prim
         padding: `${py * 4}px ${px * 4}px `,
         color: `${type === "primary" ? "white" : "black"}`,
         background: `${type === "primary" ? "var(--primary-color)" : "#ffffff"}`,
-        border: ` ${type === "secondary" && "1px solid var(--hljs-color-quote)"}`
+        border: ` ${type === "secondary" && "1px solid var(--primary-color)"}`
       }}
       data-block="button"
     >

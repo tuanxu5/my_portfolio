@@ -6,7 +6,7 @@ import Image from "next/image";
 export const AboutSection = () => {
   const words = ["TuanXu", "Software Developer"];
   return (
-    <section>
+    <section id="about">
       <TitleComponent
         title="About"
         subTitle={<div>I have experience in modern develop web and mobile apps.</div>}

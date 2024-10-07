@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const ProjectSection = () => {
   return (
-    <section>
+    <section id="project">
       <TitleComponent
         title="Projects"
         subTitle={

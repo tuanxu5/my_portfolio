@@ -1,4 +1,5 @@
 "use client";
+
 import { SvgIcon } from "@/app/assets/icons/index.ts";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +10,7 @@ import { ButtonPrimary } from "../../shared/button/button-primary.tsx";
 import ToggleComponent from "../../shared/toggle/index.tsx";
 import styles from "./index.module.scss";
 
-const HeaderPage = () => {
+const HeaderPage = ({ activeSection }: { activeSection: String }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,8 @@ const HeaderPage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  console.log(activeSection);
 
   return (
     <header className={`${styles.header_page} ${isScrolled ? styles.is_scrolled : ""}`}>
@@ -34,19 +37,19 @@ const HeaderPage = () => {
         <div className={styles.nav_menu}>
           <ul className={styles.list_menu}>
             <li className={`${styles.item_menu} ${styles.active}} active`}>
-              <Link href="/">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="">Project</Link>
+              <Link href="/#project">Project</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="">Experience</Link>
+              <Link href="/#experience">Experience</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="">Skills</Link>
+              <Link href="/#skills">Skills</Link>
             </li>
             <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="">Contacts</Link>
+              <Link href="/#contacts">Contacts</Link>
             </li>
           </ul>
           <ToggleComponent />

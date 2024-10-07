@@ -15,7 +15,7 @@ export const ImageWeb = () => {
         alt="Cloud"
         src="https://ronasit.com/_next/static/media/cloud-light.1b9a7bfb.svg"
         decoding="async"
-        className="absolute top-[10%] left-[5%]"
+        className="absolute top-[15%] left-[8%]"
         width={161}
         height={74}
       />

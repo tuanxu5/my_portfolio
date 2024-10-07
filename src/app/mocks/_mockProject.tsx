@@ -30,7 +30,7 @@ export const mockDataProject: Project[] = [
     name: "Mobile App Development",
     banner: <ImageMobile />,
     descriptions:
-      "We can create a UI/UX design for your startup’s digital product that is visually appealing,user-friendly, and aligns with your brand identity.",
+      "We can create a UI/UX design for your startup’s digital product that is visually appealing,\nuser-friendly, and aligns with your brand identity.",
     children: [
       {
         id: 1,

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ImageWeb = () => {
   return (
-    <div className="mt-[100px] relative">
+    <div className="mt-20 relative">
       <Image
         alt="Web development"
         src="https://ronasit.com/_next/static/media/web-development-light.70611adc.svg"

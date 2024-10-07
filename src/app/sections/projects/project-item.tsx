@@ -20,7 +20,7 @@ export const ProjectItems = ({ backGround, textColor, iconColor, project }: Proj
       </div>
       <div className="text-[32px] leading-[38px] mt-2 font-semibold">{project.title}</div>
       <div className="mt-5">
-        <div className="text-[16px] line-clamp-5">{project.descriptions}</div>
+        <div className="text-[16px] line-clamp">{project.descriptions}</div>
       </div>
       <ProjectDetail project={project} />
     </div>

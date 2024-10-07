@@ -6,7 +6,7 @@ export default function ContactComponent() {
     <section className="w-full flex-wrap items-start">
       <h5 className="text-[16px] font-medium mb-12 leading-6">Contacts</h5>
       <Link href="/pages/contacts">
-        <div className={styles.get_in_touch__link}>Get In Touch</div>
+        <span className={styles.get_in_touch__link}>Get In Touch</span>
       </Link>
     </section>
   );

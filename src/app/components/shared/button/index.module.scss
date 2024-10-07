@@ -1,4 +1,4 @@
-.button {
+.button_primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -12,9 +12,27 @@
   color: white;
   font-weight: 600;
   position: relative;
+}
+
+.button_secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 100px;
+  color: var(--primary-color);
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--primary-color);
 
   &:hover {
-    border: 1px solid var(--secondary-color) !important;
+    color: #ffffff;
+    border: 1px solid transparent;
   }
 }
 
@@ -35,7 +53,6 @@
 }
 
 .button--stroke:hover .button__label {
-  color: #ffffff;
   img {
     filter: brightness(0) invert(1);
   }

@@ -3,11 +3,10 @@ import { gsap } from "gsap";
 import { useEffect } from "react";
 import styles from "./index.module.scss";
 
-interface CustomButtonProps {
+interface ButtonSecondaryProps {
   label: React.ReactNode | String | null;
   px: number;
   py: number;
-  type?: "primary" | "secondary";
 }
 
 type ButtonElement = HTMLElement & {
@@ -16,7 +15,7 @@ type ButtonElement = HTMLElement & {
   };
 };
 
-const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py, type = "primary" }) => {
+export const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({ label, px, py }) => {
   useEffect(() => {
     class Button {
       block: ButtonElement;
@@ -128,12 +127,9 @@ const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py, type = "prim
 
   return (
     <button
-      className={`${styles.button} ${styles["button--stroke"]}`}
+      className={`${styles.button_secondary} ${styles["button--stroke"]}`}
       style={{
-        padding: `${py * 4}px ${px * 4}px `,
-        color: `${type === "primary" ? "white" : "black"}`,
-        background: `${type === "primary" ? "var(--primary-color)" : "#ffffff"}`,
-        border: ` ${type === "secondary" && "1px solid var(--primary-color)"}`
+        padding: `${py * 4}px ${px * 4}px `
       }}
       data-block="button"
     >
@@ -142,5 +138,3 @@ const CustomButton: React.FC<CustomButtonProps> = ({ label, px, py, type = "prim
     </button>
   );
 };
-
-export default CustomButton;

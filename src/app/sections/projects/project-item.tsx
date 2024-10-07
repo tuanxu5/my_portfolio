@@ -1,13 +1,15 @@
 import { IconProdRonasit } from "@/app/components/shared/icon/icon-prod";
+import { ProjectItem } from "@/app/interface";
 import { ProjectDetail } from "./project-detail";
 
 interface ProjectItemsProps {
   backGround: String;
   textColor: String;
   iconColor?: String;
+  project: ProjectItem;
 }
 
-export const ProjectItems = ({ backGround, textColor, iconColor }: ProjectItemsProps) => {
+export const ProjectItems = ({ backGround, textColor, iconColor, project }: ProjectItemsProps) => {
   return (
     <div
       className={`flex flex-col justify-start p-10 rounded-2xl w-full`}
@@ -16,15 +18,11 @@ export const ProjectItems = ({ backGround, textColor, iconColor }: ProjectItemsP
       <div>
         <IconProdRonasit iconColor={iconColor} />
       </div>
-      <div className="text-[32px] leading-[38px] mt-2 font-semibold">Custom web app development</div>
+      <div className="text-[32px] leading-[38px] mt-2 font-semibold">{project.title}</div>
       <div className="mt-5">
-        <div className="text-[16px]">
-          A web app is a piece of software. Unlike a website, it encourages the user to manipulate the data presented in
-          the web app. Its content is dynamic and interactive. If you need urgent web app development follow the link to
-          learn more.
-        </div>
+        <div className="text-[16px] line-clamp-5">{project.descriptions}</div>
       </div>
-      <ProjectDetail />
+      <ProjectDetail project={project} />
     </div>
   );
 };

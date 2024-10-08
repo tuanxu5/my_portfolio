@@ -36,7 +36,7 @@ export const mockDataProject: Project[] = [
         id: 1,
         title: "HongAnh Seller App Mobile",
         descriptions:
-          "A web app is a piece of software. Unlike a website, it encourages the user to manipulate the data presented in the web app. Its content is dynamic and interactive. If you need urgent web app development follow the link to learn more.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
         company: "Hong Anh Computer",
         position: "Flutter Developer",
         techStack: ["Flutter", "Rxdart", "Cubit", "BLoC", "Fvm", "Getx", "GraphQL"],

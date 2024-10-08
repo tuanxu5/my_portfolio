@@ -1,32 +1,21 @@
-"use client";
-
 import { SvgIcon } from "@/app/assets/icons/index.ts";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { LINK_CV } from "../../../utils/constant.js";
 
 import { ButtonPrimary } from "../../shared/button/button-primary.tsx";
 import ToggleComponent from "../../shared/toggle/index.tsx";
 import styles from "./index.module.scss";
 
-const HeaderPage = ({ activeSection }: { activeSection: String }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
-    };
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+interface HeaderPageProps {
+  activeSection: String;
+  showHeader: boolean;
+  onClickItem: any;
+}
 
-  console.log(activeSection);
-
+const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps) => {
   return (
-    <header className={`${styles.header_page} ${isScrolled ? styles.is_scrolled : ""}`}>
+    <header className={`${styles.header_page} ${showHeader ? styles.is_scrolled : ""}`}>
       <nav className={styles.header_nav}>
         <Link href="/">
           <div className={styles.header_logo}>
@@ -36,20 +25,40 @@ const HeaderPage = ({ activeSection }: { activeSection: String }) => {
         </Link>
         <div className={styles.nav_menu}>
           <ul className={styles.list_menu}>
-            <li className={`${styles.item_menu} ${styles.active}} active`}>
-              <Link href="/#about">About</Link>
+            <li
+              className={`${styles.item_menu} ${activeSection === "#about" ? styles.active : ""}`}
+              data-section="#about"
+              onClick={(e) => onClickItem(e, "#about")}
+            >
+              <span>About</span>
             </li>
-            <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/#project">Project</Link>
+            <li
+              className={`${styles.item_menu} ${activeSection === "#project" ? styles.active : ""}`}
+              data-section="#project"
+              onClick={(e) => onClickItem(e, "#project")}
+            >
+              <span>Project</span>
             </li>
-            <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/#experience">Experience</Link>
+            <li
+              className={`${styles.item_menu} ${activeSection === "#experience" ? styles.active : ""}`}
+              data-section="#experience"
+              onClick={(e) => onClickItem(e, "#experience")}
+            >
+              <span>Experience</span>
             </li>
-            <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/#skills">Skills</Link>
+            <li
+              className={`${styles.item_menu} ${activeSection === "#skills" ? styles.active : ""}`}
+              data-section="#skills"
+              onClick={(e) => onClickItem(e, "#skills")}
+            >
+              <span>Skills</span>
             </li>
-            <li className={`${styles.item_menu} ${styles.active}}`}>
-              <Link href="/#contacts">Contacts</Link>
+            <li
+              className={`${styles.item_menu} ${activeSection === "#contacts" ? styles.active : ""}`}
+              data-section="#contacts"
+              onClick={(e) => onClickItem(e, "#contacts")}
+            >
+              <span>Contacts</span>
             </li>
           </ul>
           <ToggleComponent />

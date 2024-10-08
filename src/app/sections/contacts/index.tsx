@@ -1,4 +1,4 @@
-import CustomButton from "@/app/components/shared/button";
+import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import TitleComponent from "@/app/components/shared/title";
 import styles from "./index.module.scss";
 export default function ContactSection() {
@@ -43,7 +43,7 @@ export default function ContactSection() {
               </div>
             </div>
             <div className="mt-20">
-              <CustomButton px={12} py={4.5} label="Send Request" />
+              <ButtonPrimary px={12} py={4.5} label="Send Request" />
             </div>
           </form>
         </div>

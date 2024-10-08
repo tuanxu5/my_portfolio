@@ -2,12 +2,39 @@
   font-size: 4rem;
   line-height: 4rem;
   font-weight: 700;
+  width: 100%;
   position: relative;
-  transition: all 1s;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: var(--primary-color);
 
   &:hover {
-    background: var(--gradient-bg-primary);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    &:before {
+      animation: slide 5s linear infinite;
+      background: var(--gradient-bg-primary);
+      opacity: 1;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 11px;
+    bottom: -10px;
+    left: 0;
+    background: #03030f;
+    transform: translateX(-25%);
+    opacity: 0.2;
+    mask: url(https://ronasit.com/_next/static/media/underline-3.cf6fc523.svg);
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }

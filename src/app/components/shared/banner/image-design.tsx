@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ImageDesign = () => {
   return (
-    <div className="relative">
+    <div className="mt-10 relative">
       <Image
         alt="Web development"
         src="https://ronasit.com/_next/static/media/android-development-light.845e0b23.svg"

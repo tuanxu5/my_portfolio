@@ -2,7 +2,7 @@
 import { SvgIcon } from "@/app/assets/icons";
 import Image from "next/image";
 import { AnimatedTooltip } from "../../aceternity-ui/tooltip/intex";
-import CustomButton from "../button";
+import { ButtonPrimary } from "../button/button-primary";
 
 export default function ScrollToTop() {
   const handleScrollToTop = () => {
@@ -15,7 +15,7 @@ export default function ScrollToTop() {
       <AnimatedTooltip
         title="Scroll to top"
         items={
-          <CustomButton
+          <ButtonPrimary
             px={2.5}
             py={2.5}
             label={

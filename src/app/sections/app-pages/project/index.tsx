@@ -1,13 +1,13 @@
 "use client";
 
-import CustomButton from "@/app/components/shared/button";
+import { ButtonSecondary } from "@/app/components/shared/button/button-secondary";
 import TitleComponent from "@/app/components/shared/title";
 import Image from "next/image";
 import Link from "next/link";
 
 export const ProjectSection = () => {
   return (
-    <section>
+    <section id="project">
       <TitleComponent
         title="Projects"
         subTitle={
@@ -28,8 +28,8 @@ export const ProjectSection = () => {
               asperiores distinctio.
             </span>
             <div className="mt-10">
-              <Link href="/pages/projects">
-                <CustomButton label="See now" px={10} py={4} />
+              <Link href="/pages/projects/web">
+                <ButtonSecondary label="See now" px={8} py={3.5} />
               </Link>
             </div>
           </div>
@@ -62,8 +62,8 @@ export const ProjectSection = () => {
               asperiores distinctio.
             </span>
             <div className="mt-10">
-              <Link href="/pages/projects">
-                <CustomButton label="See now" px={10} py={4} />{" "}
+              <Link href="/pages/projects/mobile">
+                <ButtonSecondary label="See now" px={6} py={4} />
               </Link>
             </div>
           </div>
@@ -78,8 +78,8 @@ export const ProjectSection = () => {
               asperiores distinctio.
             </span>
             <div className="mt-10">
-              <Link href="/pages/projects">
-                <CustomButton label="See now" px={10} py={4} />
+              <Link href="/pages/projects/other">
+                <ButtonSecondary label="See now" px={6} py={4} />
               </Link>
             </div>
           </div>

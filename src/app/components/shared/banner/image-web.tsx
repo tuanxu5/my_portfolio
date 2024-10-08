@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ImageWeb = () => {
   return (
-    <div className="mt-[100px] relative">
+    <div className="mt-20 relative">
       <Image
         alt="Web development"
         src="https://ronasit.com/_next/static/media/web-development-light.70611adc.svg"
@@ -15,7 +15,7 @@ export const ImageWeb = () => {
         alt="Cloud"
         src="https://ronasit.com/_next/static/media/cloud-light.1b9a7bfb.svg"
         decoding="async"
-        className="absolute top-[10%] left-[5%]"
+        className="absolute top-[15%] left-[8%]"
         width={161}
         height={74}
       />

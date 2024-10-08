@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ImageMobile = () => {
   return (
-    <div className="mt-[100px] relative">
+    <div className="mt-[40px] relative">
       <Image
         alt="Web development"
         src="https://ronasit.com/_next/static/media/ios-development-light.4e99bbeb.svg"

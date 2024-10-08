@@ -63,11 +63,41 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
     };
   }, []);
 
+  const [loading, setLoading] = useState(false);
+  const [animateSplash, setAnimateSplash] = useState(false);
+
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => setLoading(true), 1500);
+    const splashTimeout = setTimeout(() => setAnimateSplash(true), 4500);
+    const bodyTimeout = setTimeout(() => {
+      document.body.classList.add(styles.visibleSplash);
+    }, 5000);
+
+    return () => {
+      clearTimeout(loadingTimeout);
+      clearTimeout(splashTimeout);
+      clearTimeout(bodyTimeout);
+    };
+  }, []);
+
   return (
-    <main className={`${styles.layout_page} ${className}`} {...rest}>
-      <HeaderPage activeSection={activeSection} showHeader={showHeader} onClickItem={handleClick} />
-      {children}
-      <FooterPage />
-    </main>
+    <>
+      <div className={styles.splashBody}>
+        <div className={`${styles.splashScreen} ${animateSplash ? styles.animateOut : ""}`}>
+          <div className={styles.loadingContainer}>
+            <div className={`${styles.loadingBox} ${loading ? styles.show : ""}`}>
+              <div className={styles.loadingBarContainer}>
+                <div className={styles.loadingbar}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main className={`${styles.layout_page} ${className}`} {...rest}>
+          <HeaderPage activeSection={activeSection} showHeader={showHeader} onClickItem={handleClick} />
+          {children}
+          <FooterPage />
+        </main>
+      </div>
+    </>
   );
 };

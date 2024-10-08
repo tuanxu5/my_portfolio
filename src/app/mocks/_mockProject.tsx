@@ -14,13 +14,63 @@ export const mockDataProject: Project[] = [
     children: [
       {
         id: 1,
-        title: "Custom web app development",
+        title: "My Portfolio",
         descriptions:
-          "Hamperapp is a service from Florida that provides laundry and dry cleaning services to ordinary consumers as well as hotels, restaurants, and other large enterprises online. The Hamperapp team has decided to develop an application to enlarge their client base Need a helping hand to create an app? We’re always ready to help your business grow with our design and development services. Fill in the form to discuss the idea",
-        company: "Hong Anh Computer",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?",
+        company: "My Portfolio",
         position: "Frontend Developer",
         techStack: ["Reactjs"],
-        teamSize: "Team size: 15 personal (2️ frontend, 6 backend, 2️ tester, 3️ BA, 1️ PO, 1️ leader)"
+        teamSize: "Team size: 15 personal"
+      },
+      {
+        id: 1,
+        title: "Tx Design UI",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?",
+        company: "My Portfolio",
+        position: "Frontend Developer",
+        techStack: ["Reactjs"],
+        teamSize: "Team size: 15 personal"
+      },
+      {
+        id: 1,
+        title: "Ops Hong Anh",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?",
+        company: "My Portfolio",
+        position: "Frontend Developer",
+        techStack: ["Reactjs"],
+        teamSize: "Team size: 15 personal"
+      },
+      {
+        id: 1,
+        title: "SPG Manager",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?",
+        company: "My Portfolio",
+        position: "Frontend Developer",
+        techStack: ["Reactjs"],
+        teamSize: "Team size: 15 personal"
+      },
+      {
+        id: 1,
+        title: "Collection of Useful Tools for Frontend Dev",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
+        company: "Hong Anh Computer",
+        position: "Flutter Developer",
+        techStack: ["Flutter", "Rxdart", "Cubit", "BLoC", "Fvm", "Getx", "GraphQL"],
+        teamSize: "Team size: 15 personal (2 mobile, 6 backend, 2️ tester, 3️ BA, 1️ PO, 1️ leader)"
+      },
+      {
+        id: 1,
+        title: "Tiktok Clone Teamplate",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
+        company: "Hong Anh Computer",
+        position: "Flutter Developer",
+        techStack: ["Flutter", "Rxdart", "Cubit", "BLoC", "Fvm", "Getx", "GraphQL"],
+        teamSize: "Team size: 15 personal (2 mobile, 6 backend, 2️ tester, 3️ BA, 1️ PO, 1️ leader)"
       }
     ]
   },
@@ -34,7 +84,7 @@ export const mockDataProject: Project[] = [
     children: [
       {
         id: 1,
-        title: "HongAnh Seller App Mobile",
+        title: "Hong Anh Seller Mobile App",
         descriptions:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
         company: "Hong Anh Computer",
@@ -51,6 +101,37 @@ export const mockDataProject: Project[] = [
     banner: <ImageDesign />,
     descriptions:
       "We can create a UI/UX design for your startup’s digital product that is visually appealing,user-friendly, and aligns with your brand identity.",
-    children: []
+    children: [
+      {
+        id: 1,
+        title: "Figma Design Tx UI",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
+        company: "Hong Anh Computer",
+        position: "Flutter Developer",
+        techStack: ["Flutter", "Rxdart", "Cubit", "BLoC", "Fvm", "Getx", "GraphQL"],
+        teamSize: "Team size: 15 personal (2 mobile, 6 backend, 2️ tester, 3️ BA, 1️ PO, 1️ leader)"
+      },
+      {
+        id: 1,
+        title: "Coding Convention",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
+        company: "Hong Anh Computer",
+        position: "Flutter Developer",
+        techStack: ["Flutter", "Rxdart", "Cubit", "BLoC", "Fvm", "Getx", "GraphQL"],
+        teamSize: "Team size: 15 personal (2 mobile, 6 backend, 2️ tester, 3️ BA, 1️ PO, 1️ leader)"
+      },
+      {
+        id: 1,
+        title: "Custom Theme Visual Code",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non.",
+        company: "Hong Anh Computer",
+        position: "Flutter Developer",
+        techStack: ["Flutter", "Rxdart", "Cubit", "BLoC", "Fvm", "Getx", "GraphQL"],
+        teamSize: "Team size: 15 personal (2 mobile, 6 backend, 2️ tester, 3️ BA, 1️ PO, 1️ leader)"
+      }
+    ]
   }
 ];

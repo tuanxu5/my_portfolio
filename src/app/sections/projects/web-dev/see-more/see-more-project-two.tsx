@@ -1,8 +1,6 @@
 "use client";
 
-import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import { CustomDrawer } from "@/app/components/shared/drawer";
-import Image from "next/image";
 import { useState } from "react";
 import { ListTechStack } from "../../widget/list-tech-stack";
 
@@ -20,31 +18,6 @@ export const SeeMoreProjectTwo = () => {
             <h1 className="text-[16px] mb-5">Hong Anh Computer</h1>
             <h1 className="text-[54px] font-bold leading-[68px] mb-5">Ops Hong Anh</h1>
             <h5 className="text-[18px] font-medium mb-10">Position: Frontend Developer</h5>
-            <div className="flex gap-4 w-fit">
-              <ButtonPrimary
-                label={
-                  <span className="flex gap-2 items-center">
-                    <Image
-                      src="https://ronasit.com/_next/static/media/ios.f07497a4.svg"
-                      alt=""
-                      width={30}
-                      height={30}
-                    />
-                    <span className="text-sm">See preview</span>
-                  </span>
-                }
-                px={7}
-                py={4}
-              />
-            </div>
-          </div>
-          <div className="w-[45%] flex justify-center">
-            <Image
-              src="https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffirst-release.93e4176f.webp&w=1920&q=75"
-              alt=""
-              width={200}
-              height={200}
-            />
           </div>
         </div>
         <div className="font-semibold text-[24px] mt-20">
@@ -54,7 +27,8 @@ export const SeeMoreProjectTwo = () => {
           </span>
         </div>
         <div className="w-fit mt-5 text-[16px]">
-          <div className="">👉 Link Repository: {"Confidential and cannot be disclosed 🙅"}</div>
+          <div>👉 Link Repository: Confidential and cannot be disclosed 🙅</div>
+          <div>👉 Link Preview: Confidential and cannot be disclosed 🙅</div>
         </div>
         <div className="w-fit mt-10">
           <span className="text-lg font-semibold">Description ✍️</span>

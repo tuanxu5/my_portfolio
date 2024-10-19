@@ -3,7 +3,11 @@ import { ImageWeb } from "@/app/components/shared/banner/image-web";
 import TitleComponent from "@/app/components/shared/title";
 
 import { ProjectItem } from "../widget/project-item";
+import { SeeMoreProjectFive } from "./see-more/see-more-project-five";
+import { SeeMoreProjectFour } from "./see-more/see-more-project-four";
 import { SeeMoreProjectOne } from "./see-more/see-more-project-one";
+import { SeeMoreProjectSix } from "./see-more/see-more-project-six";
+import { SeeMoreProjectThree } from "./see-more/see-more-project-three";
 import { SeeMoreProjectTwo } from "./see-more/see-more-project-two";
 
 export default function ProjectWebDevSection() {
@@ -37,28 +41,28 @@ export default function ProjectWebDevSection() {
           <ProjectItem
             backGround="#d4ecfe"
             textColor="var(--primary-color)"
-            seeMore={<SeeMoreProjectTwo />}
+            seeMore={<SeeMoreProjectThree />}
             title="Tx Design UI"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?"
           />
           <ProjectItem
             backGround="#d4ecfe"
             textColor="var(--primary-color)"
-            seeMore={<SeeMoreProjectTwo />}
+            seeMore={<SeeMoreProjectFour />}
             title="SPG Manager"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?"
           />
           <ProjectItem
             backGround="#d4ecfe"
             textColor="var(--primary-color)"
-            seeMore={<SeeMoreProjectTwo />}
+            seeMore={<SeeMoreProjectFive />}
             title="Collection of Useful Tools for Frontend Dev"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non."
           />
           <ProjectItem
             backGround="#d4ecfe"
             textColor="var(--primary-color)"
-            seeMore={<SeeMoreProjectTwo />}
+            seeMore={<SeeMoreProjectSix />}
             title="TikTok Clone Template"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ab at quaerat ipsum eligendi cupiditate natus magni sint, alias architecto officiis numquam, eos odit atque, exercitationem earum est repudiandae non."
           />

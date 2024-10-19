@@ -81,7 +81,7 @@ export const SeeMoreProjectOne = () => {
         </div>
         <div className="w-fit mt-10">
           <span className="text-lg font-semibold">Tech Stack</span>
-          <ListTechStack techStack={[]} />
+          <ListTechStack techStack={["Flutter", "BloC", "Cubit", "GetX", "Fvm", "GraphQL", "RxDart"]} />
         </div>
       </CustomDrawer>
     </>

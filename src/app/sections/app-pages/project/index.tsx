@@ -28,7 +28,7 @@ export const ProjectSection = () => {
               asperiores distinctio.
             </span>
             <div className="mt-10">
-              <Link href="/pages/projects/web">
+              <Link href="/pages/projects/web-dev">
                 <ButtonSecondary label="See now" px={8} py={3.5} />
               </Link>
             </div>
@@ -62,7 +62,7 @@ export const ProjectSection = () => {
               asperiores distinctio.
             </span>
             <div className="mt-10">
-              <Link href="/pages/projects/mobile">
+              <Link href="/pages/projects/mobile-dev">
                 <ButtonSecondary label="See now" px={6} py={4} />
               </Link>
             </div>
@@ -78,7 +78,7 @@ export const ProjectSection = () => {
               asperiores distinctio.
             </span>
             <div className="mt-10">
-              <Link href="/pages/projects/other">
+              <Link href="/pages/projects/other-dev">
                 <ButtonSecondary label="See now" px={6} py={4} />
               </Link>
             </div>

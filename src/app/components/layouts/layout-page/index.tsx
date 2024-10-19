@@ -67,7 +67,7 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
 
   useEffect(() => {
     const loadingTimeout = setTimeout(() => setLoading(true), 500);
-    const splashTimeout = setTimeout(() => setAnimateSplash(true), 4500);
+    const splashTimeout = setTimeout(() => setAnimateSplash(true), 2500);
     const bodyTimeout = setTimeout(() => {
       document.body.classList.add(styles.visibleSplash);
     }, 4500);

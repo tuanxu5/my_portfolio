@@ -15,6 +15,8 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
   const [activeSection, setActiveSection] = useState("");
   const [showHeader, setShowHeader] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [animateSplash, setAnimateSplash] = useState(false);
 
   const handleScroll = () => {
     setIsScroll(true);
@@ -61,17 +63,14 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  const [loading, setLoading] = useState(false);
-  const [animateSplash, setAnimateSplash] = useState(false);
+  }, [isScroll]);
 
   useEffect(() => {
-    const loadingTimeout = setTimeout(() => setLoading(true), 1500);
+    const loadingTimeout = setTimeout(() => setLoading(true), 500);
     const splashTimeout = setTimeout(() => setAnimateSplash(true), 4500);
     const bodyTimeout = setTimeout(() => {
       document.body.classList.add(styles.visibleSplash);
-    }, 5000);
+    }, 4500);
 
     return () => {
       clearTimeout(loadingTimeout);
@@ -85,18 +84,18 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
       <div className={styles.splashBody}>
         <div className={`${styles.splashScreen} ${animateSplash ? styles.animateOut : ""}`}>
           <div className={styles.loadingContainer}>
-            <div className={`${styles.loadingBox} ${loading ? styles.show : ""}`}>
-              <div className={styles.loadingBarContainer}>
-                <div className={styles.loadingbar}></div>
-              </div>
+            <div className={`${styles.loadingBox} ${loading ? styles.show : ""} text-[24px]`}>
+              Welcome come to Tuanxu Portfolio
             </div>
           </div>
         </div>
-        <main className={`${styles.layout_page} ${className}`} {...rest}>
-          <HeaderPage activeSection={activeSection} showHeader={showHeader} onClickItem={handleClick} />
-          {children}
-          <FooterPage />
-        </main>
+        {animateSplash && (
+          <main className={`${styles.layout_page} ${className}`} {...rest}>
+            <HeaderPage activeSection={activeSection} showHeader={showHeader} onClickItem={handleClick} />
+            {children}
+            <FooterPage />
+          </main>
+        )}
       </div>
     </>
   );

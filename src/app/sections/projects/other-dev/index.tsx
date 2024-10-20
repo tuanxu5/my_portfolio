@@ -12,9 +12,9 @@ export default function ProjectOtherDevSection() {
       <TitleComponent title="Other" subTitleBig="Design, Tools, Extensions , ..." />
       <div className="flex flex-wrap flex-col mt-[-80px] w-full">
         <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet ipsum neque, iste accusantium quam
-          doloremque quisquam aperiam odit inventore laudantium necessitatibus illum eum delectus vel modi soluta
-          reprehenderit nostrum.
+          Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
+          libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
+          vulgate.
         </h5>
         <ImageDesign />
         <div className="mt-20 grid grid-cols-2 gap-x-10 gap-y-6">
@@ -23,21 +23,21 @@ export default function ProjectOtherDevSection() {
             textColor="var(--primary-color)"
             seeMore={<SeeMoreProjectOne />}
             title="Figma Tx Design  UI"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?"
+            description="Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant, libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit vulgate."
           />
           <ProjectItem
             backGround="#d4ecfe"
             textColor="var(--primary-color)"
             seeMore={<SeeMoreProjectTwo />}
             title="Custom Theme Visual Code"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?"
+            description="Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant, libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit vulgate."
           />
           <ProjectItem
             backGround="#d4ecfe"
             textColor="var(--primary-color)"
             seeMore={<SeeMoreProjectThree />}
             title="Coding Convention"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam molestiae similique ex inventore iusto autem voluptatem ullam dolorem repellendus a architecto soluta, atque deleniti maxime voluptatum nihil saepe sit?"
+            description="Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant, libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit vulgate."
           />
         </div>
       </div>

@@ -3,6 +3,7 @@ import { ImageWeb } from "@/app/components/shared/banner/image-web";
 import TitleComponent from "@/app/components/shared/title";
 
 import { ProjectItem } from "../widget/project-item";
+import { AppleCardsCarouselDemo } from "../widget/smooth-scroll";
 import { SeeMoreProjectFive } from "./see-more/see-more-project-five";
 import { SeeMoreProjectFour } from "./see-more/see-more-project-four";
 import { SeeMoreProjectOne } from "./see-more/see-more-project-one";
@@ -21,6 +22,7 @@ export default function ProjectWebDevSection() {
           reprehenderit nostrum.
         </h5>
         <ImageWeb />
+        <AppleCardsCarouselDemo />
         <div className="mt-20 grid grid-cols-2 gap-x-10 gap-y-6">
           <ProjectItem
             backGround="#d4ecfe"

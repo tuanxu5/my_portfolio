@@ -22,7 +22,7 @@ export const CustomDrawer = ({ setIsOpen, isOpen, children }: CustomDrawerProps)
           (isOpen ? " translate-y-0 " : " translate-y-full ")
         }
       >
-        <article className="relative overflow-y-scroll h-full justify-center w-full max-w-[1320px] px-[6.5rem] max-h-[80vh]">
+        <article className="relative overflow-y-scroll h-full justify-center w-full max-w-[] px-[6.5rem] max-h-[80vh]">
           <div className="text-[var(--primary-color)] w-full pt-[80px] mb-20 flex flex-col gap-3">{children}</div>
         </article>
       </section>

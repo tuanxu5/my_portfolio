@@ -23,9 +23,9 @@ export const ProjectSection = () => {
             <span className="text-[1rem] text-[#03030f80]">Development</span>
             <span className="text-[2.5rem] font-semibold mt-6">Web Development</span>
             <span className="mt-4 text-[16px] leading-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio deserunt exercitationem inventore
-              laboriosam, aspernatur qui animi provident quia? Soluta dicta quis, non laborum ut neque eos pariatur
-              asperiores distinctio.
+              Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
+              libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
+              vulgate.
             </span>
             <div className="mt-10">
               <Link href="/pages/projects/web-dev">
@@ -57,9 +57,9 @@ export const ProjectSection = () => {
             <span className="text-[1rem] text-[#03030f80]">Development</span>
             <span className="text-[2.5rem] font-semibold mt-6">Mobile App Development</span>
             <span className="mt-4 text-[16px] leading-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio deserunt exercitationem inventore
-              laboriosam, aspernatur qui animi provident quia? Soluta dicta quis, non laborum ut neque eos pariatur
-              asperiores distinctio.
+              Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
+              libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
+              vulgate.
             </span>
             <div className="mt-10">
               <Link href="/pages/projects/mobile-dev">
@@ -73,9 +73,9 @@ export const ProjectSection = () => {
             <span className="text-[1rem] text-[#03030f80]">Other</span>
             <span className="text-[2.5rem] font-semibold mt-6">Design, Tools, ...</span>
             <span className="mt-4 text-[16px] leading-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odio deserunt exercitationem inventore
-              laboriosam, aspernatur qui animi provident quia? Soluta dicta quis, non laborum ut neque eos pariatur
-              asperiores distinctio.
+              Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
+              libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
+              vulgate.
             </span>
             <div className="mt-10">
               <Link href="/pages/projects/other-dev">

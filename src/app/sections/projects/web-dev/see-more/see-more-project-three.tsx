@@ -41,9 +41,9 @@ export const SeeMoreProjectThree = () => {
         <div className="w-fit mt-10">
           <span className="text-lg font-semibold">Description ✍️</span>
           <p className="mt-3 font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ab obcaecati labore et iure veniam!
-            Magni deserunt dolores magnam, commodi excepturi officia, architecto maxime quaerat modi inventore similique
-            sequi ut.
+            Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
+            libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
+            vulgate.
           </p>
         </div>
         <div className="w-fit mt-10">

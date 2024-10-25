@@ -223,7 +223,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         onClick={handleOpen}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 w-[60vh] h-[22rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
-        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-[var(--primary-color)] via-transparent to-transparent z-30 pointer-events-none" />
+        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}

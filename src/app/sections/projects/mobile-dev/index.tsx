@@ -24,7 +24,9 @@ export default function ProjectMobileDevSection() {
           vulgate.
         </h5>
         <ImageMobile />
-        <AppleCardsCarouselDemo data={data} />
+        <div className="mt-[80px]">
+          <AppleCardsCarouselDemo data={data} />
+        </div>
       </div>
     </section>
   );

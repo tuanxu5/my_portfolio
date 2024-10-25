@@ -1,5 +1,8 @@
 import IconKep from "./about/icon_kep.svg";
 import IconKep2 from "./about/icon_kep_2.svg";
+import IconClose from "./icon-close.svg";
+import IconLeft from "./icon-left.svg";
+import IconRight from "./icon-right.svg";
 import IconTuanxu from "./icon-tuanxu.svg";
 import IconFacebook from "./icon_contact_facebook.svg";
 import IconGithub from "./icon_contact_github.svg";
@@ -28,6 +31,8 @@ import IconStackTs from "./skills/icon_stack_ts.svg";
 import IconStackVueJs from "./skills/icon_stack_vuejs.svg";
 
 const SvgIcon = {
+  IconLeft,
+  IconRight,
   IconToTop,
   IconLinkdIn,
   IconInstagram,
@@ -55,7 +60,8 @@ const SvgIcon = {
   IconStackGraphql,
   IconStackMySql,
   IconTuanxu,
-  IconStackDart
+  IconStackDart,
+  IconClose
 };
 
 export { SvgIcon };

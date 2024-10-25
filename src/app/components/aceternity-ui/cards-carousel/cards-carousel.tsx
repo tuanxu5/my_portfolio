@@ -5,6 +5,7 @@ import React, { createContext, useContext, useEffect, useRef, useState } from "r
 
 import { cn } from "@/app/utils/aceternity";
 
+import { SvgIcon } from "@/app/assets/icons";
 import { useOutsideClick } from "@/app/hooks/useOutSideClick";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
@@ -18,6 +19,7 @@ type Card = {
   src: string;
   title: string;
   category: string;
+  position: string;
   content: React.ReactNode;
 };
 
@@ -38,11 +40,11 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   useEffect(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollLeft = initialScroll;
-      checkScrollability();
+      checkScalability();
     }
   }, [initialScroll]);
 
-  const checkScrollability = () => {
+  const checkScalability = () => {
     if (carouselRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
       setCanScrollLeft(scrollLeft > 0);
@@ -85,16 +87,11 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
-          onScroll={checkScrollability}
+          onScroll={checkScalability}
         >
           <div className={cn("absolute right-0  z-[1000] h-auto  w-[5%] overflow-hidden bg-gradient-to-l")}></div>
 
-          <div
-            className={cn(
-              "flex flex-row justify-start gap-4 pl-4",
-              "max-w-7xl mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
-            )}
-          >
+          <div className={cn("flex flex-row justify-start gap-4 pl-4", "max-w-7xl mx-auto")}>
             {items.map((item, index) => (
               <motion.div
                 initial={{
@@ -121,18 +118,18 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         </div>
         <div className="flex justify-end gap-2 mr-10">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
-            <div className="h-6 w-6 text-gray-500">12312</div>
+            <Image src={SvgIcon.IconLeft} alt="icon" width={8} height={8} />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
-            <div className="h-6 w-6 text-gray-500">12312</div>
+            <Image src={SvgIcon.IconRight} alt="icon" width={8} height={8} />
           </button>
         </div>
       </div>
@@ -182,7 +179,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
+              className="bg-[var(--primary-color)] backdrop-blur-lg h-full w-full fixed inset-0"
             />
             <motion.div
               initial={{ opacity: 0 }}
@@ -190,13 +187,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="bg-white dark:bg-neutral-900 h-[80%] z-[200] mt-[100px] rounded-3xl font-sans relative overflow-scroll p-10"
+              className="bg-white dark:bg-neutral-900 h-[85vh] z-[200] mt-[70px] rounded-3xl font-sans relative overflow-scroll p-10"
             >
               <button
-                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black rounded-full flex items-center justify-center"
+                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-[var(--primary-color)] rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
-                dong
+                <Image src={SvgIcon.IconClose} alt="icon" width={14} height={14} />
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
@@ -206,9 +203,15 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold mt-4 max-w-[1320px] mx-[auto]"
+                className="text-[54px] font-bold leading-[68px] mt-4 max-w-[1320px] mx-[auto]"
               >
                 {card.title}
+              </motion.p>
+              <motion.p
+                layoutId={layout ? `title-${card.title}` : undefined}
+                className="text-[18px] font-medium max-w-[1320px] mx-[auto] mt-10"
+              >
+                Position: {card.position}
               </motion.p>
               <div className="py-10 max-w-[1320px] mx-[auto]">{card.content}</div>
             </motion.div>
@@ -220,17 +223,17 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
         onClick={handleOpen}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 w-[60vh] h-[22rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
-        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
+        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-[var(--primary-color)] via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="text-white text-left text-[16px]"
           >
             {card.category}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-4xl font-semibold text-left mt-2"
           >
             {card.title}
           </motion.p>

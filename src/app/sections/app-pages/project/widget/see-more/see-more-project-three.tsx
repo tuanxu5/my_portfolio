@@ -1,9 +1,10 @@
 "use client";
 
+import { LinkPreview } from "@/app/components/shared/link-preview/link-preview";
 import { useState } from "react";
-import { ListTechStack } from "../../widget/list-tech-stack";
+import { ListTechStack } from "../list-tech-stack";
 
-export const SeeMoreProjectFive = () => {
+export const SeeMoreProjectThree = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,8 +13,18 @@ export const SeeMoreProjectFive = () => {
         <span>🤝 Team size: 1 personal</span>
       </div>
       <div className="w-fit mt-5 text-[16px]">
-        <div className="">👉 Link Repository: {"Confidential and cannot be disclosed 🙅"}</div>
-        <div className="mt-2">👉 Link Preview: {"Confidential and cannot be disclosed 🙅"}</div>
+        <div>
+          👉 Link Repository: <LinkPreview link="https://docs-tx-design.pages.dev/" />
+        </div>
+        <div className="mt-2">
+          👉 Link Docs: <LinkPreview link="https://docs-tx-design.pages.dev/" />
+        </div>
+        <div className="mt-2">
+          👉 Link Storybook: <LinkPreview link="https://storybook-tx-design.pages.dev/" />
+        </div>
+        <div className="mt-2">
+          👉 Link npm: <LinkPreview link="https://www.npmjs.com/package/tx-design-ui" />
+        </div>
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
@@ -25,7 +36,7 @@ export const SeeMoreProjectFive = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Tech Stack</span>
-        <ListTechStack techStack={[]} />
+        <ListTechStack techStack={["React Lib", "Sass", "Docusaurus", "Styled", "Storybook"]} />
       </div>
     </div>
   );

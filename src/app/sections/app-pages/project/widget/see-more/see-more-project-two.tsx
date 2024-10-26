@@ -1,24 +1,18 @@
 "use client";
 
-import { LinkPreview } from "@/app/components/shared/link-preview/link-preview";
-import { useState } from "react";
-import { ListTechStack } from "../../widget/list-tech-stack";
+import { ListTechStack } from "../list-tech-stack";
 
-export const SeeMoreProjectSix = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+export const SeeMoreProjectTwo = () => {
   return (
     <div>
       <div className="font-semibold text-[24px] mt-10">
-        <span>🤝 Team size: 1 personal</span>
+        <span>
+          🤝 Team size: 15 personal (2 frontend, 6 backend, 2️ tester, 3️ business analyst, 1️ product owner, 1️ leader)
+        </span>
       </div>
       <div className="w-fit mt-5 text-[16px]">
-        <div className="">
-          👉 Link Repository: <LinkPreview link="https://github.com/Tuanxu5/tiktok-clone-template" />
-        </div>
-        <div className="mt-2">
-          👉 Link Preview: <LinkPreview link="https://tuanxu5.github.io/tiktok-clone-template/" />
-        </div>
+        <div>👉 Link Repository: Confidential and cannot be disclosed 🙅</div>
+        <div>👉 Link Preview: Confidential and cannot be disclosed 🙅</div>
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
@@ -30,7 +24,7 @@ export const SeeMoreProjectSix = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Tech Stack</span>
-        <ListTechStack techStack={["HTML", "CSS", "JS"]} />
+        <ListTechStack techStack={["ReactJs", "Antd", "Sass", "GraphQL", "Apollo", "Nx"]} />
       </div>
     </div>
   );

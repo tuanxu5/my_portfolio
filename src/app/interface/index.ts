@@ -20,8 +20,9 @@ export interface Project {
   company?: string;
   name?: string;
   descriptions: string;
+  position: string;
   banner?: string | StaticImport;
-  children?: ProjectItem[];
+  content: JSX.Element; 
 }
 
 export interface Experiences {

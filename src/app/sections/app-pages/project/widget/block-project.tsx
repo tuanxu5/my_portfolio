@@ -1,6 +1,6 @@
-import { ButtonSecondary } from "@/app/components/shared/button/button-secondary";
 import { Project } from "@/app/interface";
 import Image from "next/image";
+import { SeeMoreProject } from "./see-more-project";
 
 interface BlockProjectProp {
   data: Project;
@@ -18,7 +18,7 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
             <h2 className="text-5xl text-[var(--primary-color)] font-bold mb-10 mt-8">{data?.name}</h2>
             <div className="font-medium leading-6 text-[16px] flex gap-5">{data?.descriptions}</div>
             <div className="mt-16">
-              <ButtonSecondary label="See more" px={8} py={4.5} />
+              <SeeMoreProject card={data} index={data?.id} />
             </div>
           </div>
         </div>

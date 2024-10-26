@@ -2,9 +2,9 @@
 
 import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import Image from "next/image";
-import { ListTechStack } from "../../widget/list-tech-stack";
+import { ListTechStack } from "../list-tech-stack";
 
-export const SeeMoreProjectOne = () => {
+export const SeeMoreProjectFour = () => {
   return (
     <div>
       <div className="flex gap-4 w-fit">

@@ -10,8 +10,8 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
   return (
     <section className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)]">
       <div className="flex flex-col lg:h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20">
-        <div className="flex-1 flex items-start lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
-          <div className="mt-[25vh]">
+        <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
+          <div className="h-[60vh]">
             <div className="relative inline-flex text-[var(--text-opaque)] font-medium leading-6 text-[16px]">
               {data?.company}
             </div>
@@ -22,8 +22,8 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 pt-[10vh]">
-          <Image width="450" height="0" src={data?.banner ?? ""} alt="Illustration 01" className="h-[70vh]" />
+        <div className="flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300">
+          <Image width="450" height="0" src={data?.banner ?? ""} alt="Illustration 01" className="h-[60vh]" />
         </div>
       </div>
     </section>

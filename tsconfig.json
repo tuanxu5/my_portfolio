@@ -32,6 +32,6 @@
     "src/app/components/aceternity-ui/timeline/index.tsx",
     "src/app/sections/projects/widget/smooth-scroll/index.tsx",
     "src/app/sections/app-pages/project/index.tsx"
-  ],
+, "src/app/pages/test/page.jsx"  ],
   "exclude": ["node_modules"]
 }

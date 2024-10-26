@@ -2,18 +2,16 @@
 "use client";
 
 import { SvgIcon } from "@/app/assets/icons";
-import { CarouselContext } from "@/app/components/aceternity-ui/cards-carousel/cards-carousel";
 import { ButtonSecondary } from "@/app/components/shared/button/button-secondary";
 import { useOutsideClick } from "@/app/hooks/useOutSideClick";
 import { Project } from "@/app/interface";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const SeeMoreProject = ({ card, index, layout = false }: { card: Project; index: number; layout?: boolean }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -40,7 +38,6 @@ export const SeeMoreProject = ({ card, index, layout = false }: { card: Project;
 
   const handleClose = () => {
     setOpen(false);
-    onCardClose(index);
   };
 
   return (
@@ -62,12 +59,12 @@ export const SeeMoreProject = ({ card, index, layout = false }: { card: Project;
               layoutId={layout ? `card-${card.name}` : undefined}
               className="bg-white h-[80vh] z-[9999] mt-[70px] rounded-3xl font-sans relative overflow-scroll p-10"
             >
-              <button
+              <div
                 className="sticky top-4 h-8 w-8 right-0 ml-auto bg-[var(--primary-color)] rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <Image src={SvgIcon.IconClose} alt="icon" width={14} height={14} />
-              </button>
+              </div>
               <motion.p
                 layoutId={layout ? `category-${card.name}` : undefined}
                 className="text-base font-medium max-w-[1320px] mx-[auto]"

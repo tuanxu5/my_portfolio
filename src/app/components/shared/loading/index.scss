@@ -1,0 +1,75 @@
+#loader_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9990;
+  overflow: hidden;
+  background-color: white;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animItem {
+  height: 60px;
+  width: 60px;
+  border: 5px solid rgba(255, 255, 255, 0);
+  border-top: 4px solid var(--primary-color);
+  border-bottom: 5px solid var(--primary-color);
+  border-radius: 10em;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 9999;
+  transform: scale(0);
+}
+
+.animFill {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-top: -60px;
+  background: var(--primary-color);
+  z-index: 9998;
+  box-sizing: border-box;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.animText {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  margin-top: 150px;
+  opacity: 1;
+  color: var(--primary-color);
+  text-indent: 0.35em;
+  // letter-spacing: 0.35em;
+  text-align: center;
+}
+
+.animText_letter {
+  display: inline-block;
+  margin-top: 25px;
+  opacity: 0;
+}
+
+.animLoaderBar {
+  height: 1px;
+  background: rgb(217, 217, 217);
+  width: 0;
+  position: absolute;
+}

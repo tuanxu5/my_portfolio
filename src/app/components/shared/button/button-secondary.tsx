@@ -126,7 +126,7 @@ export const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({ label, px, py 
   }, []);
 
   return (
-    <button
+    <div
       className={`${styles.button_secondary} ${styles["button--stroke"]}`}
       style={{
         padding: `${py * 4}px ${px * 4}px `
@@ -135,6 +135,6 @@ export const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({ label, px, py 
     >
       <span className={styles.button__flair}></span>
       <span className={styles.button__label}>{label || "Click me"}</span>
-    </button>
+    </div>
   );
 };

@@ -1,13 +1,17 @@
 "use client";
 
-import { ButtonSecondary } from "@/app/components/shared/button/button-secondary";
 import TitleComponent from "@/app/components/shared/title";
-import Image from "next/image";
-import Link from "next/link";
+import { useStickySections } from "@/app/hooks/useScrollStickySection";
+import { dataMockProject } from "@/app/mocks/_mockProject";
+import { useRef } from "react";
+import { BlockProject } from "./widget/block-project";
 
 export const ProjectSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useStickySections(containerRef);
+
   return (
-    <section id="project">
+    <section id="project" className="mt-[160px]">
       <TitleComponent
         title="Projects"
         subTitle={
@@ -17,81 +21,19 @@ export const ProjectSection = () => {
           </span>
         }
       />
-      <div className="flex flex-col flex-wrap gap-[100px] mt-[100px]">
-        <div className="flex flex-wrap justify-between">
-          <div className="flex flex-col w-[50%]">
-            <span className="text-[1rem] text-[#03030f80]">Development</span>
-            <span className="text-[2.5rem] font-semibold mt-6">Web Development</span>
-            <span className="mt-4 text-[16px] leading-6">
-              Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-              libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-              vulgate.
-            </span>
-            <div className="mt-10">
-              <Link href="/pages/projects/web-dev">
-                <ButtonSecondary label="See now" px={8} py={3.5} />
-              </Link>
+      <div ref={containerRef} className="relative antialiased w-full" data-sticky-sections>
+        <div className="relative antialiased">
+          <main className="relative min-h-screen flex flex-col justify-center">
+            <div className="w-full mx-auto">
+              <div className="max-w-md mx-auto lg:max-w-none lg:min-h-[var(--stick-items)]" data-sticky-sections>
+                <div className="lg:sticky lg:top-0 lg:h-screen space-y-16 lg:space-y-0">
+                  {dataMockProject?.map((item, index) => {
+                    return <BlockProject key={index} data={item} />;
+                  })}
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="w-[40%]">
-            <Image
-              src="https://cdn.dribbble.com/userupload/14393308/file/original-fbd920935c3a22422573a6b02516c1ba.jpg?resize=2048x1536"
-              className="h-full rounded-xl"
-              alt=""
-              width={1000}
-              height={1000}
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap justify-between">
-          <div className="w-[40%]">
-            <Image
-              src="https://cdn.dribbble.com/userupload/16392755/file/original-f7a203380bfddfe2f4a3689e573e8be3.png?resize=2048x1536"
-              className="h-full rounded-xl"
-              alt=""
-              width={1000}
-              height={1000}
-            />
-          </div>
-          <div className="flex flex-col w-[50%]">
-            <span className="text-[1rem] text-[#03030f80]">Development</span>
-            <span className="text-[2.5rem] font-semibold mt-6">Mobile App Development</span>
-            <span className="mt-4 text-[16px] leading-6">
-              Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-              libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-              vulgate.
-            </span>
-            <div className="mt-10">
-              <Link href="/pages/projects/mobile-dev">
-                <ButtonSecondary label="See now" px={6} py={4} />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-wrap justify-between">
-          <div className="flex flex-col w-[50%]">
-            <span className="text-[1rem] text-[#03030f80]">Other</span>
-            <span className="text-[2.5rem] font-semibold mt-6">Design, Tools, ...</span>
-            <span className="mt-4 text-[16px] leading-6">
-              Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-              libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-              vulgate.
-            </span>
-            <div className="mt-10">
-              <Link href="/pages/projects/other-dev">
-                <ButtonSecondary label="See now" px={6} py={4} />
-              </Link>
-            </div>
-          </div>
-          <div className="w-[40%]">
-            <Image
-              src="https://cdn.dribbble.com/userupload/5575292/file/original-5dfde511d76c84baea8461634ef44459.png?resize=1504x1128"
-              className="h-full rounded-xl"
-              alt=""
-              width={1000}
-              height={1000}
-            />
-          </div>
+          </main>
         </div>
       </div>
     </section>

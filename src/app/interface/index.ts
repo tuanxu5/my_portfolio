@@ -1,3 +1,5 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 export interface ProjectItem {
   id: Number;
   title: String;
@@ -13,12 +15,13 @@ export interface ProjectItem {
 }
 
 export interface Project {
-  id: String;
-  type: String;
-  name: String;
-  descriptions: String;
-  banner: React.ReactNode;
-  children: ProjectItem[];
+  id: number;
+  type?: string;
+  company?: string;
+  name?: string;
+  descriptions: string;
+  banner?: string | StaticImport;
+  children?: ProjectItem[];
 }
 
 export interface Experiences {

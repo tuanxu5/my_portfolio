@@ -8,7 +8,7 @@ import SkillsSection from "@/app/sections/app-pages/skills";
 
 export default function AppPage() {
   return (
-    <LayoutPage className="flex flex-col gap-[160px] pt-[120px] pb-[50px] h-full items-center">
+    <LayoutPage className="flex flex-col pb-[50px] h-full items-center">
       <CursorComponent />
       <AboutSection />
       <ProjectSection />

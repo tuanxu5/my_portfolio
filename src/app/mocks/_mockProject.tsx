@@ -11,8 +11,9 @@ export const dataMockProject: Project[] = [
     company: "Personal Project",
     name: "My Portfolio",
     descriptions:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
-    banner: "https://cruip-tutorials.vercel.app/sticky-scrolling/illustration-01.png",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
+    banner:
+      "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-frontend.74e93fbc.webp&w=3840&q=75",
     position: "Project Creator",
     content: <SeeMoreProjectOne />
   },
@@ -21,8 +22,9 @@ export const dataMockProject: Project[] = [
     company: "Hong Anh Computer",
     name: "Ops Hong Anh",
     descriptions:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
-    banner: "https://cruip-tutorials.vercel.app/sticky-scrolling/illustration-01.png",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
+    banner:
+      "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-backend.5be8ab49.webp&w=3840&q=75",
     position: "Frontend Developer",
     content: <SeeMoreProjectTwo />
   },
@@ -31,8 +33,9 @@ export const dataMockProject: Project[] = [
     company: "Libraries UI For React By Me",
     name: "Tx Design UI Libraries",
     descriptions:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
-    banner: "https://cruip-tutorials.vercel.app/sticky-scrolling/illustration-01.png",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
+    banner:
+      "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-enterprise.2dc3779c.webp&w=3840&q=75",
     position: "Project Creator",
     content: <SeeMoreProjectThree />
   },
@@ -41,7 +44,7 @@ export const dataMockProject: Project[] = [
     company: "Hong Anh Computer",
     name: "Hong Anh Seller Mobile App",
     descriptions:
-      "Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant, libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit vulgate",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
     banner:
       "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-mobile.54a25250.webp&w=1920&q=75",
     position: "Flutter Developer",
@@ -52,7 +55,7 @@ export const dataMockProject: Project[] = [
     company: "Freelancer Project",
     name: "SPG Manager",
     descriptions:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
     banner: "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-web.9441f830.webp&w=1920&q=75",
     position: "Frontend Developer",
     content: <SeeMoreProjectFive />

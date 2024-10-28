@@ -6,9 +6,9 @@ import ScrollToTop from "../../shared/scroll-to-top";
 
 const FooterPage = () => {
   return (
-    <footer className="w-full flex flex-col mb-5 mt-10 h-full items-start">
+    <footer className="w-full flex flex-col mb-5 mt-10 h-full items-start relative z-[100]">
       <span className="text-sm text-[#03030f80]">© 2024 Tuanxu. All rights reserved.</span>
-      <div className="flex flex-col fixed gap-2 left-8 bottom-6">
+      <div className="flex flex-col fixed gap-2 left-8 bottom-6 z-[100]">
         <LinkPreview link="https://www.linkedin.com/in/tuanxu5/">
           <ButtonPrimary
             px={2.5}

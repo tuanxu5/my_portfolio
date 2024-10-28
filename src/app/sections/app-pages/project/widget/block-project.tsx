@@ -17,7 +17,9 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
             </div>
             <h2 className="text-5xl text-[var(--primary-color)] font-bold mb-20 mt-8">{data?.name}</h2>
             <div className="font-medium leading-6 text-[16px] flex gap-5">{data?.descriptions}</div>
-            <SeeMoreProject card={data} index={data?.id} />
+            <div className="relative z-[999999]">
+              <SeeMoreProject card={data} index={data?.id} />
+            </div>
           </div>
         </div>
         <div className="flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 mt-[10vh]">

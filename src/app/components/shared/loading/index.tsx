@@ -3,7 +3,6 @@ import "./index.scss";
 
 export const LoadingComponent = () => {
   useLoading();
-
   return (
     <div id="loader_container">
       <div className="loader">

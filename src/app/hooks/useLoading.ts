@@ -2,6 +2,8 @@ import anime from "animejs";
 import { useEffect } from "react";
 
 export const useLoading = () => {
+
+
   useEffect(() => {
     let loader_anim__intro = anime.timeline();
 
@@ -55,18 +57,18 @@ export const useLoading = () => {
 
     let loader_anim__spin = anime({
       targets: ".animItem",
-      rotate: "20turn",
+      rotate: "3turn",
       loop: true,
       easing: "easeInOutExpo",
-      duration: 5000,
-      delay: 200,
+      duration: 3000,
+      delay: 400,
       autoplay: false
     });
 
     let loader_anim__textQuirk = anime({
       targets: ".animText_letter",
       rotate: function () {
-        return anime.random(-45, 45);
+        return anime.random(-20, 20);
       },
       duration: function () {
         return anime.random(1000, 2000);
@@ -79,5 +81,5 @@ export const useLoading = () => {
       loop: true,
       autoplay: false
     });
-  });
+  }, []);
 };

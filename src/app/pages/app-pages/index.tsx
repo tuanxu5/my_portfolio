@@ -12,7 +12,6 @@ import SkillsSection from "@/app/sections/app-pages/skills";
 
 export default function AppPage() {
   const { isLoading } = useLoading();
-  console.log(isLoading);
   return (
     <div>
       <LoadingComponent />

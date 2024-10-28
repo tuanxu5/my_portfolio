@@ -1,6 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { TextAnimationFadeUp } from "../../shared/text-animate";
 
 interface TimelineEntry {
   title: string;
@@ -36,16 +37,16 @@ export const TimelineAceternity = ({ data }: { data: TimelineEntry[] }) => {
               <div className="h-6 absolute left-3 md:left-5 w-6 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-2 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-xl font-medium text-black dark:text-neutral-500 ">
-                {item.title}
-              </h3>
+              <h3 className="hidden md:block text-xl md:pl-20 md:text-xl font-medium text-black">{item.title}</h3>
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                {item.title}
-              </h3>
-              {item.content}{" "}
+              <TextAnimationFadeUp>
+                <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                  {item.title}
+                </h3>
+              </TextAnimationFadeUp>
+              <TextAnimationFadeUp>{item.content}</TextAnimationFadeUp>
             </div>
           </div>
         ))}

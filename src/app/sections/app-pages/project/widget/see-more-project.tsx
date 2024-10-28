@@ -58,7 +58,7 @@ export const SeeMoreProject = ({ card, index, layout = false }: { card: Project;
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.name}` : undefined}
-              className="bg-white h-[84vh] z-[9999] mt-[70px] rounded-3xl font-sans relative overflow-scroll px-[6.5rem] py-[60px]"
+              className="bg-white h-[84vh] z-[9999] mt-[70px] rounded-3xl font-sans overflow-scroll px-[6.5rem] py-[60px] relative"
             >
               <div className="sticky right-0 ml-auto cursor-pointer w-fit" onClick={handleClose}>
                 <ButtonPrimary

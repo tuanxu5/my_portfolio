@@ -1,8 +1,6 @@
-import { useLoading } from "@/app/hooks/useLoading";
 import "./index.scss";
 
 export const LoadingComponent = () => {
-  useLoading();
   return (
     <div id="loader_container">
       <div className="loader">

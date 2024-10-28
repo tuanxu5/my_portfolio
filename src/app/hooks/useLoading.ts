@@ -1,8 +1,8 @@
 import anime from "animejs";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const useLoading = () => {
-
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     let loader_anim__intro = anime.timeline();
@@ -81,5 +81,11 @@ export const useLoading = () => {
       loop: true,
       autoplay: false
     });
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 9500);
   }, []);
+
+  return { isLoading };
 };

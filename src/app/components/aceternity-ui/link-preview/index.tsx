@@ -38,8 +38,8 @@ export const LinkPreviewAceternity = ({
       colorScheme: "dark",
       "viewport.isMobile": false,
       "viewport.deviceScaleFactor": 1,
-      "viewport.width": width * 6,
-      "viewport.height": height * 6
+      "viewport.width": width * 7,
+      "viewport.height": height * 7
     });
     src = `https://api.microlink.io/?${params}`;
   } else {

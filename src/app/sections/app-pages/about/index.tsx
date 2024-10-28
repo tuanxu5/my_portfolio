@@ -5,7 +5,7 @@ import TitleComponent from "@/app/components/shared/title";
 import Image from "next/image";
 
 export const AboutSection = () => {
-  const words = ["Software Developer", "TuanXu"];
+  const words = ["TuanXu", "Software Developer"];
   return (
     <section id="about" className="mt-[160px]">
       <TitleComponent

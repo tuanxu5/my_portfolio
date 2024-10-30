@@ -15,12 +15,12 @@ export const useLoading = () => {
           elasticity: 400
         },
         opacity: 1,
-        duration: 500
+        duration: 1000
       })
       .add({
         targets: ".animItem",
         scale: 1,
-        elasticity: 800,
+        elasticity: 1000,
         complete: function () {
           loader_anim__spin.play();
         }
@@ -39,8 +39,7 @@ export const useLoading = () => {
       })
       .add({
         targets: ".animLoaderBar",
-        width: [{ value: 0 }, { value: "30%" }, { value: "60%" }, { value: "90%" }, { value: "100%" }],
-        duration: 6000,
+        duration: 1000,
         elasticity: 10
       })
       .add({
@@ -58,24 +57,14 @@ export const useLoading = () => {
     let loader_anim__spin = anime({
       targets: ".animItem",
       rotate: "3turn",
-      loop: true,
       easing: "easeInOutExpo",
-      duration: 3000,
-      delay: 400,
+      duration: 1000,
+      delay: 1000,
       autoplay: false
     });
 
     let loader_anim__textQuirk = anime({
       targets: ".animText_letter",
-      rotate: function () {
-        return anime.random(-20, 20);
-      },
-      duration: function () {
-        return anime.random(1000, 2000);
-      },
-      delay: function (el, i, l) {
-        return i * 400;
-      },
       direction: "alternate",
       easing: "easeInOutExpo",
       loop: true,
@@ -84,7 +73,7 @@ export const useLoading = () => {
 
     setTimeout(() => {
       setIsLoading(false);
-    }, 9500);
+    }, 3000);
   }, []);
 
   return { isLoading };

@@ -10,7 +10,6 @@
 
   &:hover {
     &:before {
-      animation: slide 8s linear infinite;
       background: var(--gradient-bg-primary);
       opacity: 1;
     }
@@ -26,6 +25,7 @@
     background: #03030f;
     transform: translateX(-25%);
     opacity: 0.2;
+    animation: slide 8s linear infinite;
     mask: url(https://ronasit.com/_next/static/media/underline-3.cf6fc523.svg);
   }
 

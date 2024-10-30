@@ -12,7 +12,6 @@ export const LoadingComponent = () => {
           <span className="animText_letter">TUANXU</span>
           <span className="animText_letter">PORTFOLIO</span>
         </div>
-        <div className="animLoaderBar"></div>
       </div>
     </div>
   );

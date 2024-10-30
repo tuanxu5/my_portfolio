@@ -55,9 +55,9 @@
   align-items: center;
   margin-top: 150px;
   opacity: 1;
+  font-size: 20px;
   color: var(--primary-color);
   text-indent: 0.35em;
-  // letter-spacing: 0.35em;
   text-align: center;
 }
 
@@ -65,11 +65,4 @@
   display: inline-block;
   margin-top: 25px;
   opacity: 0;
-}
-
-.animLoaderBar {
-  height: 1px;
-  background: rgb(217, 217, 217);
-  width: 0;
-  position: absolute;
 }

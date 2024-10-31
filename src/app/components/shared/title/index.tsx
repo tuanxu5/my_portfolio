@@ -9,10 +9,10 @@ export default function TitleComponent({ title, subTitle, name, subTitleBig, ...
   return (
     <section className="w-full flex flex-wrap items-start">
       <div className="w-full">
-        {title && <h6 className="flex justify-between items-start text-[16px] font-medium mb-12">{title}</h6>}
-        {name && <h1 className="text-[70px] font-bold leading-[70px] mb-8 min-h-[70px]">{name}</h1>}
-        {subTitleBig && <h1 className="text-[60px] font-semibold leading-tight">{subTitleBig}</h1>}
-        {subTitle && <h1 className="text-[45px] font-semibold leading-[50px]">{subTitle}</h1>}
+        {title && <h6 className="flex justify-between items-start text-base font-medium mb-12">{title}</h6>}
+        {name && <h1 className="text-7xl font-bold mb-8">{name}</h1>}
+        {subTitleBig && <h1 className="text-5xl font-semibold leading-tight sm:text-6xl">{subTitleBig}</h1>}
+        {subTitle && <h1 className="text-4xl font-semibold leading-[50px]">{subTitle}</h1>}
       </div>
     </section>
   );

@@ -4,7 +4,6 @@ import { PADDING_TOP_PAGE } from "@/app/utils/constant";
 import { ReactNode, useEffect, useState } from "react";
 import FooterPage from "../footer";
 import HeaderPage from "../header";
-import styles from "./index.module.scss";
 
 interface LayoutPageProps {
   children: ReactNode;
@@ -65,7 +64,7 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
 
   return (
     <>
-      <main className={`${styles.layout_page} ${className}`} {...rest}>
+      <main className={`max-w-[1320px] w-full mx-auto px-[1rem] sm:px-[6.5rem] box-border ${className}`} {...rest}>
         <HeaderPage activeSection={activeSection} showHeader={showHeader} onClickItem={handleClick} />
         {children}
         <FooterPage />

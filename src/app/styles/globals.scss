@@ -4,39 +4,39 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "TuanXu";
-  src: url("/fonts/TuanXu-Regular.woff2") format("woff2");
+  font-family: "TuanXuFont";
+  src: url("/fonts/TuanXuFont-Regular.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "TuanXu";
-  src: url("/fonts/TuanXu-Medium.woff2") format("woff2");
+  font-family: "TuanXuFont";
+  src: url("/fonts/TuanXuFont-Medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "TuanXu";
-  src: url("/fonts/TuanXu-SemiBold.woff2") format("woff2");
+  font-family: "TuanXuFont";
+  src: url("/fonts/TuanXuFont-SemiBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "TuanXu";
-  src: url("/fonts/TuanXu-Bold.woff2") format("woff2");
+  font-family: "TuanXuFont";
+  src: url("/fonts/TuanXuFont-Bold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: "TuanXu";
+  font-family: "TuanXuFont";
   font-optical-sizing: auto;
   font-style: normal;
   outline: none;
@@ -95,6 +95,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 body {

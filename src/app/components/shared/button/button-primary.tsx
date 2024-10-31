@@ -57,22 +57,26 @@ export const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ label, px, py }) =
         const handleMouseEnter = (e: MouseEvent) => {
           const { x, y } = this.getXY(e);
 
-          const moveX = ((x - 50) / 50) * 8;
-          const moveY = ((y - 50) / 50) * 8;
+          this.xSet(x);
+          this.ySet(y);
+
+          const moveX = ((x - 50) / 50) * 4;
+          const moveY = ((y - 50) / 50) * 4;
 
           gsap.set(this.DOM.button, {
             x: moveX,
             y: moveY
           });
 
-          this.xSet(x);
-          this.ySet(y);
-
-          gsap.to(this.DOM.flair, {
-            scale: 1,
-            duration: 0.4,
-            ease: "power2.out"
-          });
+          gsap.fromTo(
+            this.DOM.flair,
+            { scale: 0 },
+            {
+              scale: 1,
+              duration: 0.5,
+              ease: "power2.out"
+            }
+          );
         };
 
         const handleMouseLeave = (e: MouseEvent) => {
@@ -89,7 +93,7 @@ export const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ label, px, py }) =
             xPercent: x > 90 ? x + 20 : x < 10 ? x - 20 : x,
             yPercent: y > 90 ? y + 20 : y < 10 ? y - 20 : y,
             scale: 0,
-            duration: 0.3,
+            duration: 0.6,
             ease: "power2.out"
           });
         };
@@ -100,7 +104,7 @@ export const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ label, px, py }) =
           gsap.to(this.DOM.flair, {
             xPercent: x,
             yPercent: y,
-            duration: 0.2,
+            duration: 0.5,
             ease: "power2"
           });
 

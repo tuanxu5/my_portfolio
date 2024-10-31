@@ -3,7 +3,7 @@ import Head from "next/head";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Contact | Portfolio",
+  title: "Contact | My Portfolio",
   icons: "../../icon-tuanxu.svg"
 };
 

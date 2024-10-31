@@ -1,17 +1,18 @@
-import type { Metadata } from "next"
-import Head from "next/head"
-import Script from "next/script"
-import "./styles/globals.scss"
+import type { Metadata } from "next";
+import Head from "next/head";
+import Script from "next/script";
+import "./styles/globals.scss";
+import "./styles/responsive.scss";
 
 export const metadata: Metadata = {
-  title: "Tuanxu | Portfolio",
+  title: "Tuanxu | My Portfolio",
   icons: "./icon-tuanxu.svg"
-}
+};
 
 export default function RootLayout({
   children
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -27,5 +28,5 @@ export default function RootLayout({
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></Script>
       </body>
     </html>
-  )
+  );
 }

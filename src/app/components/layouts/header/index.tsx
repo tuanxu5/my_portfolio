@@ -23,7 +23,7 @@ const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps)
             <span>TuanXu</span>
           </div>
         </Link>
-        <div className={styles.nav_menu}>
+        <div className={`${styles.nav_menu} hidden sm:flex`}>
           <ul className={styles.list_menu}>
             <li
               className={`${styles.item_menu} ${activeSection === "#about" ? styles.active : ""}`}

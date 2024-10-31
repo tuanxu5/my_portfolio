@@ -15,16 +15,20 @@ interface HeaderPageProps {
 
 const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps) => {
   return (
-    <header className={`${styles.header_page} ${showHeader ? styles.is_scrolled : ""}`}>
+    <header
+      className={`${styles.header_page} h-[76px] sm:h-[90px] px-[1rem] lg:px-[2rem] ${
+        showHeader ? styles.is_scrolled : ""
+      }`}
+    >
       <nav className={styles.header_nav}>
         <Link href="/">
           <div className={styles.header_logo}>
-            <Image src={SvgIcon.IconTuanxu} height="32" alt="" />
+            <Image src={SvgIcon.IconTuanxu} height="0" width="0" alt="" className="w-[2rem]" />
             <span>TuanXu</span>
           </div>
         </Link>
         <div className={`${styles.nav_menu} hidden sm:flex`}>
-          <ul className={styles.list_menu}>
+          <ul className={`${styles.list_menu} hidden lg:flex`}>
             <li
               className={`${styles.item_menu} ${activeSection === "#about" ? styles.active : ""}`}
               data-section="#about"

@@ -25,7 +25,7 @@ export const ProjectSection = () => {
         <div className="relative antialiased">
           <main className="relative min-h-screen flex flex-col justify-center">
             <div className="w-full mx-auto">
-              <div className="max-w-md mx-auto lg:max-w-none lg:min-h-[var(--stick-items)]" data-sticky-sections>
+              <div className="mx-auto lg:max-w-none lg:min-h-[var(--stick-items)]" data-sticky-sections>
                 <div className="lg:sticky lg:top-0 lg:h-screen space-y-16 lg:space-y-0">
                   {dataMockProject?.map((item, index) => {
                     return <BlockProject key={index} data={item} />;

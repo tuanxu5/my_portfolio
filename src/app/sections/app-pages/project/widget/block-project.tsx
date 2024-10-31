@@ -16,19 +16,17 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
           <div className="h-[70vh]">
             <TextAnimationFadeUp>
-              <div className="relative inline-flex text-[var(--text-opaque)] font-medium leading-6 text-[16px]">
+              <div className="relative inline-flex text-[var(--text-opaque)] font-medium leading-6 text-base">
                 {data?.company}
               </div>
             </TextAnimationFadeUp>
             <TextAnimationFadeUp>
-              <h2 className="text-5xl text-[var(--primary-color)] font-bold mb-20 mt-8 animate__animated animate__fadeInUp">
-                {data?.name}
-              </h2>
+              <h2 className="text-4xl font-bold mb-20 mt-8">{data?.name}</h2>
             </TextAnimationFadeUp>
             <TextAnimationFadeUp>
-              <div className="font-medium leading-6 text-[16px] flex gap-5">{data?.descriptions}</div>
+              <div className="font-medium leading-6 text-base">{data?.descriptions}</div>
             </TextAnimationFadeUp>
-            <div className="relative z-[999999]">
+            <div>
               <TextAnimationFadeUp>
                 <SeeMoreProject card={data} index={data?.id} />
               </TextAnimationFadeUp>

@@ -39,9 +39,9 @@ export const AboutSection = () => {
         }
       />
 
-      <div className="relative mt-[80px]">
+      <div className="relative mt-[80px] overflow-hidden">
         <Image src={SvgIcon.IconKep} alt="" className="absolute left-[-36px] top-0 w-5" width={20} height={20} />
-        <p className="text-[18px] font-medium leading-[3.5rem text-justify">
+        <p className="text-lg font-medium text-start">
           As a software developer, I&apos;m passionate about staying current with the latest tech trends. My goal is to
           contribute my expertise in developing high-quality software that exceeds user expectations. Committed to
           continuous learning, I strive for excellence in every project, embracing new technologies and best practices.

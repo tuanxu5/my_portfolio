@@ -7,8 +7,8 @@ import ScrollToTop from "../../shared/scroll-to-top";
 const FooterPage = () => {
   return (
     <footer className="w-full flex flex-col mb-5 mt-10 h-full items-start relative z-[100]">
-      <h4 className="text-sm text-[#03030f80]">© 2024 Tuanxu. All rights reserved.</h4>
-      <div className="flex-col fixed gap-2 left-8 bottom-6 z-[100] hidden sm:flex">
+      <h4 className="text-base text-[#03030f80]">© 2024 Tuanxu. All rights reserved.</h4>
+      <div className="flex-col fixed gap-2 left-8 bottom-6 z-[100] hidden lg:flex">
         <LinkPreview link="https://www.linkedin.com/in/tuanxu5/">
           <ButtonPrimary
             px={2.5}

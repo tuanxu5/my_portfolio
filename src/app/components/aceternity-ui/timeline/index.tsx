@@ -42,9 +42,7 @@ export const TimelineAceternity = ({ data }: { data: TimelineEntry[] }) => {
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
               <TextAnimationFadeUp>
-                <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                  {item.title}
-                </h3>
+                <h3 className="md:hidden block text-xl mb-4 text-left font-medium">{item.title}</h3>
               </TextAnimationFadeUp>
               <TextAnimationFadeUp>{item.content}</TextAnimationFadeUp>
             </div>

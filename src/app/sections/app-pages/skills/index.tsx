@@ -19,12 +19,12 @@ export default function SkillsSection() {
                   key={item.id}
                   label={
                     <div className="flex justify-between gap-2 items-center">
-                      <Image src={item.image} height={18} width={18} alt="" />
+                      <Image src={item.image} height={0} width={0} alt="" className="w-[1.1rem] h-[1.1rem]" />
                       <div className="text-sm">{item.name}</div>
                     </div>
                   }
-                  px={6.5}
-                  py={4.5}
+                  px={6}
+                  py={4}
                 />
               ))}
             </div>

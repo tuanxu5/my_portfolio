@@ -24,8 +24,8 @@ export default function ContactSection() {
           </a>
         </div>
         <div className="mt-20 w-full">
-          <h5 className={styles.sub_title_h}>Work with me</h5>
-          <form className="flex flex-col w-full max-w-2xl gap-12">
+          <h5 className={`${styles.sub_title_h} mb-20`}>Work with me</h5>
+          <form className="flex flex-col w-full max-w-2xl gap-12 sm:gap-[5rem]">
             <div className="flex w-full flex-col gap-12 sm:flex-row">
               <div className={`${styles.input_with_placeholder} w-full md:w-1/2`}>
                 <input type="text" id="name" required />

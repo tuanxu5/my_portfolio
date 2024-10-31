@@ -1,42 +1,15 @@
-"use client";
-
 import { SvgIcon } from "@/app/assets/icons";
 import { ImageBannerAbout } from "@/app/components/shared/banner/ImageBannerAbout";
 import TitleComponent from "@/app/components/shared/title";
-import "animate.css";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 
 export const AboutSection = () => {
-  const el = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: [" TuanXu", " Software Developer"],
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 3000,
-      loop: true
-    });
-
-    return () => {
-      typed.destroy();
-    };
-  }, []);
   return (
     <section id="about" className="mt-[160px]">
       <TitleComponent
         title="About"
         subTitle={<div>I have experience in modern develop web and mobile apps.</div>}
-        name={
-          <span>
-            Hi, I&apos;m&nbsp;
-            <span className="overflow-hidden">
-              <span ref={el} />
-            </span>
-          </span>
-        }
+        name={<span>Hi, I&apos;m&nbsp;TuanXu</span>}
       />
 
       <div className="relative mt-[80px] overflow-hidden">

@@ -58,34 +58,44 @@ export const SeeMoreProject = ({ card, index, layout = false }: { card: Project;
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.name}` : undefined}
-              className="bg-white h-[84vh] z-[9999] mt-[70px] rounded-3xl font-sans overflow-scroll px-[6.5rem] py-[60px] relative"
+              className="bg-white sm:h-[85vh] h-[90vh] sm:mt-[70px] rounded-3xl overflow-scroll px-[1rem] sm:px-[6.5rem] py-[1rem] sm:py-[60px] relative w-full"
             >
-              <div className="sticky right-0 ml-auto cursor-pointer w-fit" onClick={handleClose}>
-                <ButtonPrimary
-                  label={<Image src={SvgIcon.IconClose} alt="icon" width={12} height={12} />}
-                  px={2.5}
-                  py={2.5}
-                />
+              <div className="max-w-[1320px] mx-auto">
+                <div className="sticky right-0 ml-auto cursor-pointer w-fit" onClick={handleClose}>
+                  <ButtonPrimary
+                    label={
+                      <Image
+                        src={SvgIcon.IconClose}
+                        alt="icon"
+                        width={0}
+                        height={0}
+                        className="w-[0.6rem] sm:w-[0.8rem] m-[0.1rem]"
+                      />
+                    }
+                    px={2}
+                    py={2}
+                  />
+                </div>
+                <motion.p
+                  layoutId={layout ? `category-${card.name}` : undefined}
+                  className="text-base font-medium mx-[auto]"
+                >
+                  {card.company}
+                </motion.p>
+                <motion.p
+                  layoutId={layout ? `title-${card.name}` : undefined}
+                  className="text-5xl leading-tight font-bold mt-4 mx-[auto]"
+                >
+                  {card.name}
+                </motion.p>
+                <motion.p
+                  layoutId={layout ? `title-${card.name}` : undefined}
+                  className="text-lg font-medium mx-[auto] mt-10"
+                >
+                  Position: {card.position}
+                </motion.p>
+                <div className="py-10 mx-[auto]">{card.content}</div>
               </div>
-              <motion.p
-                layoutId={layout ? `category-${card.name}` : undefined}
-                className="text-base font-medium max-w-[1320px] mx-[auto] px-[6.5rem]"
-              >
-                {card.company}
-              </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.name}` : undefined}
-                className="text-[54px] font-bold leading-[68px] mt-4 max-w-[1320px] mx-[auto] px-[6.5rem]"
-              >
-                {card.name}
-              </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.name}` : undefined}
-                className="text-[18px] font-medium max-w-[1320px] mx-[auto] mt-10 px-[6.5rem]"
-              >
-                Position: {card.position}
-              </motion.p>
-              <div className="py-10 max-w-[1320px] mx-[auto] px-[6.5rem]">{card.content}</div>
             </motion.div>
           </div>
         )}

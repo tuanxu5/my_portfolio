@@ -9,10 +9,10 @@ export const SeeMoreProjectThree = () => {
 
   return (
     <div>
-      <div className="font-semibold text-[24px] mt-10">
+      <div className="font-semibold text-2xl mt-10">
         <span>🤝 Team size: 1 personal</span>
       </div>
-      <div className="w-fit mt-5 text-[16px]">
+      <div className="w-fit mt-5 text-base">
         <div>
           👉 Link Repository: <LinkPreview link="https://docs-tx-design.pages.dev/" />
         </div>
@@ -28,7 +28,7 @@ export const SeeMoreProjectThree = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
-        <p className="mt-3 font-medium">
+        <p className="mt-3 font-medium text-base">
           Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
           libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
           vulgate.

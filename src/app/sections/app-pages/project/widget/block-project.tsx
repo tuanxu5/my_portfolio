@@ -14,7 +14,7 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
     <section className="lg:absolute lg:inset-0 lg:z-[var(--stick-visibility)]">
       <div className="flex flex-col lg:h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20 pt-[7.5vh]">
         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
-          <div className="h-[70vh]">
+          <div className="">
             <TextAnimationFadeUp>
               <div className="relative inline-flex text-[var(--text-opaque)] font-medium leading-6 text-base">
                 {data?.company}

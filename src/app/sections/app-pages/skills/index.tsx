@@ -23,8 +23,8 @@ export default function SkillsSection() {
                       <div className="text-sm">{item.name}</div>
                     </div>
                   }
-                  px={6}
-                  py={4}
+                  px={6.5}
+                  py={4.5}
                 />
               ))}
             </div>

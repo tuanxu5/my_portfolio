@@ -77,21 +77,21 @@ export const mockDataExperiences: Experiences[] = [
             <p className="font-medium text-lg">Position: Frontend Talent Internship</p>
           </div>
           <div className="flex flex-col gap-2">
-            <div className="font-medium leading-6 text-base flex gap-5">
+            <div className="font-medium text-base flex gap-5">
               <span>•</span>
               <span>
                 Gained hands-on experience with modern technologies such as VueJs, Ant Design, Typescript, RxJS,
                 ReactJs, ...
               </span>
             </div>
-            <div className="font-medium leading-6 text-base flex gap-5">
+            <div className="font-medium text-base flex gap-5">
               <span>•</span>
               <span>
                 Executed and developed 4 mini projects (Todo-list, Shopping, News, and FoodShop) by applying the
                 technologies learned.
               </span>
             </div>
-            <div className="font-medium leading-6 text-base flex gap-5">
+            <div className="font-medium text-base flex gap-5">
               <span>•</span>
               <span>
                 Achieved the highest score during the internship and received feedback from the Tech Lead for quick

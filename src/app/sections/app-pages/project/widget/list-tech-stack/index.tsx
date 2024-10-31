@@ -3,8 +3,10 @@ import Image from "next/image";
 import styles from "./index.module.scss";
 
 export const ListTechStack = ({ techStack }: { techStack: String[] | undefined }) => {
+  const widthScreen = window.innerWidth;
+
   return (
-    <div className="flex mt-5 relative overflow-scroll w-[40vh]">
+    <div className="flex mt-5 relative overflow-scroll flex-row" style={{ width: `calc(${widthScreen}px - 2rem)` }}>
       {techStack?.map((item, index) => (
         <div
           key={index}
@@ -12,7 +14,13 @@ export const ListTechStack = ({ techStack }: { techStack: String[] | undefined }
           style={{ transform: `translateX(-${index * 15}%)` }}
         >
           <div className={`${styles.circle} w-[6rem] h-[6rem]`}>
-            <Image src={SvgIcon.IconStackReactJs} alt="React Icon" width={0} height={0} className="w-[2.5rem]" />
+            <Image
+              src={SvgIcon.IconStackReactJs}
+              alt="React Icon"
+              width={0}
+              height={0}
+              className="w-[2rem] sm:w-[2.5rem]"
+            />
           </div>
           <span className="font-semibold text-sm">{item}</span>
         </div>

@@ -45,6 +45,13 @@ export const mockDataExperiences: Experiences[] = [
             <div className="font-medium leading-6 text-base flex gap-5">
               <span>•</span>
               <span>
+                Integrated Google Analytics 4 (GA4) into both web and mobile applications to track user behavior,
+                monitor key performance indicators, and optimize user engagement and conversion rates.
+              </span>
+            </div>
+            <div className="font-medium leading-6 text-base flex gap-5">
+              <span>•</span>
+              <span>
                 Implemented CI/CD systems for app releases, using CodeMagic and Shorebird to automate the process.
               </span>
             </div>

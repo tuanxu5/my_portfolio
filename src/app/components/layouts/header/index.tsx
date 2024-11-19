@@ -27,7 +27,7 @@ const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps)
             <span>TuanXu</span>
           </div>
         </Link>
-        <div className={`${styles.nav_menu} hidden sm:flex`}>
+        <div className={`${styles.nav_menu} flex`}>
           <ul className={`${styles.list_menu} hidden lg:flex`}>
             <li
               className={`${styles.item_menu} ${activeSection === "#about" ? styles.active : ""}`}
@@ -65,7 +65,9 @@ const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps)
               <span>Contacts</span>
             </li>
           </ul>
-          <ToggleComponent />
+          <div className="hidden lg:block">
+            <ToggleComponent />
+          </div>
           <a href={LINK_CV} target="_blank">
             <ButtonPrimary label="Curriculum Vitae" px={6} py={5} />
           </a>

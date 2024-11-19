@@ -1,11 +1,12 @@
+import { SvgIcon } from "@/app/assets/icons";
+import Image from "next/image";
 import "./index.scss";
 
 export const LoadingComponent = () => {
   return (
     <div id="loader_container">
       <div className="loader">
-        <div className="animItem"></div>
-        <div className="animFill"></div>
+        <Image src={SvgIcon.IconTuanxu} width="0" height="0" alt="logo" className="w-[3.5rem] h-[3.5rem]" />
         <div className="animText mt-10">
           <span className="animText_letter">WELCOME</span>
           <span className="animText_letter">TO</span>

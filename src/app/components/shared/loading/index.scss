@@ -20,32 +20,6 @@
   align-items: center;
 }
 
-.animItem {
-  height: 3rem;
-  width: 3rem;
-  border: 5px solid rgba(255, 255, 255, 0);
-  border-top: 4px solid var(--primary-color);
-  border-bottom: 5px solid var(--primary-color);
-  border-radius: 10em;
-  overflow: hidden;
-  box-sizing: border-box;
-  z-index: 9999;
-  transform: scale(0);
-}
-
-.animFill {
-  position: relative;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 100%;
-  margin-top: -3rem;
-  background: var(--primary-color);
-  z-index: 9998;
-  box-sizing: border-box;
-  transform: scale(0);
-  opacity: 0;
-}
-
 .animText {
   position: absolute;
   display: flex;

@@ -7,7 +7,7 @@ export const SeeMoreProjectOne = () => {
       <div className="font-semibold text-[24px] mt-10">
         <span>🤝 Team size: 1 personal</span>
       </div>
-      <div className="w-fit mt-5 text-[16px]">
+      <div className="w-fit mt-5 text-base">
         <div className="">👉 Link Repository: Confidential and cannot be disclosed 🙅</div>
         <div className="mt-2">
           👉 Link Preview:&nbsp;

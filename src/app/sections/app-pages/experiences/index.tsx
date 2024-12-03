@@ -6,7 +6,7 @@ export function ExperienceSection() {
   const experiences = mockDataExperiences;
 
   return (
-    <section id="experience">
+    <section id="experience" className="lg:mt-[160px]">
       <TitleComponent
         title="Experience"
         subTitle={

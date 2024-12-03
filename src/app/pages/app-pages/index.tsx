@@ -13,18 +13,20 @@ import SkillsSection from "@/app/sections/app-pages/skills";
 export default function AppPage() {
   const { isLoading } = useLoading();
   return (
-    <div>
-      <LoadingComponent />
-      {!isLoading && (
-        <LayoutPage className="flex flex-col pb-[50px] h-full items-center">
-          <CursorComponent />
-          <AboutSection />
-          <ProjectSection />
-          <ExperienceSection />
-          <SkillsSection />
-          <ContactComponent />
-        </LayoutPage>
-      )}
-    </div>
+    <LayoutPage>
+      <div>
+        <LoadingComponent />
+        {!isLoading && (
+          <LayoutPage className="flex flex-col pb-[50px] h-full items-center">
+            <CursorComponent />
+            <AboutSection />
+            <ProjectSection />
+            <ExperienceSection />
+            <SkillsSection />
+            <ContactComponent />
+          </LayoutPage>
+        )}
+      </div>
+    </LayoutPage>
   );
 }

@@ -1,7 +1,13 @@
+"use client";
+
 import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import TitleComponent from "@/app/components/shared/title";
+import { useContact } from "@/app/hooks/useContact";
 import styles from "./index.module.scss";
+
 export default function ContactSection() {
+  const { form, handleSubmit } = useContact();
+
   return (
     <section className="flex flex-col pt-[120px] pb-[50px] h-full items-center">
       <TitleComponent
@@ -25,20 +31,20 @@ export default function ContactSection() {
         </div>
         <div className="mt-20 w-full">
           <h5 className={`${styles.sub_title_h} mb-20`}>Work with me</h5>
-          <form className="flex flex-col w-full max-w-2xl gap-12 sm:gap-[5rem]">
+          <form ref={form} className="flex flex-col w-full max-w-2xl gap-12 sm:gap-[5rem]" onSubmit={handleSubmit}>
             <div className="flex w-full flex-col gap-12 sm:flex-row">
               <div className={`${styles.input_with_placeholder} w-full md:w-1/2`}>
-                <input type="text" id="name" required />
+                <input type="text" id="fullname" name="fullname" required />
                 <label htmlFor="Your name">Your name</label>
               </div>
               <div className={`${styles.input_with_placeholder} w-full md:w-1/2`}>
-                <input type="text" id="email" required />
+                <input type="text" id="email" name="email" required />
                 <label htmlFor="Your email">Your email</label>
               </div>
             </div>
             <div className="flex w-full flex-col gap-12">
               <div className={`${styles.text_area_with_placeholder} w-full`}>
-                <textarea id="message" required></textarea>
+                <textarea id="message" name="message" required></textarea>
                 <label htmlFor="Your message">Your message</label>
               </div>
             </div>

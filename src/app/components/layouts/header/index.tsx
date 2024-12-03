@@ -2,7 +2,6 @@ import { SvgIcon } from "@/app/assets/icons/index.ts";
 import Image from "next/image";
 import Link from "next/link";
 import { LINK_CV } from "../../../utils/constant.js";
-
 import { ButtonPrimary } from "../../shared/button/button-primary.tsx";
 import ToggleComponent from "../../shared/toggle/index.tsx";
 import styles from "./index.module.scss";
@@ -14,13 +13,15 @@ interface HeaderPageProps {
 }
 
 const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps) => {
+  const isHomepage = window.location.pathname === "/";
+
   return (
     <header
       className={`${styles.header_page} h-[76px] sm:h-[90px] px-[1rem] lg:px-[2rem] ${
         showHeader ? styles.is_scrolled : ""
       }`}
     >
-      <nav className={styles.header_nav}>
+      <nav className={`${styles.header_nav}`}>
         <Link href="/">
           <div className={styles.header_logo}>
             <Image src={SvgIcon.IconTuanxu} height="0" width="0" alt="" className="w-[2rem]" />
@@ -28,7 +29,7 @@ const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps)
           </div>
         </Link>
         <div className={`${styles.nav_menu} flex`}>
-          <ul className={`${styles.list_menu} hidden lg:flex`}>
+          <ul className={`${styles.list_menu} hidden ${isHomepage ? "lg:flex" : "lg:hidden"}`}>
             <li
               className={`${styles.item_menu} ${activeSection === "#about" ? styles.active : ""}`}
               data-section="#about"

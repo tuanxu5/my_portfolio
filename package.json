@@ -11,11 +11,14 @@
     "export": "next export"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-hover-card": "^1.1.2",
     "animate.css": "^4.1.1",
     "animejs": "^3.2.2",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.7.8",
     "clsx": "^2.1.1",
+    "emailjs": "^4.0.3",
     "framer-motion": "^11.2.6",
     "gsap": "^3.12.5",
     "next": "^14.2.13",

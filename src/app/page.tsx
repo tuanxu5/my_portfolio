@@ -1,11 +1,15 @@
-import CursorComponent from "./components/shared/cursor"
-import AppPage from "./pages/app-pages"
+import CursorComponent from "./components/shared/cursor";
+import { ToastProvider } from "./contexts/ToastContext";
+
+import AppPage from "./pages/app-pages";
 
 export default function App() {
   return (
-    <main className="flex flex-col items-center justify-center">
-      <CursorComponent />
-      <AppPage />
-    </main>
-  )
+    <ToastProvider>
+      <main className="flex flex-col items-center justify-center">
+        <CursorComponent />
+        <AppPage />
+      </main>
+    </ToastProvider>
+  );
 }

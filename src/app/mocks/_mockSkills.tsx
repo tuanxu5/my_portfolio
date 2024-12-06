@@ -1,6 +1,7 @@
 import { SvgIcon } from "../assets/icons";
+import { ListTechStack } from "../interface/model";
 
-export const mockDataSkill = [
+export const mockDataSkill: ListTechStack[] = [
   {
     id: 1,
     title: "Tech Stack",

@@ -29,3 +29,17 @@ export interface Experiences {
   title: string;
   content: any;
 }
+
+export interface Skill {
+  id?: number;
+  image: string; 
+  name: string;
+  width?: number;
+  height?: number;
+}
+
+export interface ListTechStack {
+  id: number;
+  title: string;
+  children: Skill[];
+}

@@ -1,3 +1,4 @@
+"use client";
 import { useCursor } from "@/app/hooks/useCursor";
 import { useDevice } from "@/app/hooks/useDevice";
 import style from "./index.module.scss";

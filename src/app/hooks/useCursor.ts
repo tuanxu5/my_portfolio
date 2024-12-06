@@ -1,6 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-"use client";
-
 import { useEffect, useRef } from "react";
 
 export const useCursor = () => {

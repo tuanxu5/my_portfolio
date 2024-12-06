@@ -10,25 +10,31 @@ import IconInstagram from "./icon_contact_instagram.svg";
 import IconLinkdIn from "./icon_contact_linkedIn.svg";
 import IconToTop from "./icon_to_top.svg";
 import IconStackAntd from "./skills/icon_stack_antd.svg";
+import IconStackApollo from "./skills/icon_stack_apollo.svg";
 import IconStackBootstrap from "./skills/icon_stack_bootstrap.svg";
 import IconStackCss from "./skills/icon_stack_css.svg";
 import IconStackDart from "./skills/icon_stack_dart.svg";
+import IconStackDocusaurus from "./skills/icon_stack_docusaurus.svg";
 import IconStackFigma from "./skills/icon_stack_figma.svg";
 import IconStackFirebase from "./skills/icon_stack_firebase.svg";
 import IconStackFlutter from "./skills/icon_stack_flutter.svg";
 import IconStackGit from "./skills/icon_stack_git.svg";
 import IconStackGithub from "./skills/icon_stack_github.svg";
 import IconStackGraphql from "./skills/icon_stack_graphql.svg";
+import IconStackGsap from "./skills/icon_stack_gsap.svg";
 import IconStackHtml from "./skills/icon_stack_html.svg";
 import IconStackJs from "./skills/icon_stack_js.svg";
 import IconStackLaravel from "./skills/icon_stack_laravel.svg";
+import IconStackMotion from "./skills/icon_stack_motion.svg";
 import IconStackMySql from "./skills/icon_stack_mysql.svg";
 import IconStackNextJs from "./skills/icon_stack_nextjs.svg";
+import IconStackNx from "./skills/icon_stack_nx.svg";
 import IconStackReactJs from "./skills/icon_stack_react.svg";
 import IconStackSass from "./skills/icon_stack_sass.svg";
 import IconStackTailWind from "./skills/icon_stack_tailwind.svg";
 import IconStackTs from "./skills/icon_stack_ts.svg";
 import IconStackVueJs from "./skills/icon_stack_vuejs.svg";
+import IconStackStoryBook from "./skills/icon_stack_storybook.svg";
 
 const SvgIcon = {
   IconLeft,
@@ -61,7 +67,13 @@ const SvgIcon = {
   IconStackMySql,
   IconTuanxu,
   IconStackDart,
-  IconClose
+  IconClose,
+  IconStackMotion,
+  IconStackGsap,
+  IconStackNx,
+  IconStackApollo,
+  IconStackDocusaurus,
+  IconStackStoryBook,
 };
 
 export { SvgIcon };

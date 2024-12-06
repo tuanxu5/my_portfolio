@@ -1,5 +1,6 @@
 "use client";
 
+import { SvgIcon } from "@/app/assets/icons";
 import { ListTechStack } from "../list-tech-stack";
 
 export const SeeMoreProjectFive = () => {
@@ -22,7 +23,14 @@ export const SeeMoreProjectFive = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Tech Stack</span>
-        <ListTechStack techStack={[]} />
+        <ListTechStack
+          techStack={[
+            { image: SvgIcon.IconStackReactJs, name: "ReactJS" },
+            { image: SvgIcon.IconStackAntd, name: "Antd" },
+            { image: SvgIcon.IconStackTailWind, name: "Tailwind" },
+            { image: SvgIcon.IconStackSass, name: "Sass" }
+          ]}
+        />
       </div>
     </div>
   );

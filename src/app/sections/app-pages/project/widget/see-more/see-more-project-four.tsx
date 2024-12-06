@@ -1,5 +1,6 @@
 "use client";
 
+import { SvgIcon } from "@/app/assets/icons";
 import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import Image from "next/image";
 import { ListTechStack } from "../list-tech-stack";
@@ -60,7 +61,17 @@ export const SeeMoreProjectFour = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Tech Stack</span>
-        <ListTechStack techStack={["Flutter", "BloC", "Cubit", "GetX", "Fvm", "GraphQL", "RxDart"]} />
+        <ListTechStack
+          techStack={[
+            { image: SvgIcon.IconStackFlutter, name: "Flutter" },
+            { image: SvgIcon.IconStackReactJs, name: "BloC" },
+            { image: SvgIcon.IconStackReactJs, name: "Cubit" },
+            { image: SvgIcon.IconStackReactJs, name: "GetX" },
+            { image: SvgIcon.IconStackReactJs, name: "Fvm" },
+            { image: SvgIcon.IconStackGraphql, name: "GraphQL" },
+            { image: SvgIcon.IconStackReactJs, name: "RxDart" }
+          ]}
+        />
       </div>
     </div>
   );

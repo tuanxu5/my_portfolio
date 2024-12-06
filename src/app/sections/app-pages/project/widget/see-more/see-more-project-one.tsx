@@ -1,3 +1,4 @@
+import { SvgIcon } from "@/app/assets/icons";
 import { LinkPreview } from "@/app/components/shared/link-preview/link-preview";
 import { ListTechStack } from "../list-tech-stack";
 
@@ -24,7 +25,16 @@ export const SeeMoreProjectOne = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Tech Stack</span>
-        <ListTechStack techStack={["NextJs", "Typescript", "Tailwind", "Sass", "Motion", "Gsap"]} />
+        <ListTechStack
+          techStack={[
+            { image: SvgIcon.IconStackReactJs, name: "NextJs" },
+            { image: SvgIcon.IconStackTs, name: "Typescript" },
+            { image: SvgIcon.IconStackTailWind, name: "Tailwind" },
+            { image: SvgIcon.IconStackSass, name: "Sass" },
+            { image: SvgIcon.IconStackMotion, name: "Motion" },
+            { image: SvgIcon.IconStackGsap, name: "Gsap" }
+          ]}
+        />
       </div>
     </div>
   );

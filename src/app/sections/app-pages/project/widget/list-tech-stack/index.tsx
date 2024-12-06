@@ -1,4 +1,3 @@
-import { SvgIcon } from "@/app/assets/icons";
 import { ListTechStackProps } from "@/app/interface/props";
 import Image from "next/image";
 import styles from "./index.module.scss";
@@ -16,14 +15,14 @@ export const ListTechStack = ({ techStack }: ListTechStackProps) => {
         >
           <div className={`${styles.circle} w-[6rem] h-[6rem]`}>
             <Image
-              src={SvgIcon.IconStackReactJs}
+              src={item.image}
               alt="React Icon"
               width={0}
               height={0}
-              className="w-[2rem] sm:w-[2.5rem]"
+              className="w-[2rem] sm:w-[2.5rem] rounded-md"
             />
           </div>
-          <span className="font-semibold text-sm">{item}</span>
+          <span className="font-semibold text-sm">{item.name}</span>
         </div>
       ))}
     </div>

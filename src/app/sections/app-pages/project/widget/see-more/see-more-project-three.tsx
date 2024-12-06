@@ -1,5 +1,6 @@
 "use client";
 
+import { SvgIcon } from "@/app/assets/icons";
 import { LinkPreview } from "@/app/components/shared/link-preview/link-preview";
 import { useState } from "react";
 import { ListTechStack } from "../list-tech-stack";
@@ -36,7 +37,15 @@ export const SeeMoreProjectThree = () => {
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Tech Stack</span>
-        <ListTechStack techStack={["React Lib", "Sass", "Docusaurus", "Styled", "Storybook"]} />
+        <ListTechStack
+          techStack={[
+            { image: SvgIcon.IconStackReactJs, name: "React Lib" },
+            { image: SvgIcon.IconStackSass, name: "Sass" },
+            { image: SvgIcon.IconStackDocusaurus, name: "Docusaurus" },
+            { image: SvgIcon.IconStackReactJs, name: "Styled" },
+            { image: SvgIcon.IconStackStoryBook, name: "Storybook" }
+          ]}
+        />
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ export default function ContactSection() {
           <form ref={form} className="flex flex-col w-full max-w-2xl gap-12 sm:gap-[5rem]" onSubmit={handleSubmit}>
             <div className="flex w-full flex-col gap-12 sm:flex-row">
               <div className={`${styles.input_with_placeholder} w-full md:w-1/2`}>
-                <input type="text" id="fullname" name="fullname" required />
+                <input type="text" id="fullName" name="fullName" required />
                 <label htmlFor="Your name">Your name</label>
               </div>
               <div className={`${styles.input_with_placeholder} w-full md:w-1/2`}>

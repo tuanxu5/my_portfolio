@@ -1,4 +1,4 @@
-import { Project } from "./model";
+import { Project, Skill } from "./model";
 
 export interface ButtonProps {
   label: React.ReactNode | string | null;
@@ -17,7 +17,7 @@ export interface SeeMoreProjectProps {
 }
 
 export interface ListTechStackProps {
-  techStack: String[] | undefined;
+  techStack: Skill[] | undefined;
 }
 
 export interface LinkPreviewProps {

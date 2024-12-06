@@ -36,6 +36,39 @@
   }
 }
 
+.button_primary_mobile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  background: var(--primary-color);
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.button_secondary_mobile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 100px;
+  color: var(--primary-color);
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--primary-color);
+}
+
 .button--stroke:after {
   content: "";
   position: absolute;

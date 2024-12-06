@@ -23,8 +23,8 @@ export const mockDataExperiences: Experiences[] = [
             <div className="font-medium leading-6 text-base flex gap-5">
               <span>•</span>
               <span className="">
-                Developed and maintained web ops using ReactJS for a product management system for business and
-                logistics, optimizing user experience.
+                Developed and maintained web ops using ReactJS and GraphQL for a product management system for business
+                and logistics, optimizing user experience and ensuring efficient data fetching and state management.
               </span>
             </div>
             <div className="font-medium leading-6 text-base flex gap-5">

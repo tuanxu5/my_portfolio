@@ -3,13 +3,13 @@ import { useButton } from "@/app/hooks/useButton";
 import { useDevice } from "@/app/hooks/useDevice";
 import styles from "./index.module.scss";
 
-interface ButtonSecondaryProps {
+interface ButtonProps {
   label: React.ReactNode | String | null;
   px: number;
   py: number;
 }
 
-export const ButtonSecondary: React.FC<ButtonSecondaryProps> = ({ label, px, py }) => {
+export const ButtonSecondary: React.FC<ButtonProps> = ({ label, px, py }) => {
   const { isDesktop } = useDevice();
   useButton({ styles });
 

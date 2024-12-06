@@ -1,12 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import gsap from "gsap";
 import { useEffect } from "react";
-
-type ButtonElement = HTMLElement & {
-  dataset: {
-    block: string;
-  };
-};
+import { ButtonElement } from "../types";
 
 export const useButton = ({ styles }: { styles: any }) => {
   useEffect(() => {

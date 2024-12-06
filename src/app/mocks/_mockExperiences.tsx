@@ -1,4 +1,4 @@
-import { Experiences } from "../interface";
+import { Experiences } from "../interface/model";
 
 export const mockDataExperiences: Experiences[] = [
   {

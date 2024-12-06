@@ -1,21 +1,10 @@
 "use client";
 import { useButton } from "@/app/hooks/useButton";
 import { useDevice } from "@/app/hooks/useDevice";
+import { ButtonProps } from "@/app/interface/props";
 import styles from "./index.module.scss";
 
-interface ButtonPrimaryProps {
-  label: React.ReactNode | String | null;
-  px: number;
-  py: number;
-}
-
-type ButtonElement = HTMLElement & {
-  dataset: {
-    block: string;
-  };
-};
-
-export const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ label, px, py }) => {
+export const ButtonPrimary: React.FC<ButtonProps> = ({ label, px, py }) => {
   const { isDesktop } = useDevice();
   useButton({ styles });
   return isDesktop ? (

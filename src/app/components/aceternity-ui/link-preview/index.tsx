@@ -1,4 +1,5 @@
 "use client";
+import { LinkPreviewAceternityProps } from "@/app/types";
 import { cn } from "@/app/utils/aceternity";
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card";
 import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
@@ -6,16 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { encode } from "qss";
 import React from "react";
-
-type LinkPreviewProps = {
-  children: React.ReactNode;
-  url: string;
-  className?: string;
-  width?: number;
-  height?: number;
-  quality?: number;
-  layout?: string;
-} & ({ isStatic: true; imageSrc: string } | { isStatic?: false; imageSrc?: never });
 
 export const LinkPreviewAceternity = ({
   children,
@@ -27,7 +18,7 @@ export const LinkPreviewAceternity = ({
   layout = "fixed",
   isStatic = false,
   imageSrc = ""
-}: LinkPreviewProps) => {
+}: LinkPreviewAceternityProps) => {
   let src;
   if (!isStatic) {
     const params = encode({

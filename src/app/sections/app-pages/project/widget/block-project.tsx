@@ -1,13 +1,7 @@
-"use client";
-
 import { TextAnimationFadeUp } from "@/app/components/shared/text-animate";
-import { Project } from "@/app/interface";
+import { BlockProjectProp } from "@/app/interface/props";
 import Image from "next/image";
 import { SeeMoreProject } from "./see-more-project";
-
-interface BlockProjectProp {
-  data: Project;
-}
 
 export const BlockProject = ({ data }: BlockProjectProp) => {
   return (

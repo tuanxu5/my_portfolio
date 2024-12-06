@@ -1,9 +1,5 @@
+import { LinkPreviewProps } from "@/app/interface/props";
 import { LinkPreviewAceternity } from "../../aceternity-ui/link-preview";
-
-interface LinkPreviewProps {
-  link: string;
-  children?: React.ReactNode;
-}
 
 export const LinkPreview = ({ link, children }: LinkPreviewProps) => {
   return (

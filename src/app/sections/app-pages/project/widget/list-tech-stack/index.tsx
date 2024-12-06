@@ -1,8 +1,9 @@
 import { SvgIcon } from "@/app/assets/icons";
+import { ListTechStackProps } from "@/app/interface/props";
 import Image from "next/image";
 import styles from "./index.module.scss";
 
-export const ListTechStack = ({ techStack }: { techStack: String[] | undefined }) => {
+export const ListTechStack = ({ techStack }: ListTechStackProps) => {
   const widthScreen = window.innerWidth;
 
   return (

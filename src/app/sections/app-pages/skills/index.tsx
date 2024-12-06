@@ -1,6 +1,7 @@
 import { ButtonSecondary } from "@/app/components/shared/button/button-secondary";
 import TitleComponent from "@/app/components/shared/title";
 import { mockDataSkill } from "@/app/mocks/_mockSkills";
+
 import Image from "next/image";
 
 export default function SkillsSection() {

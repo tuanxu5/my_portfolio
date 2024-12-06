@@ -1,14 +1,10 @@
 "use client";
+import { TimelineEntryProps } from "@/app/interface/props";
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TextAnimationFadeUp } from "../../shared/text-animate";
 
-interface TimelineEntry {
-  title: string;
-  content: React.ReactNode;
-}
-
-export const TimelineAceternity = ({ data }: { data: TimelineEntry[] }) => {
+export const TimelineAceternity = ({ data }: { data: TimelineEntryProps[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);

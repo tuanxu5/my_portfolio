@@ -5,12 +5,12 @@ import { SvgIcon } from "@/app/assets/icons";
 import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import { ButtonSecondary } from "@/app/components/shared/button/button-secondary";
 import { useOutsideClick } from "@/app/hooks/useOutSideClick";
-import { Project } from "@/app/interface";
+import { SeeMoreProjectProps } from "@/app/interface/props";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-export const SeeMoreProject = ({ card, index, layout = false }: { card: Project; index: number; layout?: boolean }) => {
+export const SeeMoreProject = ({ card, index, layout = false }: SeeMoreProjectProps) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 

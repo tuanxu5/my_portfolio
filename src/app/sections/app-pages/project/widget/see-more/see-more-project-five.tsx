@@ -14,9 +14,11 @@ export const SeeMoreProjectFive = () => {
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
         <p className="mt-3 font-medium">
-          Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-          libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-          vulgate.
+          SPG Manager is a freelance project designed to empower employees to efficiently manage products across popular
+          e-commerce platforms such as WooCommerce, Shopify, and more. With a user-friendly interface and essential
+          tools, this project simplifies product listing, updating, and tracking, making operations smoother and more
+          streamlined. Built with flexibility and scalability in mind, SPG Manager enables businesses to optimize their
+          workflows, save time, and focus on growth in the competitive e-commerce market..
         </p>
       </div>
       <div className="w-fit mt-10">

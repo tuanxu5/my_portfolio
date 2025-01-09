@@ -1,5 +1,4 @@
 import { SvgIcon } from "@/app/assets/icons";
-import { LinkPreview } from "@/app/components/shared/link-preview/link-preview";
 import { ListTechStack } from "../list-tech-stack";
 
 export const SeeMoreProjectOne = () => {
@@ -10,17 +9,15 @@ export const SeeMoreProjectOne = () => {
       </div>
       <div className="w-fit mt-5 text-base">
         <div className="">👉 Link Repository: Confidential and cannot be disclosed 🙅</div>
-        <div className="mt-2">
-          👉 Link Preview:&nbsp;
-          <LinkPreview link="https://tuanxu5.pages.dev/" />
-        </div>
+        <div className="mt-2">👉 Link Preview:&nbsp;https://tuanxu5.pages.dev/</div>
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
         <p className="mt-3 font-medium">
-          Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-          libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-          vulgate.
+          Welcome to my portfolio! This project highlights my journey in software development, showcasing my skills in
+          creating efficient, innovative, and user-friendly solutions. I focus on crafting impactful applications that
+          solve real-world problems and deliver great user experiences. Explore my work to see how I bring ideas to life
+          with creativity and precision. Let&apos;s connect and build something amazing together!.
         </p>
       </div>
       <div className="w-fit mt-10">

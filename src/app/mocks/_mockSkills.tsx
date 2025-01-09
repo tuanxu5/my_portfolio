@@ -9,7 +9,7 @@ export const mockDataSkill: ListTechStack[] = [
       {
         id: 3,
         image: SvgIcon.IconStackReactJs,
-        name: "ReatJS",
+        name: "ReactJS",
         width: 40,
         height: 40
       },

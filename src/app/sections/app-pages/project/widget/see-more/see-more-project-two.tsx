@@ -6,7 +6,8 @@ export const SeeMoreProjectTwo = () => {
     <div>
       <div className="font-semibold text-2xl mt-10">
         <span>
-          🤝 Team size: 15 personal (2 frontend, 6 backend, 2 tester, 3 business analyst, 1 product owner, 1 leader)
+          🤝 Team size: 15 Personal (2 Frontend, 6 Backend, 2 Tester, 2 Business Analyst, 2 Product Owner, 1 Head of
+          Department)
         </span>
       </div>
       <div className="w-fit mt-5 text-base">
@@ -16,9 +17,12 @@ export const SeeMoreProjectTwo = () => {
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
         <p className="mt-3 font-medium text-base">
-          Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-          libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-          vulgate.
+          Our OPS Project is a cutting-edge operational solution tailored to optimize the workflow of our computer
+          components and technology products business. By automating repetitive tasks, improving inventory management,
+          and providing actionable insights, this project enhances efficiency and ensures smooth operations. It is
+          designed to streamline order processing, track stock in real-time, and deliver exceptional customer service.
+          With scalability and flexibility at its core, the OPS Project positions our company to meet the growing
+          demands of the tech market and provide top-quality products to our customers..
         </p>
       </div>
       <div className="w-fit mt-10">

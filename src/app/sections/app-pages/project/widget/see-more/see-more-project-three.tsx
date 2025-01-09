@@ -10,24 +10,29 @@ export const SeeMoreProjectThree = () => {
       </div>
       <div className="w-fit mt-5 text-base">
         <div>
-          👉 Link Repository: <LinkPreview link="https://docs-tx-design.pages.dev/" />
+          👉 Link repository: <LinkPreview link="https://github.com/tuanxu5/tx-design-ui" />
         </div>
         <div className="mt-2">
-          👉 Link Docs: <LinkPreview link="https://docs-tx-design.pages.dev/" />
+          👉 Link docs: <LinkPreview link="https://docs-tx-design.pages.dev/" />
         </div>
         <div className="mt-2">
-          👉 Link Storybook: <LinkPreview link="https://storybook-tx-design.pages.dev/" />
+          👉 Link storybook: <LinkPreview link="https://storybook-tx-design.pages.dev/" />
         </div>
         <div className="mt-2">
-          👉 Link npm: <LinkPreview link="https://www.npmjs.com/package/tx-design-ui" />
+          👉 Link download: <LinkPreview link="https://www.npmjs.com/package/tx-design-ui" />
         </div>
+        <div className="mt-2">👉 Total downloads: 250+ downloads</div>
+        <div className="mt-2">👉 Total weekly downloads: 3+</div>
       </div>
       <div className="w-fit mt-10">
         <span className="text-lg font-semibold">Description ✍️</span>
         <p className="mt-3 font-medium text-base">
-          Lorem ipsum dolor sit amen, consectetur advising edit. Pharsalus finials, purus vel facilities aliquant,
-          libero erat phaedra just, at premium libero lacks a edit. Vivas Lucius felid non libero gravid, eger edit
-          vulgate.
+          Tx Design UI Libraries is a modern and versatile UI library designed specifically for ReactJs applications.
+          Built with performance, scalability, and developer experience in mind, this library offers a comprehensive set
+          of components that are easy to integrate, fully customizable, and optimized for both mobile and desktop.
+          Whether you’re building dashboards, e-commerce platforms, or enterprise applications,Tx Design UI Libraries
+          empowers developers to create stunning, responsive user interfaces with minimal effort. With clean
+          documentation and ongoing support, this library is your ultimate tool for crafting modern web experiences.
         </p>
       </div>
       <div className="w-fit mt-10">

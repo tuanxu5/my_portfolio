@@ -9,12 +9,7 @@ export function ExperienceSection() {
     <section id="experience" className="lg:mt-[160px]">
       <TitleComponent
         title="Experience"
-        subTitle={
-          <span>
-            Take a look at some of the ideas <br />
-            we’ve helped to implement. Will yours be next?
-          </span>
-        }
+        subTitle={<span>Below is my work experience timeline and career progression.</span>}
       />
       <div className="flex justify-start w-full items-start mt-[40px]">
         <TimelineAceternity data={experiences} />

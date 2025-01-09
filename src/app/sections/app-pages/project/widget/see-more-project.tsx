@@ -61,7 +61,7 @@ export const SeeMoreProject = ({ card, index, layout = false }: SeeMoreProjectPr
               className="bg-white sm:h-[85vh] h-[90vh] sm:mt-[70px] rounded-3xl overflow-scroll px-[1rem] py-[1rem] sm:py-[60px] relative w-full"
             >
               <div className="max-w-[1320px] mx-auto sm:px-[6.5rem]">
-                <div className="fixed right-[1rem] ml-auto cursor-pointer w-fit" onClick={handleClose}>
+                <div className="fixed right-[1rem] sm:right-8 ml-auto cursor-pointer w-fit" onClick={handleClose}>
                   <ButtonPrimary
                     label={
                       <Image

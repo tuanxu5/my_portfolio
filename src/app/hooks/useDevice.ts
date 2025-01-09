@@ -1,24 +1,21 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 export const useDevice = () => {
-  const [screenSize, setScreenSize] = useState({
-    width: window.innerWidth,
-    height: window.innerWidth
-  });
+  const [isDesktop, setIsDesktop] = useState(true);
 
-  const handleResize = () => {
-    setScreenSize({
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-  };
+  useLayoutEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setIsDesktop(window.innerWidth > 1024);
+      };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
-  return { isDesktop: screenSize.width > 1024 };
+  return { isDesktop };
 };

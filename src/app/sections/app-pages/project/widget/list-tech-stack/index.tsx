@@ -18,7 +18,7 @@ export const ListTechStack = ({ techStack }: ListTechStackProps) => {
           <div className={`${styles.circle} w-[6rem] h-[6rem]`}>
             <Image
               src={item.image}
-              alt="React Icon"
+              alt="This is the description for the image"
               width={0}
               height={0}
               className="w-[2rem] sm:w-[2.5rem] rounded-md"

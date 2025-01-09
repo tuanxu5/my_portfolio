@@ -6,7 +6,9 @@ import "./styles/responsive.scss";
 
 export const metadata: Metadata = {
   title: "Tuanxu | My Portfolio",
-  icons: "./icon-tuanxu.svg"
+  icons: "./icon-tuanxu.svg",
+  description:
+    "Welcome to my portfolio! Here, you’ll find my projects, skills, and experiences that highlight my journey as a developer. Explore my work and feel free to connect if you’re interested in collaboration or learning more about my expertise."
 };
 
 export default function RootLayout({
@@ -19,6 +21,7 @@ export default function RootLayout({
       <Head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="canonical" href="https://tuanxu5.pages.dev" />
       </Head>
 
       <body>

@@ -17,7 +17,7 @@ export const SeeMoreProjectFour = () => {
               <span className="flex gap-2 items-center">
                 <Image
                   src="https://ronasit.com/_next/static/media/ios.f07497a4.svg"
-                  alt=""
+                  alt="This is the description for the image"
                   width={0}
                   height={0}
                   className="w-[1.5rem] h-[1.5rem]"
@@ -38,7 +38,7 @@ export const SeeMoreProjectFour = () => {
               <span className="text-sm flex gap-2 items-center">
                 <Image
                   src="https://ronasit.com/_next/static/media/android.4bd66b8b.svg"
-                  alt=""
+                  alt="This is the description for the image"
                   width={0}
                   height={0}
                   className="w-[1.5rem] h-[1.5rem]"

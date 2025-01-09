@@ -66,7 +66,7 @@ export const SeeMoreProject = ({ card, index, layout = false }: SeeMoreProjectPr
                     label={
                       <Image
                         src={SvgIcon.IconClose}
-                        alt="icon"
+                        alt="This is the description for the image"
                         width={0}
                         height={0}
                         className="w-[0.6rem] sm:w-[0.8rem] m-[0.1rem]"

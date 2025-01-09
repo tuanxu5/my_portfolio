@@ -9,7 +9,7 @@ export default function SkillsSection() {
 
   return (
     <section id="skills" className="mt-[160px]">
-      <TitleComponent title="Skills" subTitle={<span>Here are some of my skills.</span>} />
+      <TitleComponent title="Skills" subTitle="Here are some of my skills." />
 
       <div className="flex flex-wrap mt-10">
         {skills?.map((skill) => (
@@ -20,7 +20,13 @@ export default function SkillsSection() {
                   key={item.id}
                   label={
                     <div className="flex justify-between gap-2 items-center">
-                      <Image src={item.image} height={0} width={0} alt="" className="w-[1.1rem] h-[1.1rem]" />
+                      <Image
+                        src={item.image}
+                        height={0}
+                        width={0}
+                        alt="This is the description for the image"
+                        className="w-[1.1rem] h-[1.1rem]"
+                      />
                       <div className="text-sm">{item.name}</div>
                     </div>
                   }

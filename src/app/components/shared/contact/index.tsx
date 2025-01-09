@@ -7,7 +7,7 @@ export default function ContactComponent() {
       <h5 className="text-base font-medium mb-12">Contacts</h5>
       <Link href="/pages/contacts">
         <div className="h-[80px] w-fit overflow-hidden">
-          <span className={`${styles.get_in_touch__link} text-6xl`}>Get In Touch</span>
+          <h1 className={`${styles.get_in_touch__link} text-6xl`}>Get In Touch</h1>
         </div>
       </Link>
     </section>

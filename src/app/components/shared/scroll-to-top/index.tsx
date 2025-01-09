@@ -22,7 +22,7 @@ export default function ScrollToTop() {
             label={
               <Image
                 src={SvgIcon.IconToTop}
-                alt="icon"
+                alt="This is the description for the image"
                 width={16}
                 height={16}
                 className="flex justify-center items-center"

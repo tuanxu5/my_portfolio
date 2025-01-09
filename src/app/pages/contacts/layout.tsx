@@ -4,7 +4,9 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Contact | My Portfolio",
-  icons: "../../icon-tuanxu.svg"
+  icons: "../../icon-tuanxu.svg",
+  description:
+    "Welcome to my portfolio! Here, you’ll find my projects, skills, and experiences that highlight my journey as a developer. Explore my work and feel free to connect if you’re interested in collaboration or learning more about my expertise."
 };
 
 export default function ContactsPageLayout({
@@ -16,6 +18,7 @@ export default function ContactsPageLayout({
     <html lang="en">
       <Head>
         <link rel="shortcut icon" href="../../icon-tuanxu.svg" />
+        <link rel="canonical" href="https://tuanxu5.pages.dev" />
       </Head>
       <body>
         {children}

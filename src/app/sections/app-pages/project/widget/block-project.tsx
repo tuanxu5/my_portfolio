@@ -29,7 +29,13 @@ export const BlockProject = ({ data }: BlockProjectProp) => {
         </div>
         <TextAnimationFadeUp>
           <div className="flex items-center lg:scale-[var(--stick-scale)] lg:opacity-[var(--stick-visibility)] transition duration-300 mt-[10vh]">
-            <Image width="0" height="0" src={data?.banner ?? ""} alt="Illustration 01" className="h-[70vh] w-[50vh]" />
+            <Image
+              width="0"
+              height="0"
+              src={data?.banner ?? ""}
+              alt="This is the description for the image"
+              className="h-[70vh] w-[50vh]"
+            />
           </div>
         </TextAnimationFadeUp>
       </div>

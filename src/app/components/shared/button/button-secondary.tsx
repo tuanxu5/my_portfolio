@@ -15,7 +15,7 @@ export const ButtonSecondary: React.FC<ButtonProps> = ({ label, px, py }) => {
 
   return isDesktop ? (
     <div
-      className={`${styles.button_secondary} ${styles["button--stroke"]}`}
+      className={`${styles.button_secondary} ${styles["button--stroke"]} ${isDesktop && styles["button--brightness"]}`}
       style={{
         padding: `${py * 4}px ${px * 4}px `
       }}

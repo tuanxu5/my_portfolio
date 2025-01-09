@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Contact | My Portfolio",
   icons: "../../icon-tuanxu.svg",
   description:
-    "Welcome to my portfolio! Here, you’ll find my projects, skills, and experiences that highlight my journey as a developer. Explore my work and feel free to connect if you’re interested in collaboration or learning more about my expertise."
+    "Welcome to my portfolio! Discover my projects, skills, and experiences as a developer. Feel free to connect for collaboration or to learn more about my work."
 };
 
 export default function ContactsPageLayout({
@@ -19,6 +19,18 @@ export default function ContactsPageLayout({
       <Head>
         <link rel="shortcut icon" href="../../icon-tuanxu.svg" />
         <link rel="canonical" href="https://tuanxu5.pages.dev" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "My Portfolio",
+              description: "Welcome to My v",
+              url: "https://tuanxu5.pages.dev"
+            })
+          }}
+        />
       </Head>
       <body>
         {children}

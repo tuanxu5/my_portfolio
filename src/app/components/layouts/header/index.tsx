@@ -1,6 +1,7 @@
 import { SvgIcon } from "@/app/assets/icons/index.ts";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { LINK_CV } from "../../../utils/constant.js";
 import { ButtonPrimary } from "../../shared/button/button-primary.tsx";
 import ToggleComponent from "../../shared/toggle/index.tsx";
@@ -13,7 +14,8 @@ interface HeaderPageProps {
 }
 
 const HeaderPage = ({ activeSection, showHeader, onClickItem }: HeaderPageProps) => {
-  const isHomepage = window.location.pathname === "/";
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
 
   return (
     <header

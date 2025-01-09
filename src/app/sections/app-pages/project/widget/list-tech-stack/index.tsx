@@ -1,3 +1,5 @@
+"use client";
+
 import { ListTechStackProps } from "@/app/interface/props";
 import Image from "next/image";
 import styles from "./index.module.scss";

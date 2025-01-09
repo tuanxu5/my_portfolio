@@ -1,5 +1,3 @@
-"use client";
-
 import { SvgIcon } from "@/app/assets/icons";
 import { ListTechStack } from "../list-tech-stack";
 
@@ -8,7 +6,7 @@ export const SeeMoreProjectTwo = () => {
     <div>
       <div className="font-semibold text-2xl mt-10">
         <span>
-          🤝 Team size: 15 personal (2 frontend, 6 backend, 2️ tester, 3️ business analyst, 1️ product owner, 1️ leader)
+          🤝 Team size: 15 personal (2 frontend, 6 backend, 2 tester, 3 business analyst, 1 product owner, 1 leader)
         </span>
       </div>
       <div className="w-fit mt-5 text-base">

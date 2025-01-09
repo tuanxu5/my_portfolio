@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://pub.dev/api/packages/:path*"
+      }
+    ];
+  },
   serverExternalPackages: ["package-name"],
   experimental: {
     optimizePackageImports: ["icon-library"]

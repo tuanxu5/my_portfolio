@@ -1,5 +1,5 @@
 import { LayoutPage } from "@/app/components/layouts/layout-page";
-import CursorComponent from "@/app/components/shared/cursor";
+import { CursorComponent } from "@/app/components/shared/cursor";
 import { ToastProvider } from "@/app/contexts/ToastContext";
 import ContactSection from "@/app/sections/contacts";
 

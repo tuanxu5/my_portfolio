@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
 export const useCursor = () => {
@@ -65,5 +66,5 @@ export const useCursor = () => {
     };
   }, []);
 
-  return {cursorBig,cursorSmall};
+  return { cursorBig, cursorSmall };
 };

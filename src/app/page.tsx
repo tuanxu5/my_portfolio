@@ -1,4 +1,4 @@
-import CursorComponent from "./components/shared/cursor";
+import { CursorComponent } from "./components/shared/cursor";
 import { ToastProvider } from "./contexts/ToastContext";
 import AppPage from "./pages/app-pages";
 

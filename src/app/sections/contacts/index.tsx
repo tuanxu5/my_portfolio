@@ -48,7 +48,7 @@ export default function ContactSection() {
                 <label htmlFor="Your message">Your message</label>
               </div>
             </div>
-            <div className="mt-[6rem]">
+            <div className="mt-[6rem]" onClick={handleSubmit}>
               <ButtonPrimary px={12} py={4.5} label="Send Request" />
             </div>
           </form>

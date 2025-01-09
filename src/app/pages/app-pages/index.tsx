@@ -2,7 +2,8 @@
 
 import { LayoutPage } from "@/app/components/layouts/layout-page";
 import ContactComponent from "@/app/components/shared/contact";
-import CursorComponent from "@/app/components/shared/cursor";
+import { CursorComponent } from "@/app/components/shared/cursor";
+
 import { ToastProvider } from "@/app/contexts/ToastContext";
 import { useLoading } from "@/app/hooks/useLoading";
 import { AboutSection } from "@/app/sections/app-pages/about";

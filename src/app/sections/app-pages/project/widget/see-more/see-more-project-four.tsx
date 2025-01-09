@@ -1,5 +1,3 @@
-"use client";
-
 import { SvgIcon } from "@/app/assets/icons";
 import { ButtonPrimary } from "@/app/components/shared/button/button-primary";
 import Image from "next/image";
@@ -44,7 +42,7 @@ export const SeeMoreProjectFour = () => {
       </div>
       <div className="font-semibold text-2xl mt-20">
         <span>
-          🤝 Team size: 15 personal (2 mobile, 6 backend, 2️ tester, 3️ business analyst, 1️ product owner, 1️ leader)
+          🤝 Team size: 15 personal (2 mobile, 6 backend, 2 tester, 3 business analyst, 1 product owner, 1 leader)
         </span>
       </div>
       <div className="w-fit mt-5 text-base">
@@ -64,12 +62,11 @@ export const SeeMoreProjectFour = () => {
         <ListTechStack
           techStack={[
             { image: SvgIcon.IconStackFlutter, name: "Flutter" },
-            { image: SvgIcon.IconStackReactJs, name: "BloC" },
-            { image: SvgIcon.IconStackReactJs, name: "Cubit" },
-            { image: SvgIcon.IconStackReactJs, name: "GetX" },
-            { image: SvgIcon.IconStackReactJs, name: "Fvm" },
+            { image: SvgIcon.IconStackBloc, name: "BloC & Cubit" },
+            { image: SvgIcon.IconStackGetX, name: "GetX" },
+            { image: SvgIcon.IconStackFvm, name: "Fvm" },
             { image: SvgIcon.IconStackGraphql, name: "GraphQL" },
-            { image: SvgIcon.IconStackReactJs, name: "RxDart" }
+            { image: SvgIcon.IconStackRx, name: "RxDart" }
           ]}
         />
       </div>

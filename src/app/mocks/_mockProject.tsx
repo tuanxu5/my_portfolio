@@ -1,7 +1,8 @@
 import { SeeMoreProjectOne } from "@/app/sections/app-pages/project/widget/see-more/see-more-project-one";
-import { Project } from "../interface";
+import { Project } from "../interface/model";
 import { SeeMoreProjectFive } from "../sections/app-pages/project/widget/see-more/see-more-project-five";
 import { SeeMoreProjectFour } from "../sections/app-pages/project/widget/see-more/see-more-project-four";
+import { SeeMoreProjectSix } from "../sections/app-pages/project/widget/see-more/see-more-project-six";
 import { SeeMoreProjectThree } from "../sections/app-pages/project/widget/see-more/see-more-project-three";
 import { SeeMoreProjectTwo } from "../sections/app-pages/project/widget/see-more/see-more-project-two";
 
@@ -59,5 +60,15 @@ export const dataMockProject: Project[] = [
     banner: "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-web.9441f830.webp&w=1920&q=75",
     position: "Frontend Developer",
     content: <SeeMoreProjectFive />
+  },
+  {
+    id: 6,
+    company: "Libraries For Flutter By Me",
+    name: "Some Flutter libraries",
+    descriptions:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi rerum quibusdam dolore, sit veniam! Nulla neque quis nobis error beatae optio ipsa quos dolorem quaerat, corrupti vel provident modi?",
+    position: "Project Creator",
+    banner: "https://ronasit.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fservices-web.9441f830.webp&w=1920&q=75",
+    content: <SeeMoreProjectSix />
   }
 ];

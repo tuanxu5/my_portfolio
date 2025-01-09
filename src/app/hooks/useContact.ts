@@ -6,7 +6,8 @@ export const useContact = () => {
   const form = useRef<HTMLFormElement | null>(null);
   const { showToast } = useToast();
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: any) => {
+    console.log(12312);
     event.preventDefault();
     emailjs
       .sendForm("service_64el0ej", "template_ao6uwif", form.current!, {

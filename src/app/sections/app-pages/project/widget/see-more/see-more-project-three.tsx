@@ -1,13 +1,8 @@
-"use client";
-
 import { SvgIcon } from "@/app/assets/icons";
 import { LinkPreview } from "@/app/components/shared/link-preview/link-preview";
-import { useState } from "react";
 import { ListTechStack } from "../list-tech-stack";
 
 export const SeeMoreProjectThree = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div>
       <div className="font-semibold text-2xl mt-10">
@@ -42,7 +37,7 @@ export const SeeMoreProjectThree = () => {
             { image: SvgIcon.IconStackReactJs, name: "React Lib" },
             { image: SvgIcon.IconStackSass, name: "Sass" },
             { image: SvgIcon.IconStackDocusaurus, name: "Docusaurus" },
-            { image: SvgIcon.IconStackReactJs, name: "Styled" },
+            { image: SvgIcon.IconStackStyled, name: "Styled" },
             { image: SvgIcon.IconStackStoryBook, name: "Storybook" }
           ]}
         />

@@ -11,13 +11,17 @@ import IconLinkdIn from "./icon_contact_linkedIn.svg";
 import IconToTop from "./icon_to_top.svg";
 import IconStackAntd from "./skills/icon_stack_antd.svg";
 import IconStackApollo from "./skills/icon_stack_apollo.svg";
+import IconStackBloc from "./skills/icon_stack_bloc.svg";
 import IconStackBootstrap from "./skills/icon_stack_bootstrap.svg";
 import IconStackCss from "./skills/icon_stack_css.svg";
+import IconStackCubit from "./skills/icon_stack_cubit.svg";
 import IconStackDart from "./skills/icon_stack_dart.svg";
 import IconStackDocusaurus from "./skills/icon_stack_docusaurus.svg";
 import IconStackFigma from "./skills/icon_stack_figma.svg";
 import IconStackFirebase from "./skills/icon_stack_firebase.svg";
 import IconStackFlutter from "./skills/icon_stack_flutter.svg";
+import IconStackFvm from "./skills/icon_stack_fvm.svg";
+import IconStackGetX from "./skills/icon_stack_getx.svg";
 import IconStackGit from "./skills/icon_stack_git.svg";
 import IconStackGithub from "./skills/icon_stack_github.svg";
 import IconStackGraphql from "./skills/icon_stack_graphql.svg";
@@ -30,11 +34,13 @@ import IconStackMySql from "./skills/icon_stack_mysql.svg";
 import IconStackNextJs from "./skills/icon_stack_nextjs.svg";
 import IconStackNx from "./skills/icon_stack_nx.svg";
 import IconStackReactJs from "./skills/icon_stack_react.svg";
+import IconStackRx from "./skills/icon_stack_rx.svg";
 import IconStackSass from "./skills/icon_stack_sass.svg";
+import IconStackStoryBook from "./skills/icon_stack_storybook.svg";
+import IconStackStyled from "./skills/icon_stack_styled.svg";
 import IconStackTailWind from "./skills/icon_stack_tailwind.svg";
 import IconStackTs from "./skills/icon_stack_ts.svg";
 import IconStackVueJs from "./skills/icon_stack_vuejs.svg";
-import IconStackStoryBook from "./skills/icon_stack_storybook.svg";
 
 const SvgIcon = {
   IconLeft,
@@ -74,6 +80,12 @@ const SvgIcon = {
   IconStackApollo,
   IconStackDocusaurus,
   IconStackStoryBook,
+  IconStackGetX,
+  IconStackBloc,
+  IconStackRx,
+  IconStackFvm,
+  IconStackCubit,
+  IconStackStyled,
 };
 
 export { SvgIcon };

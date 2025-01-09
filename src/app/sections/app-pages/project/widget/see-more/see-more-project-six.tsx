@@ -1,11 +1,13 @@
+"use client";
+
 import { SvgIcon } from "@/app/assets/icons";
 import { ListTechStack } from "../list-tech-stack";
 
-export const SeeMoreProjectFive = () => {
+export const SeeMoreProjectSix = () => {
   return (
     <div>
       <div className="font-semibold text-[24px] mt-10">
-        <span>🤝 Team size: 1 personal</span>
+        <span>🤝 Package: tx_dropdown_menu</span>
       </div>
       <div className="w-fit mt-5 text-[16px]">
         <div className="">👉 Link Repository: {"Confidential and cannot be disclosed 🙅"}</div>

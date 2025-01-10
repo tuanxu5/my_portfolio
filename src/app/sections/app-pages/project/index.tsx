@@ -17,7 +17,7 @@ export const ProjectSection = () => {
         subTitle={
           <span>
             Take a look at some of the projects <br />
-            I’ve helped to implement. Will yours be next?
+            I&apos;ve helped to implement. Will yours be next?
           </span>
         }
       />

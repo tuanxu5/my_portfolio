@@ -33,24 +33,6 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Homepage Tuanxu Portfolio" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              headline: "headline default",
-              author: {
-                "@type": "Person",
-                name: "Tuanxu",
-                url: "https://tuanxu5.pages.dev/"
-              },
-              image: "https://tuanxu5.pages.dev/images/contact-thumbnail.jpg",
-              datePublished: "2025-01-01",
-              dateModified: "2025-01-01"
-            })
-          }}
-        />
       </Head>
 
       <body>

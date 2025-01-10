@@ -3,10 +3,10 @@ import Head from "next/head";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Contact | My Portfolio",
+  title: "Contact | My Portfolio Page",
   icons: "../../icon-tuanxu.svg",
   description:
-    "Welcome to my portfolio! Discover my projects, skills, and experiences as a developer. Feel free to connect for collaboration or to learn more about my work."
+    "Get in touch with me through the contact page of my portfolio. Let's discuss projects, collaborations, or opportunities to work together. Explore my developer skills and experiences!"
 };
 
 export default function ContactsPageLayout({
@@ -19,18 +19,6 @@ export default function ContactsPageLayout({
       <Head>
         <link rel="shortcut icon" href="../../icon-tuanxu.svg" />
         <link rel="canonical" href="https://tuanxu5.pages.dev" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "My Portfolio",
-              description: "Welcome to My v",
-              url: "https://tuanxu5.pages.dev"
-            })
-          }}
-        />
       </Head>
       <body>
         {children}

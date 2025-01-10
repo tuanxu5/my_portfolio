@@ -33,7 +33,7 @@ export const TimelineAceternity = ({ data }: { data: TimelineEntryProps[] }) => 
               <div className="h-6 absolute left-[0.3rem] md:left-5 w-6 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-2 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-xl font-medium text-black">{item.title}</h3>
+              <time className="hidden md:block text-xl md:pl-20 md:text-xl font-medium text-black">{item.title}</time>
             </div>
 
             <div className="relative pl-14 sm:pl-20 pr-4 md:pl-4 w-full">

@@ -5,10 +5,10 @@ import "./styles/globals.scss";
 import "./styles/responsive.scss";
 
 export const metadata: Metadata = {
-  title: "Tuanxu | My Portfolio",
+  title: "Tuanxu | My Portfolio Page",
   icons: "./icon-tuanxu.svg",
   description:
-    "Welcome to my portfolio! Discover my projects, skills, and experiences as a developer. Feel free to connect for collaboration or to learn more about my work."
+    "Explore Tuanxu's portfolio to discover innovative projects, advanced developer skills, and professional experiences. Connect for collaborations or opportunities to work together."
 };
 
 export default function RootLayout({
@@ -22,18 +22,6 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="canonical" href="https://tuanxu5.pages.dev" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "My Portfolio",
-              description: "Welcome to My v",
-              url: "https://tuanxu5.pages.dev"
-            })
-          }}
-        />
       </Head>
 
       <body>

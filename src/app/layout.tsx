@@ -22,6 +22,16 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <link rel="canonical" href="https://tuanxu5.pages.dev" />
+        <meta property="og:title" content="Home - Tuanxu Portfolio Website" />
+        <meta
+          property="og:description"
+          content="Explore Tuanxu's portfolio to discover innovative projects, advanced developer skills, and professional experiences. Connect for collaborations or opportunities to work together."
+        />
+        <meta property="og:image" content="https://example.com/images/contact-thumbnail.jpg" />
+        <meta property="og:url" content="https://tuanxu5.pages.dev/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Homepage Tuanxu Portfolio" />
       </Head>
 
       <body>

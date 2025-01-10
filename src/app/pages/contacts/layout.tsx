@@ -19,6 +19,16 @@ export default function ContactsPageLayout({
       <Head>
         <link rel="shortcut icon" href="../../icon-tuanxu.svg" />
         <link rel="canonical" href="https://tuanxu5.pages.dev" />
+        <meta property="og:title" content="Contact - Tuanxu Portfolio Website" />
+        <meta
+          property="og:description"
+          content="Get in touch with me through the contact page of my portfolio. Let's discuss projects, collaborations, or opportunities to work together. Explore my developer skills and experiences."
+        />
+        <meta property="og:image" content="https://example.com/images/contact-thumbnail.jpg" />
+        <meta property="og:url" content="https://tuanxu5.pages.dev/pages/contacts" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Contact Tuanxu Portfolio" />
       </Head>
       <body>
         {children}

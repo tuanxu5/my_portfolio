@@ -14,7 +14,7 @@ export default function ContactSection() {
         title="Contact"
         subTitleBig={
           <>
-            Interested?
+            <span>Interested?</span>
             <br />
             Let’s talk!
           </>

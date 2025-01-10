@@ -6,7 +6,7 @@ export const mockDataExperiences: Experiences[] = [
     content: (
       <div>
         <div className="flex justify-between items-center gap-10">
-          <h1 className="text-3xl font-semibold leading-9">Hong Anh Computer Company Limited</h1>
+          <h4 className="text-3xl font-semibold leading-9">Hong Anh Computer Company Limited</h4>
         </div>
         <div className="flex flex-col gap-4 mt-2">
           <div className="flex flex-col gap-2">
@@ -75,9 +75,9 @@ export const mockDataExperiences: Experiences[] = [
     content: (
       <div>
         <div className="flex justify-between items-center gap-10">
-          <h1 className="text-3xl font-semibold leading-9">
+          <h4 className="text-3xl font-semibold leading-9">
             ABCSOFT Information System Solution and Development Join-Stock
-          </h1>
+          </h4>
         </div>
         <div className="flex flex-col gap-4 mt-2">
           <div className="flex flex-col gap-2">
@@ -115,7 +115,7 @@ export const mockDataExperiences: Experiences[] = [
     content: (
       <div>
         <div className="flex justify-between items-center gap-10">
-          <h1 className="text-3xl font-semibold leading-9">Hung Yen University of Technology and Education</h1>
+          <h4 className="text-3xl font-semibold leading-9">Hung Yen University of Technology and Education</h4>
         </div>
         <div className="flex flex-col gap-4 mt-2">
           <div className="flex flex-col gap-2">

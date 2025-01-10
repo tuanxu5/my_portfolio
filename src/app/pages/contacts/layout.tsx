@@ -3,10 +3,11 @@ import Head from "next/head";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Contact | My Portfolio Page",
+  title: "Contacts | Portfolio Website",
   icons: "../../icon-tuanxu.svg",
+  keywords: ["portfolio", "website", "tuanxu", "cv", "tuanxu5"],
   description:
-    "Get in touch with me through the contact page of my portfolio. Let's discuss projects, collaborations, or opportunities to work together. Explore my developer skills and experiences!"
+    "Get in touch via the contact page of my portfolio. Let's discuss projects, collaborations, or opportunities to work together!"
 };
 
 export default function ContactsPageLayout({
@@ -29,6 +30,39 @@ export default function ContactsPageLayout({
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Contact Tuanxu Portfolio" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Contact - Tuanxu Portfolio",
+              url: "https://tuanxu5.pages.dev/pages/contacts",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://tuanxu5.pages.dev/pages/contacts/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Contact - Tuanxu Portfolio",
+              url: "https://tuanxu5.pages.dev/pages/contacts",
+              logo: "https://tuanxu5.pages.dev/logo.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "0386426150",
+                contactType: "Customer Service"
+              }
+            })
+          }}
+        />
       </Head>
       <body>
         {children}

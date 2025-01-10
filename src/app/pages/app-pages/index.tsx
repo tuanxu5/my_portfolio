@@ -3,7 +3,7 @@
 import { LayoutPage } from "@/app/components/layouts/layout-page";
 import ContactComponent from "@/app/components/shared/contact";
 import { CursorComponent } from "@/app/components/shared/cursor";
-
+import { LoadingComponent } from "@/app/components/shared/loading";
 import { ToastProvider } from "@/app/contexts/ToastContext";
 import { useLoading } from "@/app/hooks/useLoading";
 import { AboutSection } from "@/app/sections/app-pages/about";
@@ -16,17 +16,17 @@ export default function AppPage() {
   return (
     <ToastProvider>
       <div>
-        {/* <LoadingComponent />
-        {!isLoading && ( */}
-        <LayoutPage className="flex flex-col pb-[50px] h-full items-center">
-          <CursorComponent />
-          <AboutSection />
-          <ProjectSection />
-          <ExperienceSection />
-          <SkillsSection />
-          <ContactComponent />
-        </LayoutPage>
-        {/* )} */}
+        <LoadingComponent />
+        {!isLoading && (
+          <LayoutPage className="flex flex-col pb-[50px] h-full items-center">
+            <CursorComponent />
+            <AboutSection />
+            <ProjectSection />
+            <ExperienceSection />
+            <SkillsSection />
+            <ContactComponent />
+          </LayoutPage>
+        )}
       </div>
     </ToastProvider>
   );

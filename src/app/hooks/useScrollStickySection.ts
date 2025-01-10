@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-// useStickySections.ts
+
 import { MutableRefObject, useEffect, useRef } from "react";
 
 type SectionElement = HTMLElement | null;

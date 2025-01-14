@@ -78,48 +78,62 @@ export const mockDataSkill: ListTechStack[] = [
       },
       {
         id: 13,
-        image: SvgIcon.IconStackLaravel,
-        name: "Laravel",
+        image: SvgIcon.IconStackNodeJs,
+        name: "NodeJs",
         width: 40,
         height: 40
       },
       {
         id: 14,
+        image: SvgIcon.IconStackMongodb,
+        name: "MongoDb",
+        width: 40,
+        height: 40
+      },
+      {
+        id: 15,
         image: SvgIcon.IconStackGraphql,
         name: "GraphQL",
         width: 40,
         height: 40
       },
       {
-        id: 15,
+        id: 16,
         image: SvgIcon.IconStackMySql,
         name: "MySQL",
         width: 40,
         height: 40
       },
       {
-        id: 16,
+        id: 17,
         image: SvgIcon.IconStackFirebase,
         name: "Firebase",
         width: 40,
         height: 40
       },
       {
-        id: 20,
+        id: 18,
         image: SvgIcon.IconStackGit,
         name: "Git",
         width: 40,
         height: 40
       },
       {
-        id: 17,
+        id: 19,
         image: SvgIcon.IconStackGithub,
         name: "Github",
         width: 40,
         height: 40
       },
       {
-        id: 18,
+        id: 20,
+        image: SvgIcon.IconStackSlack,
+        name: "Slack",
+        width: 40,
+        height: 40
+      },
+      {
+        id: 21,
         image: SvgIcon.IconStackFigma,
         name: "Figma",
         width: 40,

@@ -29,13 +29,16 @@ import IconStackGsap from "./skills/icon_stack_gsap.svg";
 import IconStackHtml from "./skills/icon_stack_html.svg";
 import IconStackJs from "./skills/icon_stack_js.svg";
 import IconStackLaravel from "./skills/icon_stack_laravel.svg";
+import IconStackMongodb from "./skills/icon_stack_mongodb.svg";
 import IconStackMotion from "./skills/icon_stack_motion.svg";
 import IconStackMySql from "./skills/icon_stack_mysql.svg";
 import IconStackNextJs from "./skills/icon_stack_nextjs.svg";
+import IconStackNodeJs from "./skills/icon_stack_nodejs.svg";
 import IconStackNx from "./skills/icon_stack_nx.svg";
 import IconStackReactJs from "./skills/icon_stack_react.svg";
 import IconStackRx from "./skills/icon_stack_rx.svg";
 import IconStackSass from "./skills/icon_stack_sass.svg";
+import IconStackSlack from "./skills/icon_stack_slack.svg";
 import IconStackStoryBook from "./skills/icon_stack_storybook.svg";
 import IconStackStyled from "./skills/icon_stack_styled.svg";
 import IconStackTailWind from "./skills/icon_stack_tailwind.svg";
@@ -69,6 +72,8 @@ const SvgIcon = {
   IconStackGit,
   IconStackFigma,
   IconStackLaravel,
+    IconStackMongodb,
+
   IconStackGraphql,
   IconStackMySql,
   IconTuanxu,
@@ -86,6 +91,8 @@ const SvgIcon = {
   IconStackFvm,
   IconStackCubit,
   IconStackStyled,
+  IconStackNodeJs,  IconStackSlack,
+
 };
 
 export { SvgIcon };

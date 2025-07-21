@@ -22,7 +22,8 @@ export const LayoutPage = ({ children, className, ...rest }: LayoutPageProps) =>
     const menuLinks = document.querySelectorAll("ul li");
 
     menuLinks.forEach((link) => {
-      const target = document.querySelector(link.getAttribute("data-section") || "");
+      const sectionSelector = link.getAttribute("data-section");
+      const target = sectionSelector ? document.querySelector(sectionSelector) : null;
       if (target) {
         const { offsetTop, clientHeight } = target as HTMLElement;
 

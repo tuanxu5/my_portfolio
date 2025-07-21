@@ -6,6 +6,7 @@ import { SeeMoreProjectFour } from "../sections/app-pages/project/widget/see-mor
 import { SeeMoreProjectNine } from "../sections/app-pages/project/widget/see-more/see-more-project-nine";
 import { SeeMoreProjectSeven } from "../sections/app-pages/project/widget/see-more/see-more-project-seven";
 import { SeeMoreProjectSix } from "../sections/app-pages/project/widget/see-more/see-more-project-six";
+import { SeeMoreProjectTen } from "../sections/app-pages/project/widget/see-more/see-more-project-ten";
 import { SeeMoreProjectThree } from "../sections/app-pages/project/widget/see-more/see-more-project-three";
 import { SeeMoreProjectTwo } from "../sections/app-pages/project/widget/see-more/see-more-project-two";
 
@@ -61,6 +62,16 @@ export const dataMockProject: Project[] = [
     content: <SeeMoreProjectEight />
   },
   {
+    id: 6,
+    company: "Hong Anh Computer",
+    name: "Promotional Campaign Landing Page",
+    descriptions:
+      "This landing page was developed to highlight all active promotional campaigns run by Hong Anh Computer. Built with NextJS, it features a visually appealing layout with dynamic banners, countdown timers, and campaign-specific product sections. Admins can create and manage campaigns through a custom CMS, including setting titles, images, promotion durations, and associated product SKUs. The page is SEO-friendly, mobile-responsive, and optimized for fast load times, making it an effective tool for marketing and conversion.",
+    banner: "https://i.pinimg.com/1200x/2c/6a/32/2c6a324b15aa0b8e4df1e9d7ac02613b.jpg",
+    position: "Frontend Developer",
+    content: <SeeMoreProjectTen />
+  },
+  {
     id: 5,
     company: "Zenco Production & Import-Export Co., Ltd.",
     name: "Landing Page Zenco",
@@ -70,6 +81,7 @@ export const dataMockProject: Project[] = [
     position: "FullStack Developer",
     content: <SeeMoreProjectNine />
   },
+
   {
     id: 4,
     company: "Libraries UI For React By Me",

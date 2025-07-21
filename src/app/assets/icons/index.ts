@@ -16,6 +16,7 @@ import IconStackBootstrap from "./skills/icon_stack_bootstrap.svg";
 import IconStackCss from "./skills/icon_stack_css.svg";
 import IconStackCubit from "./skills/icon_stack_cubit.svg";
 import IconStackDart from "./skills/icon_stack_dart.svg";
+import IconStackDocker from "./skills/icon_stack_docker.svg";
 import IconStackDocusaurus from "./skills/icon_stack_docusaurus.svg";
 import IconStackFigma from "./skills/icon_stack_figma.svg";
 import IconStackFirebase from "./skills/icon_stack_firebase.svg";
@@ -36,6 +37,7 @@ import IconStackNextJs from "./skills/icon_stack_nextjs.svg";
 import IconStackNodeJs from "./skills/icon_stack_nodejs.svg";
 import IconStackNx from "./skills/icon_stack_nx.svg";
 import IconStackReactJs from "./skills/icon_stack_react.svg";
+import IconStackRedux from "./skills/icon_stack_redux.svg";
 import IconStackRx from "./skills/icon_stack_rx.svg";
 import IconStackSass from "./skills/icon_stack_sass.svg";
 import IconStackSlack from "./skills/icon_stack_slack.svg";
@@ -44,6 +46,7 @@ import IconStackStyled from "./skills/icon_stack_styled.svg";
 import IconStackTailWind from "./skills/icon_stack_tailwind.svg";
 import IconStackTs from "./skills/icon_stack_ts.svg";
 import IconStackVueJs from "./skills/icon_stack_vuejs.svg";
+import IconStackNginx from "./skills/icon_stack_nginx.svg";
 
 const SvgIcon = {
   IconLeft,
@@ -72,8 +75,7 @@ const SvgIcon = {
   IconStackGit,
   IconStackFigma,
   IconStackLaravel,
-    IconStackMongodb,
-
+  IconStackMongodb,
   IconStackGraphql,
   IconStackMySql,
   IconTuanxu,
@@ -91,8 +93,11 @@ const SvgIcon = {
   IconStackFvm,
   IconStackCubit,
   IconStackStyled,
-  IconStackNodeJs,  IconStackSlack,
-
+  IconStackNodeJs,
+  IconStackSlack,
+  IconStackDocker,
+  IconStackRedux,
+  IconStackNginx
 };
 
 export { SvgIcon };

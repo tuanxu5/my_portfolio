@@ -10,7 +10,7 @@ export const mockDataExperiences: Experiences[] = [
         </div>
         <div className="flex flex-col gap-4 mt-2">
           <div className="flex flex-col gap-2">
-            <p className="font-medium text-lg">Position: FrontEnd Developer && Flutter Developer</p>
+            <p className="font-medium text-lg">Position: Frontend Leader ( FrontEnd Developer && Flutter Developer)</p>
           </div>
           <div className="flex flex-col gap-2">
             <div className="font-medium leading-6 text-base flex gap-5">
@@ -18,6 +18,14 @@ export const mockDataExperiences: Experiences[] = [
               <span>
                 Worked in an Agile/Scrum environment, managed projects using YouTrack and Slack, performed code reviews,
                 and collaborated with the backend team.
+              </span>
+            </div>
+            <div className="font-medium leading-6 text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Took on the role of Frontend Leader, responsible for establishing coding standards, reviewing team pull
+                requests, mentoring junior developers, and making architectural decisions for both web and mobile
+                projects.
               </span>
             </div>
             <div className="font-medium leading-6 text-base flex gap-5">
@@ -34,7 +42,20 @@ export const mockDataExperiences: Experiences[] = [
                 performance and UI/UX for improved user experience.
               </span>
             </div>
-
+            <div className="font-medium leading-6 text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Built and maintained a retail e-commerce website, supporting product listing, filtering, cart,
+                promotions, and responsive UI for desktop/mobile.
+              </span>
+            </div>
+            <div className="font-medium leading-6 text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Developed a landing page website to promote ongoing marketing campaigns and promotional programs of the
+                company.
+              </span>
+            </div>
             <div className="font-medium leading-6 text-base flex gap-5">
               <span>•</span>
               <span>
@@ -64,6 +85,66 @@ export const mockDataExperiences: Experiences[] = [
             <div className="font-medium leading-6 text-base flex gap-5">
               <span>•</span>
               <span>Configured linter to enforce code standards for the project.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  },
+  {
+    title: "Apr 2024 - Present",
+    content: (
+      <div>
+        <div className="flex justify-between items-center gap-10">
+          <h4 className="text-3xl font-semibold leading-9">Zenco Production & Import-Export Co., Ltd. (ZENCOMEX)</h4>
+        </div>
+        <div className="flex flex-col gap-4 mt-2">
+          <div className="flex flex-col gap-2">
+            <p className="font-medium text-lg">Position: Freelance Fullstack Developer</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="font-medium text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Optimized and maintained the company’s landing page at{" "}
+                <a
+                  href="https://zencomex.com/"
+                  className="text-blue-500 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  zencomex
+                </a>
+                , improving performance, loading speed, and responsiveness across devices.
+              </span>
+            </div>
+            <div className="font-medium text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Deployed the entire system to a self-managed VPS environment, configuring Nginx, SSL, and CI/CD
+                pipelines for stable and secure delivery.
+              </span>
+            </div>
+            <div className="font-medium text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Developed an admin dashboard to manage product information, company news, and SEO metadata, enabling
+                non-technical users to update site content easily.
+              </span>
+            </div>
+            <div className="font-medium text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Implemented on-page SEO optimization through dynamic meta tags, structured data, and Open Graph settings
+                configured via the admin panel.
+              </span>
+            </div>
+            <div className="font-medium text-base flex gap-5">
+              <span>•</span>
+              <span>
+                Integrated analytics tools to track traffic and optimize content strategy based on real user behavior
+                and search performance.
+              </span>
             </div>
           </div>
         </div>

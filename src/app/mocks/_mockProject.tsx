@@ -1,7 +1,10 @@
 import { SeeMoreProjectOne } from "@/app/sections/app-pages/project/widget/see-more/see-more-project-one";
 import { Project } from "../interface/model";
+import { SeeMoreProjectEight } from "../sections/app-pages/project/widget/see-more/see-more-project-eight";
 import { SeeMoreProjectFive } from "../sections/app-pages/project/widget/see-more/see-more-project-five";
 import { SeeMoreProjectFour } from "../sections/app-pages/project/widget/see-more/see-more-project-four";
+import { SeeMoreProjectNine } from "../sections/app-pages/project/widget/see-more/see-more-project-nine";
+import { SeeMoreProjectSeven } from "../sections/app-pages/project/widget/see-more/see-more-project-seven";
 import { SeeMoreProjectSix } from "../sections/app-pages/project/widget/see-more/see-more-project-six";
 import { SeeMoreProjectThree } from "../sections/app-pages/project/widget/see-more/see-more-project-three";
 import { SeeMoreProjectTwo } from "../sections/app-pages/project/widget/see-more/see-more-project-two";
@@ -29,23 +32,53 @@ export const dataMockProject: Project[] = [
   },
   {
     id: 3,
-    company: "Libraries UI For React By Me",
-    name: "Tx Design UI Libraries",
-    descriptions:
-      "Tx Design UI Libraries is a modern and versatile UI library designed specifically for ReactJs applications. Built with performance, scalability, and developer experience in mind, this library offers a comprehensive set of components that are easy to integrate, fully customizable, and optimized for both mobile and desktop. Whether you’re building dashboards, e-commerce platforms, or enterprise applications,Tx Design UI Libraries empowers developers to create stunning, responsive user interfaces with minimal effort. With clean documentation and ongoing support, this library is your ultimate tool for crafting modern web experiences.",
-    banner: "https://i.pinimg.com/736x/7f/17/59/7f175992875ca71e07f5730900a442f6.jpg",
-    position: "Project Creator",
-    content: <SeeMoreProjectThree />
-  },
-  {
-    id: 4,
     company: "Hong Anh Computer",
     name: "Hong Anh Seller Mobile App",
     descriptions:
       "Hong Anh Seller Mobile App is an innovative e-commerce platform designed to simplify shopping for both customers and dealers. This app creates a seamless connection between buyers and sellers, offering a wide range of products with intuitive navigation and secure payment options. Built for convenience and efficiency, it enables customers to browse, compare, and purchase with ease, while providing dealers with tools to showcase products, track orders, and reach a larger audience. With a focus on user-friendly design and real-time updates, this app redefines the shopping experience and empowers businesses to thrive in the digital age.",
-    banner: "https://i.pinimg.com/736x/a4/44/95/a4449575c6266d1061067ac473e7465c.jpg",
+    banner: "https://i.pinimg.com/736x/7f/17/59/7f175992875ca71e07f5730900a442f6.jpg",
     position: "Flutter Developer",
     content: <SeeMoreProjectFour />
+  },
+  {
+    id: 4,
+    company: "Hong Anh Computer",
+    name: "Hong Anh Retail E-commerce Website",
+    descriptions:
+      "Hong Anh Retail E-commerce Website is a modern B2C platform built to streamline online shopping and sales operations. It features product listing, advanced filtering, real-time search with autosuggest, and rich product pages with specifications and promotions. The site supports a smooth checkout experience with cart, vouchers, and multiple payment options. Admins can manage content, inventory, banners, and SEO via a custom CMS. Designed with scalability and SEO in mind, the platform is fully responsive and integrated with analytics for tracking user behavior and campaign performance.",
+    banner: "https://i.pinimg.com/736x/09/57/46/0957466cac38a55c28d60309325b347f.jpg",
+    position: "Frontend Developer (ReactJS)",
+    content: <SeeMoreProjectSeven />
+  },
+  {
+    id: 5,
+    company: "Hong Anh Computer",
+    name: "Hong Anh Shipper App",
+    descriptions:
+      "Hong Anh Shipper App is a logistics and delivery management web application developed with ReactJS, tailored to support internal shippers in processing daily order assignments. The platform allows shippers to log in securely, view and filter order lists by status, update delivery progress in real-time, and access route and customer information. Designed to work across modern browsers and devices, the app facilitates smooth coordination between sales teams, warehouse staff, and delivery personnel. With a user-friendly interface and optimized performance, it enhances delivery efficiency and improves tracking accuracy within the company’s logistics workflow.",
+    banner: "https://i.pinimg.com/1200x/02/3f/3d/023f3d268f366275ca95cd9254a7a2fa.jpg",
+    position: "Frontend Developer",
+    content: <SeeMoreProjectEight />
+  },
+  {
+    id: 5,
+    company: "Zenco Production & Import-Export Co., Ltd.",
+    name: "Landing Page Zenco",
+    descriptions:
+      "Landing Page Zenco is a corporate website developed for Zenco Production & Import-Export Co., Ltd. Built with NextJs, the site showcases the company’s product lines, services, and import-export capabilities. It features responsive design, multi-section layout, and SEO-optimized metadata to improve search visibility. The project also includes a CMS-based admin panel for updating banners, content, and SEO settings without developer intervention. Deployed on a VPS with Nginx and HTTPS, the website ensures high availability, performance, and secure access.",
+    banner: "https://i.pinimg.com/1200x/70/6a/fc/706afc592cea2098e7b28d0423de19b6.jpg",
+    position: "FullStack Developer",
+    content: <SeeMoreProjectNine />
+  },
+  {
+    id: 4,
+    company: "Libraries UI For React By Me",
+    name: "Tx Design UI Libraries",
+    descriptions:
+      "Tx Design UI Libraries is a modern and versatile UI library designed specifically for ReactJs applications. Built with performance, scalability, and developer experience in mind, this library offers a comprehensive set of components that are easy to integrate, fully customizable, and optimized for both mobile and desktop. Whether you’re building dashboards, e-commerce platforms, or enterprise applications,Tx Design UI Libraries empowers developers to create stunning, responsive user interfaces with minimal effort. With clean documentation and ongoing support, this library is your ultimate tool for crafting modern web experiences.",
+    banner: "https://i.pinimg.com/736x/a4/44/95/a4449575c6266d1061067ac473e7465c.jpg",
+    position: "Project Creator",
+    content: <SeeMoreProjectThree />
   },
   {
     id: 5,
